@@ -272,7 +272,8 @@ function receivedMessage(event) {
       case 'yum asuuya':  
       case 'хүн бну':  
       case 'hun bnu':
-      case '123': 
+      case '123':
+        case 'Get Started':         
         send123Buttons(senderID);
         break; 
         
