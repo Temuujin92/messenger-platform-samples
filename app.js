@@ -573,6 +573,10 @@ function sendButtonMessage(recipientId) {
 
   callSendAPI(messageData);
 }
+send123Buttons(recipientId); 
+
+
+
 //TODO mine 
 function send123Buttons(recipientId) {
   var messageData = {
