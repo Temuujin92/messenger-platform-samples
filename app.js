@@ -276,6 +276,10 @@ function receivedMessage(event) {
         send123Buttons(senderID);
         break; 
         
+            case 'Get Started':
+            startMessage(senderID); 
+            break; 
+            
         case 'мэдээ':
             sendNewsMessage(senderID); 
             break; 
@@ -357,7 +361,10 @@ function receivedPostback(event) {
         break; 
         case 'CUSTOM_123_DATA_PACKAGE':
             sendDataQuickReply(senderID); 
-            break; 
+            break;
+        case 'CUSTOM_new':
+            sendNewQuickReply(senderID); 
+            break;     
         case 'CUSTOM_123_FB_PACKAGE':
             sendTextMessage(senderID, "Та 123-г ашиглан Facebook багц авахын тулд facebook гэсэн түлхүүр үгийг 123 тусгай дугаарт илгээхэд хангалттай. Дагалдах эрх үйлчилгээний 30 хоног. Үнэ 5000₮");
             break; 
@@ -573,7 +580,7 @@ function sendButtonMessage(recipientId) {
 
   callSendAPI(messageData);
 }
-send123Buttons(recipientId); 
+
 
 
 
@@ -609,6 +616,52 @@ function send123Buttons(recipientId) {
 
   callSendAPI(messageData);
 }
+
+function startMessage(recipientId) {
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Мобайл",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_new",
+            title: "Шинэ үйлчилгээ, урамшуулал"
+          }, {
+            type: "postback",
+            title: "Онлайн худалдаа",
+            payload: "CUSTOM_onlain"
+          }, {
+            type: "postback",
+            title: "Датай үйлчилгээ",
+            payload: "CUSTOM_data"
+          }, {
+            type: "postback",
+            title: "Smart home",
+            payload: "CUSTOM_smart_home"
+          }, {
+            type: "postback",
+            title: "Гар утасны тохиргоо",
+            payload: "CUSTOM_settings"
+          }, {
+            type: "postback",
+            title: "Төлбөр төлөх дансны мэдээлэл",
+            payload: "CUSTOM_payment"
+          }]
+        }
+      }
+    }
+  };  
+
+  callSendAPI(messageData);
+}
+
+
 
 var newsDetail; 
 
@@ -824,6 +877,37 @@ function sendDataQuickReply(recipientId) {
 
   callSendAPI(messageData);
 }
+
+function sendNewQuickReply(recipientId) {
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Мобайл",
+          buttons:[
+                {
+                              "type": "web_url",
+                              "url": "https://www.skytel.mn/", 
+                              "title": "Take Quiz"
+                            }
+          ]
+        }
+      }
+    }
+  };  
+
+  callSendAPI(messageData);
+}
+
+
+
+
+
 
 //MINE
 function sendStartButtons(recipientId) {
