@@ -272,9 +272,8 @@ function receivedMessage(event) {
       case 'yum asuuya':  
       case 'хүн бну':  
       case 'hun bnu':
-      case '123':
-        case 'Get Started':         
-        startMessage(senderID);
+      case '123': 
+        send123Buttons(senderID);
         break; 
         
             case 'Get Started':
@@ -641,18 +640,6 @@ function startMessage(recipientId) {
             type: "postback",
             title: "Датай үйлчилгээ",
             payload: "CUSTOM_data"
-          }, {
-            type: "postback",
-            title: "Smart home",
-            payload: "CUSTOM_smart_home"
-          }, {
-            type: "postback",
-            title: "Гар утасны тохиргоо",
-            payload: "CUSTOM_settings"
-          }, {
-            type: "postback",
-            title: "Төлбөр төлөх дансны мэдээлэл",
-            payload: "CUSTOM_payment"
           }]
         }
       }
