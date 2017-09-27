@@ -274,7 +274,7 @@ function receivedMessage(event) {
       case 'hun bnu':
       case '123':
         case 'Get Started':         
-        send123Buttons(senderID);
+        startMessage(senderID);
         break; 
         
             case 'Get Started':
