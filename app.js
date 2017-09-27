@@ -888,7 +888,7 @@ function sendNewQuickReply(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "Мобайл",
+          text: "Шинэ үйлчилгээ урамшуулал",
           buttons:[
                 {
                               "type": "web_url",
