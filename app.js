@@ -385,7 +385,33 @@ function startUramshuulal(recipientId) {
   callSendAPI(messageData);
 }
 
-
+function CUSTOM_2_1(recipientId) {
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "ДТҮ-ний урамшуулал",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_2_1_1",
+            title: "Шинэ хэрэглэгч"
+          }, {
+            type: "postback",
+            title: "Гар утасны лизинг",
+            payload: "CUSTOM_2_1_2"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
 
 
 
@@ -445,6 +471,9 @@ function receivedPostback(event) {
             break;
       case 'CUSTOM_2':
             startUramshuulal(senderID); 
+            break;
+     case 'CUSTOM_2_1':
+            CUSTOM_2_1(senderID); 
             break;         
         case 'CUSTOM_GET_STARTED_PAYLOAD':
             sendStartButtons(senderID); 
