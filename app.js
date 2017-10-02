@@ -346,15 +346,116 @@ function receivedPostback(event) {
     switch (payload){
         case 'CUSTOM_GET_STARTED_PAYLOAD':
             sendStartButtons(senderID); 
+            break;
+     case 'CUSTOM_1:
+            CUSTOM_1(senderID); 
+            break; 
+             case 'CUSTOM_3':
+            CUSTOM_3(senderID); 
+            break; 
+             case 'CUSTOM_2_1':
+            CUSTOM_2_1(senderID); 
+            break; 
+             case 'CUSTOM_2_2':
+            CUSTOM_2_2(senderID); 
+            break; 
+             case 'CUSTOM_2_3':
+            CUSTOM_2_3(senderID); 
+            break; 
+             case 'CUSTOM_2_1_1':
+            CUSTOM_2_1_1(senderID); 
+            break; 
+             case 'CUSTOM_2_1_2':
+            CUSTOM_2_1_2(senderID); 
+            break; 
+             case 'CUSTOM_2_2_1':
+            CUSTOM_2_2_1(senderID); 
+            break; 
+             case 'CUSTOM_2_2_2':
+            CUSTOM_2_2_1(senderID); 
+            break; 
+             case 'CUSTOM_2_2_3':
+            CUSTOM_2_2_3(senderID); 
+            break; 
+             case 'CUSTOM_2_3_1':
+            CUSTOM_2_3_1(senderID); 
+            break; 
+              case 'CUSTOM_2_3_2':
+            CUSTOM_2_3_2(senderID); 
+            break; 
+              case 'CUSTOM_1_1':
+            CUSTOM_1_1(senderID); 
+            break; 
+              case 'CUSTOM_1_2':
+            CUSTOM_1_2(senderID); 
+            break; 
+              case 'CUSTOM_1_3':
+            CUSTOM_1_3(senderID); 
+            break; 
+              case 'CUSTOM_1_1_1':
+            CUSTOM_1_1_1(senderID); 
+            break; 
+              case 'CUSTOM_1_1_2':
+            CUSTOM_1_1_2(senderID); 
+            break; 
+              case 'CUSTOM_1_1_3':
+            CUSTOM_1_1_3(senderID); 
+            break; 
+              case 'CUSTOM_1_2_1':
+            CUSTOM_1_2_1(senderID); 
+            break; 
+              case 'CUSTOM_1_2_2':
+            CUSTOM_1_2_2(senderID); 
+            break; 
+              case 'CUSTOM_1_2_3':
+            CUSTOM_1_2_3(senderID); 
+            break; 
+              case 'CUSTOM_1_3_1':
+            CUSTOM_1_3_1(senderID); 
+            break; 
+              case 'CUSTOM_1_3_2':
+            CUSTOM_1_3_2(senderID); 
+            break;
+              case 'CUSTOM_1_1_1_1':
+            CUSTOM_1_1_1_1(senderID); 
+            break; 
+              case 'CUSTOM_1_1_1_2':
+            CUSTOM_1_1_1_2(senderID); 
+            break; 
+              case 'CUSTOM_1_1_1_3':
+            CUSTOM_1_1_1_3(senderID); 
+            break; 
+              case 'CUSTOM_1_1_2_1':
+            CUSTOM_1_1_2_1(senderID); 
+            break; 
+              case 'CUSTOM_1_1_2_2':
+            CUSTOM_1_1_2_2(senderID); 
+            break; 
+              case 'CUSTOM_1_1_2_3':
+            CUSTOM_1_1_2_3(senderID); 
+            break; 
+              case 'CUSTOM_1_2_1_1':
+            CUSTOM_1_2_1_1(senderID); 
+            break; 
+              case 'CUSTOM_1_2_1_2':
+            CUSTOM_1_2_1_2(senderID); 
+            break; 
+              case 'CUSTOM_1_2_1_3':
+            CUSTOM_1_2_1_3(senderID); 
+            break; 
+              case 'CUSTOM_1_2_2_1':
+            CUSTOM_1_2_2_1(senderID); 
+            break; 
+              case 'CUSTOM_1_2_2_2':
+            CUSTOM_1_2_2_2(senderID); 
             break; 
         case 'CUSTOM_START_NEW_SERVICE':
-            sendTypingOn(senderID);
-            send123Buttons(senderID);
+            startUramshuulal(senderID);
             break; 
         case 'CUSTOM_START_NEWS':
-            sendTypingOn(senderID);
-            sendNewsMessage(senderID);
-            break;
+            sendTypingOn2(senderID);
+          
+        break;
         case 'CUSTOM_FROM_123_NEWS':
                     sendNewsMessage(senderID); 
         //sendTextMessage(senderID, "Та 123-г ашиглан 247 багц авахын тулд 247 гэсэн түлхүүр үгийг //123 тусгай дугаарт илгээхэд хангалттай. Дагалдах эрх үйлчилгээний 30 хоног. Үнэ 5000₮");
@@ -631,15 +732,11 @@ function startMessage(recipientId) {
           buttons:[{
             type: "postback",
             payload: "CUSTOM_new",
-            title: "Шинэ үйлчилгээ, урамшуулал"
+            title: "Хэрэглэгч тусламж"
           }, {
             type: "postback",
-            title: "Онлайн худалдаа",
-            payload: "CUSTOM_onlain"
-          }, {
-            type: "postback",
-            title: "Датай үйлчилгээ",
-            payload: "CUSTOM_data"
+            title: "Үйлчилгээ авах",
+            payload: "CUSTOM_dealer"
           }]
         }
       }
@@ -866,8 +963,9 @@ function sendDataQuickReply(recipientId) {
   callSendAPI(messageData);
 }
 
-function sendNewQuickReply(recipientId) {
-  var messageData = {
+function sendNewQuickReplyBtn(recipientId) {
+    
+    var messageData = {
     recipient: {
       id: recipientId
     },
@@ -892,7 +990,155 @@ function sendNewQuickReply(recipientId) {
   callSendAPI(messageData);
 }
 
+function sendNewQuickReply(recipientId) {
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Skytel Messenger-т тавтай морил",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_1",
+            title: "Үндсэн үйлчилгээ"
+          }, {
+            type: "postback",
+            title: "Урамшуулал",
+            payload: "CUSTOM_START_NEW_SERVICE"
+          }, {
+            type: "postback",
+            title: "Гар утас, төхөөрөмж",
+            payload: "CUSTOM_3"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
 
+function startUramshuulal(recipientId) {
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Урамшуулал",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_2_1",
+            title: "ДТУ-ний урамшуулал"
+          }, {
+            type: "postback",
+            title: "УТҮ-ний урамшуулал",
+            payload: "CUSTOM_2_2"
+          }, {
+            type: "postback",
+            title: "Smart home",
+            payload: "CUSTOM_2_3"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
+
+function CUSTOM_2_1(recipientId) {
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "ДТҮ-ний урамшуулал",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_2_1_1",
+            title: "Шинэ хэрэглэгч"
+          }, {
+            type: "postback",
+            title: "Гар утасны лизинг",
+            payload: "CUSTOM_2_1_2"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
+function CUSTOM_2_2(recipientId) {
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "УТҮ-ний урамшуулал",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_2_2_1",
+            title: "Шинэ хэрэглэгч"
+          }, {
+            type: "postback",
+            title: "Цэнэглэгч карт",
+            payload: "CUSTOM_2_2_2"
+          }, {
+            type: "postback",
+            title: "Shake & Share",
+            payload: "CUSTOM_2_2_3"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
+function CUSTOM_2_3(recipientId) {
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Smart home",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_2_3_1",
+            title: "Танилцуулга"
+          }, {
+            type: "postback",
+            title: "Бүртгүүлэх заавар",
+            payload: "CUSTOM_2_3_2"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
 
 
 
