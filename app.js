@@ -237,8 +237,9 @@ function receivedMessage(event) {
     console.log("Quick reply for message %s with payload %s",
       messageId, quickReplyPayload);
 	  switch (quickReplyPayload) {
-		case 'CUSTOM_QUICK_DATA_1GB':
+		case 'CUSTOM_EXIT':
 			sendTextMessage(senderID, "1gb гэсэн түлхүүр үгийг 123 дугаарт илгээнэ. Дагалдах эрх үйлчилгээний хоног 30. Үнэ 10.000₮"); 
+              startMessage(senderID);
             break;
 		case 'CUSTOM_QUICK_DATA_2GB':
 			sendTextMessage(senderID, "2gb гэсэн түлхүүр үгийг 123 дугаарт илгээнэ. Дагалдах эрх үйлчилгээний хоног 30. Үнэ 13.000₮"); 
@@ -347,7 +348,108 @@ function receivedPostback(event) {
         case 'CUSTOM_GET_STARTED_PAYLOAD':
             sendStartButtons(senderID); 
             break;
- 
+     case 'CUSTOM_1:
+            CUSTOM_1(senderID); 
+            break; 
+             case 'CUSTOM_3':
+            CUSTOM_3(senderID); 
+            break; 
+             case 'CUSTOM_2_1':
+            CUSTOM_2_1(senderID); 
+            break; 
+             case 'CUSTOM_2_2':
+            CUSTOM_2_2(senderID); 
+            break; 
+             case 'CUSTOM_2_3':
+            CUSTOM_2_3(senderID); 
+            break; 
+             case 'CUSTOM_2_1_1':
+            CUSTOM_2_1_1(senderID); 
+            break; 
+             case 'CUSTOM_2_1_2':
+            CUSTOM_2_1_2(senderID); 
+            break; 
+             case 'CUSTOM_2_2_1':
+            CUSTOM_2_2_1(senderID); 
+            break; 
+             case 'CUSTOM_2_2_2':
+            CUSTOM_2_2_1(senderID); 
+            break; 
+             case 'CUSTOM_2_2_3':
+            CUSTOM_2_2_3(senderID); 
+            break; 
+             case 'CUSTOM_2_3_1':
+            CUSTOM_2_3_1(senderID); 
+            break; 
+              case 'CUSTOM_2_3_2':
+            CUSTOM_2_3_2(senderID); 
+            break; 
+              case 'CUSTOM_1_1':
+            CUSTOM_1_1(senderID); 
+            break; 
+              case 'CUSTOM_1_2':
+            CUSTOM_1_2(senderID); 
+            break; 
+              case 'CUSTOM_1_3':
+            CUSTOM_1_3(senderID); 
+            break; 
+              case 'CUSTOM_1_1_1':
+            CUSTOM_1_1_1(senderID); 
+            break; 
+              case 'CUSTOM_1_1_2':
+            CUSTOM_1_1_2(senderID); 
+            break; 
+              case 'CUSTOM_1_1_3':
+            CUSTOM_1_1_3(senderID); 
+            break; 
+              case 'CUSTOM_1_2_1':
+            CUSTOM_1_2_1(senderID); 
+            break; 
+              case 'CUSTOM_1_2_2':
+            CUSTOM_1_2_2(senderID); 
+            break; 
+              case 'CUSTOM_1_2_3':
+            CUSTOM_1_2_3(senderID); 
+            break; 
+              case 'CUSTOM_1_3_1':
+            CUSTOM_1_3_1(senderID); 
+            break; 
+              case 'CUSTOM_1_3_2':
+            CUSTOM_1_3_2(senderID); 
+            break;
+              case 'CUSTOM_1_1_1_1':
+            CUSTOM_1_1_1_1(senderID); 
+            break; 
+              case 'CUSTOM_1_1_1_2':
+            CUSTOM_1_1_1_2(senderID); 
+            break; 
+              case 'CUSTOM_1_1_1_3':
+            CUSTOM_1_1_1_3(senderID); 
+            break; 
+              case 'CUSTOM_1_1_2_1':
+            CUSTOM_1_1_2_1(senderID); 
+            break; 
+              case 'CUSTOM_1_1_2_2':
+            CUSTOM_1_1_2_2(senderID); 
+            break; 
+              case 'CUSTOM_1_1_2_3':
+            CUSTOM_1_1_2_3(senderID); 
+            break; 
+              case 'CUSTOM_1_2_1_1':
+            CUSTOM_1_2_1_1(senderID); 
+            break; 
+              case 'CUSTOM_1_2_1_2':
+            CUSTOM_1_2_1_2(senderID); 
+            break; 
+              case 'CUSTOM_1_2_1_3':
+            CUSTOM_1_2_1_3(senderID); 
+            break; 
+              case 'CUSTOM_1_2_2_1':
+            CUSTOM_1_2_2_1(senderID); 
+            break; 
+              case 'CUSTOM_1_2_2_2':
+            CUSTOM_1_2_2_2(senderID); 
+            break; 
         case 'CUSTOM_START_NEW_SERVICE':
             startUramshuulal(senderID);
             break; 
@@ -364,7 +466,10 @@ function receivedPostback(event) {
             break;
         case 'CUSTOM_new':
             sendNewQuickReply(senderID); 
-            break;     
+            break;
+         case 'CUSTOM_dealer':
+            CUSTOM_dealer(senderID); 
+            break;    
         case 'CUSTOM_123_FB_PACKAGE':
             sendTextMessage(senderID, "Та 123-г ашиглан Facebook багц авахын тулд facebook гэсэн түлхүүр үгийг 123 тусгай дугаарт илгээхэд хангалттай. Дагалдах эрх үйлчилгээний 30 хоног. Үнэ 5000₮");
             break; 
@@ -861,7 +966,27 @@ function sendDataQuickReply(recipientId) {
 
   callSendAPI(messageData);
 }
+function CUSTOM_dealer(recipientId) {
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      text: "Coming soon",
+      metadata: "ZOL_DEFINED_METADATA",
+      quick_replies: [
+        {
+          "content_type":"text",
+          "title":"Буцах",
+          "payload":"CUSTOM_EXIT"
+        }
+      
+      ]
+    }
+  };
 
+  callSendAPI(messageData);
+}
 function sendNewQuickReplyBtn(recipientId) {
     
     var messageData = {
