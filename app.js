@@ -656,7 +656,31 @@ function CUSTOM_1_1_2(recipientId) {
   };  
   callSendAPI(messageData);
 }
+function CUSTOM_1_1_3(recipientId) {
+ var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Нэмэлт үйлчилгээ",
+          buttons:[
+                {
+                              "type": "web_url",
+                              "url": "https://www.skytel.mn/p/extra", 
+                              "title": "Нэмэлт үйлчилгээ"
+                            }
+          ]
+        }
+      }
+    }
+  };  
 
+  callSendAPI(messageData);
+}
 
 /*
  * Delivery Confirmation Event
