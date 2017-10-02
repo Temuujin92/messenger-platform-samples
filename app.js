@@ -471,6 +471,133 @@ function CUSTOM_2_3(recipientId) {
   callSendAPI(messageData);
 }
 
+function CUSTOM_1(recipientId) {
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Үндсэн үйлчилгээ",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_1_1",
+            title: ":Дараа төлбөрт үйлчилгээ"
+          }, {
+            type: "postback",
+            title: "Урьдчилсан төлбөрт үйлчилгээ",
+            payload: "CUSTOM_1_2"
+          }, {
+            type: "postback",
+            title: "Дата",
+            payload: "CUSTOM_1_3"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
+function CUSTOM_1_1(recipientId) {
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Дараа төлбөрт үйлчилгээ",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_1_1_1",
+            title: "Төлбөр тооцоо"
+          }, {
+            type: "postback",
+            title: "Монголдоо",
+            payload: "CUSTOM_1_1_2"
+          }, {
+            type: "postback",
+            title: "Нэмэлт үйлчилгээ",
+            payload: "CUSTOM_1_1_3"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
+
+function CUSTOM_1_2(recipientId) {
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Үндсэн үйлчилгээ",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_1_1",
+            title: ":Дараа төлбөрт үйлчилгээ"
+          }, {
+            type: "postback",
+            title: "Урьдчилсан төлбөрт үйлчилгээ",
+            payload: "CUSTOM_1_2"
+          }, {
+            type: "postback",
+            title: "Дата",
+            payload: "CUSTOM_1_3"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
+
+function CUSTOM_1_3(recipientId) {
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Үндсэн үйлчилгээ",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_1_1",
+            title: ":Дараа төлбөрт үйлчилгээ"
+          }, {
+            type: "postback",
+            title: "Урьдчилсан төлбөрт үйлчилгээ",
+            payload: "CUSTOM_1_2"
+          }, {
+            type: "postback",
+            title: "Дата",
+            payload: "CUSTOM_1_3"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
+
 /*
  * Delivery Confirmation Event
  *
@@ -525,6 +652,9 @@ function receivedPostback(event) {
        case 'CUSTOM_new':
             CUSTOM_new(senderID); 
             break;
+    case 'CUSTOM_1':
+            CUSTOM_1(senderID); 
+            break;        
       case 'CUSTOM_2':
             startUramshuulal(senderID); 
             break;
