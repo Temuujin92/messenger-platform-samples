@@ -580,12 +580,12 @@ function CUSTOM_1_3(recipientId) {
           text: "Дата",
           buttons:[{
             type: "postback",
-            payload: "",
+            payload: "CUSTOM_1_3_1",
             title: "Дата багц"
           }, {
             type: "postback",
             title: "Facebook",
-            payload: ""
+            payload: "CUSTOM_1_3_2"
           }]
         }
       }
