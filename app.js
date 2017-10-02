@@ -671,7 +671,7 @@ function CUSTOM_1_1_3(recipientId) {
                 {
                               "type": "web_url",
                               "url": "https://www.skytel.mn/p/extra", 
-                              "title": "Нэмэлт үйлчилгээ"
+                              "title": "Энд дарна уу"
                             }
           ]
         }
@@ -679,6 +679,37 @@ function CUSTOM_1_1_3(recipientId) {
     }
   };  
 
+  callSendAPI(messageData);
+}
+function CUSTOM_3(recipientId) {
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Гар утас, төхөөрөмж",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_3_1",
+            title: "Гар утасны үнэ тариф"
+          }, {
+            type: "postback",
+            title: "Модем",
+            payload: "CUSTOM_3_2"
+          }, {
+            type: "postback",
+            title: "Тохиргоо ",
+            payload: "CUSTOM_3_3"
+          }]
+        }
+      }
+    }
+  };  
   callSendAPI(messageData);
 }
 
@@ -742,6 +773,9 @@ function receivedPostback(event) {
       case 'CUSTOM_2':
             startUramshuulal(senderID); 
             break;
+     case 'CUSTOM_3':
+            CUSTOM_3(senderID); 
+            break;         
      case 'CUSTOM_2_1':
             CUSTOM_2_1(senderID); 
             break;
