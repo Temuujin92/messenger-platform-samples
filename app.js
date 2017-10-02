@@ -412,8 +412,64 @@ function CUSTOM_2_1(recipientId) {
   };  
   callSendAPI(messageData);
 }
-
-
+function CUSTOM_2_2(recipientId) {
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "УТҮ-ний урамшуулал",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_2_2_1",
+            title: "Шинэ хэрэглэгч"
+          }, {
+            type: "postback",
+            title: "Цэнэглэгч карт",
+            payload: "CUSTOM_2_2_2"
+          }, {
+            type: "postback",
+            title: "Shake & Share",
+            payload: "CUSTOM_2_2_3"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
+function CUSTOM_2_3(recipientId) {
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Smart home",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_2_3_1",
+            title: "Танилцуулга"
+          }, {
+            type: "postback",
+            title: "Бүртгүүлэх заавар",
+            payload: "CUSTOM_2_3_2"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
 
 /*
  * Delivery Confirmation Event
@@ -474,6 +530,12 @@ function receivedPostback(event) {
             break;
      case 'CUSTOM_2_1':
             CUSTOM_2_1(senderID); 
+            break;
+     case 'CUSTOM_2_2':
+            CUSTOM_2_2(senderID); 
+            break; 
+     case 'CUSTOM_2_3':
+            CUSTOM_2_3(senderID); 
             break;         
         case 'CUSTOM_GET_STARTED_PAYLOAD':
             sendStartButtons(senderID); 
