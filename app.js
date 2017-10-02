@@ -340,7 +340,7 @@ function CUSTOM_new(recipientId){
           }, {
             type: "postback",
             title: "Урамшуулал",
-            payload: "CUSTOM_START_NEW_SERVICE"
+            payload: "CUSTOM_2"
           }, {
             type: "postback",
             title: "Гар утас, төхөөрөмж",
@@ -353,7 +353,37 @@ function CUSTOM_new(recipientId){
   callSendAPI(messageData);
 }
 
-
+function startUramshuulal(recipientId) {
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Урамшуулал",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_2_1",
+            title: "ДТУ-ний урамшуулал"
+          }, {
+            type: "postback",
+            title: "УТҮ-ний урамшуулал",
+            payload: "CUSTOM_2_2"
+          }, {
+            type: "postback",
+            title: "Smart home",
+            payload: "CUSTOM_2_3"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
 
 
 
@@ -412,6 +442,9 @@ function receivedPostback(event) {
     switch (payload){
        case 'CUSTOM_new':
             CUSTOM_new(senderID); 
+            break;
+      case 'CUSTOM_2':
+            startUramshuulal(senderID); 
             break;         
         case 'CUSTOM_GET_STARTED_PAYLOAD':
             sendStartButtons(senderID); 
