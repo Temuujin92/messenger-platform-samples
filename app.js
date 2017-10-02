@@ -486,7 +486,7 @@ function CUSTOM_1(recipientId) {
           buttons:[{
             type: "postback",
             payload: "CUSTOM_1_1",
-            title: ":Дараа төлбөрт үйлчилгээ"
+            title: "Дараа төлбөрт үйлчилгээ"
           }, {
             type: "postback",
             title: "Урьдчилсан төлбөрт үйлчилгээ",
@@ -545,19 +545,19 @@ function CUSTOM_1_2(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "Үндсэн үйлчилгээ",
+          text: "Урьдчилсан төлбөрт үйлчилгээ",
           buttons:[{
             type: "postback",
-            payload: "CUSTOM_1_1",
-            title: ":Дараа төлбөрт үйлчилгээ"
+            payload: "CUSTOM_1_2_1",
+            title: "Үндсэн үйлчилгээ"
           }, {
             type: "postback",
-            title: "Урьдчилсан төлбөрт үйлчилгээ",
-            payload: "CUSTOM_1_2"
+            title: "Shake & Share",
+            payload: "CUSTOM_1_2_2"
           }, {
             type: "postback",
-            title: "Дата",
-            payload: "CUSTOM_1_3"
+            title: "Нэмэлт үйлчилгээ",
+            payload: "CUSTOM_1_2_3"
           }]
         }
       }
@@ -577,19 +577,15 @@ function CUSTOM_1_3(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "Үндсэн үйлчилгээ",
+          text: "Дата",
           buttons:[{
             type: "postback",
-            payload: "CUSTOM_1_1",
-            title: ":Дараа төлбөрт үйлчилгээ"
+            payload: "",
+            title: "Дата багц"
           }, {
             type: "postback",
-            title: "Урьдчилсан төлбөрт үйлчилгээ",
-            payload: "CUSTOM_1_2"
-          }, {
-            type: "postback",
-            title: "Дата",
-            payload: "CUSTOM_1_3"
+            title: "Facebook",
+            payload: ""
           }]
         }
       }
