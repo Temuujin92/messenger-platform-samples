@@ -594,6 +594,93 @@ function CUSTOM_1_3(recipientId) {
   callSendAPI(messageData);
 }
 
+function CUSTOM_1_1_1(recipientId) {
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Төлбөр тооцоо",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_1_1_1_1",
+            title: "Төлбөр шалгах заавар"
+          }, {
+            type: "postback",
+            title: "Mobile, интернет банк",
+            payload: "CUSTOM_1_1_1_2"
+          }, {
+            type: "postback",
+            title: "Цахим салбар",
+            payload: "CUSTOM_1_1_1_3"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
+function CUSTOM_1_1_2(recipientId) {
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Монголдоо",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_1_1_2_1",
+            title: "Дугаарын үнэ тариф"
+          }, {
+            type: "postback",
+            title: "Багцын танилцуулга",
+            payload: "CUSTOM_1_1_2_2"
+          }, {
+            type: "postback",
+            title: "Онцлог давуу тал",
+            payload: "CUSTOM_1_1_2_3"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
+function CUSTOM_1_1_3(recipientId) {
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Нэмэлт үйлчилгээ",
+          buttons:[{
+                 type: "web_url",
+            url: "https://www.skytel.mn/p/extra",
+            title: ""
+          }, {
+          ]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
+
 /*
  * Delivery Confirmation Event
  *
