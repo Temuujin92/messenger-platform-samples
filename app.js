@@ -743,134 +743,68 @@ function salbarMessage(recipientId) {
   };  
   callSendAPI(messageData);
 }
-           
-function CUSTOM_salbarub(recipientId) {
-     var messageData = {
-        recipient: {
-          id: recipientId
-        },
-        message: {
-          attachment: {
-            type: "template",
-            payload: {
-              template_type: "generic",
-              elements: [{
-                title: "Төв Плаза",
-                subtitle: "*СБДүүрэг, Чингисийн өргөн чөлөө-9, Скайтел Плаза
-                           * 7611-2000 
-                           * Даваа-Баасан: 08:30-20:30 Бямба,Ням: 10:00-19:00",
-                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
-                image_url: 'https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png',
-                buttons: [{
-                   type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
-                }],
-              },{
-                title: "Залуус салбар",
-                subtitle: "*СБДүүрэг, Мэдээлэл технологийн үндэсний паркын 1 давхар 
-* 7611-2005
-* Даваа-Баасан: 09:00-20:00 Бямба,Ням: 10:00-20:00
-",
-                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
-                image_url: 'https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png',
-               buttons: [{
-                   type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
-                }],
-              },{
-                title: "ӨНӨР салбар",
-                subtitle: "*СХДүүрэг, 1-р хороолол, Голомт банкны байр
-* 7611-2002
-* Даваа-Баасан: 09:00-20:00 Бямба,Ням: 10:00-18:00",
-                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
-                image_url: 'https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png',
-               buttons: [{
-                   type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
-                }],
-              },{
-                title: "Скайтел үйлчилгээний төв",
-                subtitle: "*ЧДүүрэг, 3-р хороо, Тэнгис кино театрийн замын урд талд 
-* 7611-2001
-* Даваа-Баасан: 08:30-20:00 Бямба,Ням: 10:00-19:00",
-                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
-                image_url: 'https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png',
-               buttons: [{
-                   type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
-                }],
-              },{
-                title: "Улсын их дэлгүүр салбар",
-                subtitle: "*ЧДүүрэг, 3-р хороо, Энх тайвны өргөн чөлөө-25 Улсын их дэлгүүр 5-р давхар
-* 7611-2010
-* Даваа-Баасан: 09:00-21:30 Бямба,Ням: 09:30-21:30",
-                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
-                image_url: 'https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png',
-               buttons: [{
-                   type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
-                }],
-              },{
-                title: "ОРГИЛ салбар",
-                subtitle: "ХУДүүрэг, Зайсан, Оргил худалдааны төвийн 1 давхар
-* 7611-2009
-* Даваа-Баасан: 10:00-20:00 Бямба,Ням: 10:00-19:00",
-                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
-                image_url: 'https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png',
-               buttons: [{
-                   type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
-                }],
-              },{
-                title: "САНСАР салбар",
-                subtitle: "БЗДүүрэг, 15 хороолол, Сансарын Начин заан ломбардын байранд /Сансарын тунелийн эсрэг талд/ 
-* 7611-2006
-* Даваа-Баасан: 09:00-19:00 Бямба,Ням: 10:00-18:00",
-                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
-                image_url: 'https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png',
-               buttons: [{
-                   type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
-                }],
-              },{
-                title: "Имарт",
-                subtitle: "*Баянзүрх дүүрэг, Технологийн гудамж, Имарт Чингис салбар 2 давхар
-* 7611-2008
-* Даваа-Ням: 10:00-20:00",
-                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
-                image_url: 'https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png',
-               buttons: [{
-                   type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
-                }],
-              },{
-                title: "Налайх салбар",
-                subtitle: "*Налайх дүүрэг, 2-р хороо, МХС ТӨК байр, 1-р давхар, Налайх Скайтел салбар
-* 7611-2003
-* Даваа-Баасан: 09:00-19:00 Бямба: 11:00-16:00 Ням:Амарна",
-                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
-                image_url: 'https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png',
-               buttons: [{
-                   type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
-                }],
-              },]
-            }
-          }
-        }
-      };  
 
-      callSendAPI(messageData);
+
+function CUSTOM_salbarub(recipientId) {
+    var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message:{
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "receipt",
+          recipient_name: "Peter Chang",
+          order_number: receiptId,
+          currency: "USD",
+          payment_method: "Visa 1234",        
+          timestamp: "1428444852", 
+          elements: [{
+            title: "Oculus Rift",
+            subtitle: "Includes: headset, sensor, remote",
+            quantity: 1,
+            price: 599.00,
+            currency: "USD",
+            image_url: SERVER_URL + "/assets/riftsq.png"
+          }, {
+            title: "Samsung Gear VR",
+            subtitle: "Frost White",
+            quantity: 1,
+            price: 99.99,
+            currency: "USD",
+            image_url: SERVER_URL + "/assets/gearvrsq.png"
+          }],
+          address: {
+            street_1: "1 Hacker Way",
+            street_2: "",
+            city: "Menlo Park",
+            postal_code: "94025",
+            state: "CA",
+            country: "US"
+          },
+          summary: {
+            subtotal: 698.99,
+            shipping_cost: 20.00,
+            total_tax: 57.67,
+            total_cost: 626.66
+          },
+          adjustments: [{
+            name: "New Customer Discount",
+            amount: -50
+          }, {
+            name: "$100 Off Coupon",
+            amount: -100
+          }]
+        }
+      }
+    }
   };
+
+  callSendAPI(messageData);
+  };
+           
+
 
 /*
  * Delivery Confirmation Event
