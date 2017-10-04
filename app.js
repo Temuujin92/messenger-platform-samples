@@ -746,8 +746,9 @@ function salbarMessage(recipientId) {
 
 
 function CUSTOM_salbarub(recipientId) {
- 
-  var messageData = {
+    networking.getLatestNews((detail) => {
+      newsDetail = detail; 
+      var messageData = {
         recipient: {
           id: recipientId
         },
@@ -757,7 +758,7 @@ function CUSTOM_salbarub(recipientId) {
             payload: {
               template_type: "generic",
               elements: [{
-                title: detail[0].title,
+                title: "Төв плаза",
                 subtitle: stringUtils.getSubWords(detail[0].intro, charLimitTitle),
                 item_url: `https://www.skytel.mn/content/${detail[0].id}/view`,               
                 image_url: detail[0].image,
@@ -819,7 +820,7 @@ function CUSTOM_salbarub(recipientId) {
       };  
 
       callSendAPI(messageData);
-
+  });
   
 
   }
