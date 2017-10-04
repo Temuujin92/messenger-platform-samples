@@ -1400,6 +1400,9 @@ function receivedPostback(event) {
              case 'CUSTOM_Back':
             CUSTOM_new(senderID); 
             break;
+             case 'CUSTOM_Backs':
+            CUSTOM_new(senderID); 
+            break;
     case 'CUSTOM_1':
             CUSTOM_1(senderID); 
             break;        
@@ -1760,8 +1763,8 @@ function sendTextMessage2(recipientId, messageText) {
         quick_replies: [
         {
           "content_type":"text",
-          "title":"Буцах",
-          "payload":"CUSTOM_Back"
+          "title":"Үндсэн цэс",
+          "payload":"CUSTOM_Backs"
         },
        
       ]
