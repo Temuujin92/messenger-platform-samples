@@ -1231,7 +1231,118 @@ function CUSTOM_salbaroron(recipientId) {
   };  
   callSendAPI(messageData);
 }
-
+function CUSTOM_3_2(recipientId) {
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Модем",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_3_2_1",
+            title: "Дата үлдэгдэл шалгах"
+          }, {
+            type: "postback",
+            title: "Цэнэглэх заавар",
+            payload: "CUSTOM_3_2_2"
+          }, {
+            type: "postback",
+            title: "Тохиргоо ",
+            payload: "CUSTOM_3_2_3"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
+function CUSTOM_3_3(recipientId) {
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Модем",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_3_3_1",
+            title: "Интернет тохиргоо"
+          }, {
+            type: "postback",
+            title: "Сүлжээний тохиргоо",
+            payload: "CUSTOM_3_3_2"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
+function CUSTOM_3_3_1(recipientId) {
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Модем",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_3_3_1_1",
+            title: "Android"
+          }, {
+            type: "postback",
+            title: "IOS",
+            payload: "CUSTOM_3_3_1_2"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
+function CUSTOM_3_3_2(recipientId) {
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Модем",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_3_3_2_1",
+            title: "Android"
+          }, {
+            type: "postback",
+            title: "IOS",
+            payload: "CUSTOM_3_3_2_1"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
 /*
  * Delivery Confirmation Event
  *
@@ -1394,6 +1505,21 @@ function receivedPostback(event) {
               case 'CUSTOM_1_2_2_2':
             CUSTOM_1_2_2_2(senderID); 
             break;
+            
+              case 'CUSTOM_3_2':
+            CUSTOM_3_2(senderID); 
+            break;
+              case 'CUSTOM_3_3':
+            CUSTOM_3_3(senderID); 
+            break;
+              case 'CUSTOM_3_3_1':
+            CUSTOM_3_3_1(senderID); 
+            break;
+              case 'CUSTOM_3_3_2':
+            CUSTOM_3_3_2(senderID); 
+            break;
+              
+            
       
           case 'CUSTOM_salbarub':
               CUSTOM_salbarub(senderID); 
@@ -1423,6 +1549,9 @@ function receivedPostback(event) {
             sendTypingOn(senderID);
             sendNewsMessage(senderID);
             break;
+    case 'CUSTOM_3_3_1_1':
+            sendTextMessage2(senderID, "Android утасны интернэт тохиргоог дараах заавраар хийнэ Settings-More setting-Mobile network-Access point names Name-Skytel Apn / style, net, skytel / аль нэгийг бичээд хадгална. Утсаа унтрааж асаана.");
+            break;         
         case 'CUSTOM_FROM_123_NEWS':
                     sendNewsMessage(senderID); 
         //sendTextMessage(senderID, "Та 123-г ашиглан 247 багц авахын тулд 247 гэсэн түлхүүр үгийг //123 тусгай дугаарт илгээхэд хангалттай. Дагалдах эрх үйлчилгээний 30 хоног. Үнэ 5000₮");
@@ -1604,6 +1733,25 @@ function sendTextMessage(recipientId, messageText) {
     message: {
       text: messageText,
       metadata: "DEVELOPER_DEFINED_METADATA"
+    }
+  };
+
+  callSendAPI(messageData);
+}
+
+function sendTextMessage2(recipientId, messageText) {
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      text: messageText,
+      metadata: "DEVELOPER_DEFINED_METADATA",
+         buttons:[{
+            type: "postback",
+            title: "Үндсэн цэс",
+            payload: "CUSTOM_Back"
+          }]
     }
   };
 
