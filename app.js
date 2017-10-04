@@ -757,7 +757,7 @@ function CUSTOM_salbarub(recipientId) {
             payload: {
               template_type: "generic",
               elements: [{
-                title: `Төв плаза`,
+                title: detail[0].title,
                 subtitle: stringUtils.getSubWords(detail[0].intro, charLimitTitle),
                 item_url: `https://www.skytel.mn/content/${detail[0].id}/view`,               
                 image_url: detail[0].image,
