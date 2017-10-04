@@ -1746,12 +1746,7 @@ function sendTextMessage2(recipientId, messageText) {
     },
     message: {
       text: messageText,
-      metadata: "DEVELOPER_DEFINED_METADATA",
-         buttons:[{
-            type: "postback",
-            title: "Үндсэн цэс",
-            payload: "CUSTOM_Back"
-          }]
+      metadata: "DEVELOPER_DEFINED_METADATA"
     }
   };
 
