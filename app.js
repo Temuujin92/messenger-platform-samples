@@ -1760,7 +1760,7 @@ function sendTextMessage2(recipientId, messageText) {
         quick_replies: [
         {
           "content_type":"text",
-          "title":"Үндсэн цэс",
+          "title":"Буцах",
           "payload":"CUSTOM_Back"
         },
        
