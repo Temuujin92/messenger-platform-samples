@@ -746,63 +746,84 @@ function salbarMessage(recipientId) {
 
 
 function CUSTOM_salbarub(recipientId) {
-    var messageData = {
-    recipient: {
-      id: recipientId
-    },
-    message:{
-      attachment: {
-        type: "template",
-        payload: {
-          template_type: "receipt",
-          recipient_name: "Peter Chang",
-          order_number: receiptId,
-          currency: "USD",
-          payment_method: "Visa 1234",        
-          timestamp: "1428444852", 
-          elements: [{
-            title: "Oculus Rift",
-            subtitle: "Includes: headset, sensor, remote",
-            quantity: 1,
-            price: 599.00,
-            currency: "USD",
-            image_url: SERVER_URL + "/assets/riftsq.png"
-          }, {
-            title: "Samsung Gear VR",
-            subtitle: "Frost White",
-            quantity: 1,
-            price: 99.99,
-            currency: "USD",
-            image_url: SERVER_URL + "/assets/gearvrsq.png"
-          }],
-          address: {
-            street_1: "1 Hacker Way",
-            street_2: "",
-            city: "Menlo Park",
-            postal_code: "94025",
-            state: "CA",
-            country: "US"
-          },
-          summary: {
-            subtotal: 698.99,
-            shipping_cost: 20.00,
-            total_tax: 57.67,
-            total_cost: 626.66
-          },
-          adjustments: [{
-            name: "New Customer Discount",
-            amount: -50
-          }, {
-            name: "$100 Off Coupon",
-            amount: -100
-          }]
+    networking.getLatestNews((detail) => {
+      newsDetail = detail; 
+      var messageData = {
+        recipient: {
+          id: recipientId
+        },
+        message: {
+          attachment: {
+            type: "template",
+            payload: {
+              template_type: "generic",
+              elements: [{
+                title: detail[0].title,
+                subtitle: stringUtils.getSubWords(detail[0].intro, charLimitTitle),
+                item_url: `https://www.skytel.mn/content/${detail[0].id}/view`,               
+                image_url: detail[0].image,
+                buttons: [{
+                  type: "web_url",
+                  url: `https://www.skytel.mn/content/${detail[0].id}/view`,
+                  title: "Мэдээг унших"
+                }, {
+                  type: "postback",
+                  title: "Тойм унших",
+                  payload: `CUSTOM_NEWS_0`,
+                }],
+              },{
+                title: detail[1].title,
+                subtitle: stringUtils.getSubWords(detail[1].intro, charLimitTitle),
+                item_url: `https://www.skytel.mn/content/${detail[1].id}/view`,               
+                image_url: detail[1].image,
+                buttons: [{
+                  type: "web_url",
+                  url: `https://www.skytel.mn/content/${detail[1].id}/view`,
+                  title: "Мэдээг унших"
+                }, {
+                  type: "postback",
+                  title: "Тойм унших",
+                  payload: `CUSTOM_NEWS_1`,
+                }],
+              },{
+                title: detail[2].title,
+                subtitle: stringUtils.getSubWords(detail[2].intro, charLimitTitle),
+                item_url: `https://www.skytel.mn/content/${detail[2].id}/view`,               
+                image_url: detail[2].image,
+                buttons: [{
+                  type: "web_url",
+                  url: `https://www.skytel.mn/content/${detail[2].id}/view`,
+                  title: "Мэдээг унших"
+                }, {
+                  type: "postback",
+                  title: "Тойм унших",
+                  payload: `CUSTOM_NEWS_2`,
+                }],
+              },{
+                title: detail[3].title,
+                subtitle: stringUtils.getSubWords(detail[3].intro, charLimitTitle),
+                item_url: `https://www.skytel.mn/content/${detail[3].id}/view`,               
+                image_url: detail[3].image,
+                buttons: [{
+                  type: "web_url",
+                  url: `https://www.skytel.mn/content/${detail[3].id}/view`,
+                  title: "Мэдээг унших"
+                }, {
+                  type: "postback",
+                  title: "Тойм унших",
+                  payload: `CUSTOM_NEWS_3`,
+                }],
+              }]
+            }
+          }
         }
-      }
-    }
-  };
+      };  
 
-  callSendAPI(messageData);
-  };
+      callSendAPI(messageData);
+  });
+  
+
+  }
            
 
 
