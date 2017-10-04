@@ -278,7 +278,7 @@ function receivedMessage(event) {
     case 'Get Started':
             startMessage(senderID); 
             break;     
-      case 'Салбар:
+      case 'Салбар':
      case 'salbar':
             salbarMessage(senderID); 
             break;          
