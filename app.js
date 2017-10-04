@@ -765,49 +765,87 @@ function CUSTOM_salbarub(recipientId) {
                buttons: [ {
                   type: "postback",
                   title: "Буцах",
-                  payload: `CUSTOM_NEWS_0`,
+                  payload: `CUSTOM_Back`,
                 }],
               },{
-                title: detail[1].title,
-                subtitle: stringUtils.getSubWords(detail[1].intro, charLimitTitle),
-                item_url: `https://www.skytel.mn/content/${detail[1].id}/view`,               
-                image_url: detail[1].image,
-                buttons: [{
-                  type: "web_url",
-                  url: `https://www.skytel.mn/content/${detail[1].id}/view`,
-                  title: "Мэдээг унших"
-                }, {
+                 title: "Төв Плаза*СБДүүрэг, Чингисийн өргөн чөлөө-9, Скайтел Плаза* 7611-2000 ",
+                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
+                subtitle: "Даваа-Баасан: 08:30-20:30 Бямба,Ням: 10:00-19:00",
+                item_url: `https://www.skytel.mn/content/${detail[0].id}/view`,               
+               buttons: [ {
                   type: "postback",
-                  title: "Тойм унших",
-                  payload: `CUSTOM_NEWS_1`,
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
                 }],
               },{
-                title: detail[2].title,
-                subtitle: stringUtils.getSubWords(detail[2].intro, charLimitTitle),
-                item_url: `https://www.skytel.mn/content/${detail[2].id}/view`,               
-                image_url: detail[2].image,
-                buttons: [{
-                  type: "web_url",
-                  url: `https://www.skytel.mn/content/${detail[2].id}/view`,
-                  title: "Мэдээг унших"
-                }, {
+               title: "Төв Плаза*СБДүүрэг, Чингисийн өргөн чөлөө-9, Скайтел Плаза* 7611-2000 ",
+                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
+                subtitle: "Даваа-Баасан: 08:30-20:30 Бямба,Ням: 10:00-19:00",
+                item_url: `https://www.skytel.mn/content/${detail[0].id}/view`,               
+               buttons: [ {
                   type: "postback",
-                  title: "Тойм унших",
-                  payload: `CUSTOM_NEWS_2`,
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
                 }],
               },{
-                title: detail[3].title,
-                subtitle: stringUtils.getSubWords(detail[3].intro, charLimitTitle),
-                item_url: `https://www.skytel.mn/content/${detail[3].id}/view`,               
-                image_url: detail[3].image,
-                buttons: [{
-                  type: "web_url",
-                  url: `https://www.skytel.mn/content/${detail[3].id}/view`,
-                  title: "Мэдээг унших"
-                }, {
+                 title: "Төв Плаза*СБДүүрэг, Чингисийн өргөн чөлөө-9, Скайтел Плаза* 7611-2000 ",
+                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
+                subtitle: "Даваа-Баасан: 08:30-20:30 Бямба,Ням: 10:00-19:00",
+                item_url: `https://www.skytel.mn/content/${detail[0].id}/view`,               
+               buttons: [ {
                   type: "postback",
-                  title: "Тойм унших",
-                  payload: `CUSTOM_NEWS_3`,
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "Төв Плаза*СБДүүрэг, Чингисийн өргөн чөлөө-9, Скайтел Плаза* 7611-2000 ",
+                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
+                subtitle: "Даваа-Баасан: 08:30-20:30 Бямба,Ням: 10:00-19:00",
+                item_url: `https://www.skytel.mn/content/${detail[0].id}/view`,               
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "Төв Плаза*СБДүүрэг, Чингисийн өргөн чөлөө-9, Скайтел Плаза* 7611-2000 ",
+                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
+                subtitle: "Даваа-Баасан: 08:30-20:30 Бямба,Ням: 10:00-19:00",
+                item_url: `https://www.skytel.mn/content/${detail[0].id}/view`,               
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "Төв Плаза*СБДүүрэг, Чингисийн өргөн чөлөө-9, Скайтел Плаза* 7611-2000 ",
+                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
+                subtitle: "Даваа-Баасан: 08:30-20:30 Бямба,Ням: 10:00-19:00",
+                item_url: `https://www.skytel.mn/content/${detail[0].id}/view`,               
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "Төв Плаза*СБДүүрэг, Чингисийн өргөн чөлөө-9, Скайтел Плаза* 7611-2000 ",
+                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
+                subtitle: "Даваа-Баасан: 08:30-20:30 Бямба,Ням: 10:00-19:00",
+                item_url: `https://www.skytel.mn/content/${detail[0].id}/view`,               
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "Төв Плаза*СБДүүрэг, Чингисийн өргөн чөлөө-9, Скайтел Плаза* 7611-2000 ",
+                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
+                subtitle: "Даваа-Баасан: 08:30-20:30 Бямба,Ням: 10:00-19:00",
+                item_url: `https://www.skytel.mn/content/${detail[0].id}/view`,               
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
                 }],
               }]
             }
@@ -875,6 +913,9 @@ function receivedPostback(event) {
     
     switch (payload){
        case 'CUSTOM_new':
+            CUSTOM_new(senderID); 
+            break;
+             case 'CUSTOM_Back':
             CUSTOM_new(senderID); 
             break;
     case 'CUSTOM_1':
