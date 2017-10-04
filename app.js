@@ -758,9 +758,11 @@ function CUSTOM_salbarub(recipientId) {
             payload: {
               template_type: "generic",
               elements: [{
-                title: "Төв плаза",
+                title: "Төв Плаза
+*СБДүүрэг, Чингисийн өргөн чөлөө-9, Скайтел Плаза
+* 7611-2000 ",
                 image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
-                subtitle: "aaa",
+                subtitle: "Даваа-Баасан: 08:30-20:30 Бямба,Ням: 10:00-19:00",
                 item_url: `https://www.skytel.mn/content/${detail[0].id}/view`,               
                buttons: [ {
                   type: "postback",
