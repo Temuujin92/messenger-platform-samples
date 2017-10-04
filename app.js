@@ -1335,7 +1335,7 @@ function CUSTOM_3_3_2(recipientId) {
           }, {
             type: "postback",
             title: "IOS",
-            payload: "CUSTOM_3_3_2_1"
+            payload: "CUSTOM_3_3_2_2"
           }]
         }
       }
