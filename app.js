@@ -1214,16 +1214,16 @@ function CUSTOM_salbaroron(recipientId) {
           text: "Орон нутаг салбар",
           buttons:[{
             type: "postback",
-            payload: "CUSTOM_salbarub_tuv",
+            payload: "CUSTOM_salbaroron_tuv",
             title: "Төвийн бүс"
           }, {
             type: "postback",
             title: "Зүүн бүс",
-            payload: "CUSTOM_salbarub_zuun"
+            payload: "CUSTOM_salbaroron_zuun"
           }, {
             type: "postback",
             title: "Баруун бүс ",
-            payload: "CUSTOM_salbarub_baruun"
+            payload: "CUSTOM_salbaroron_baruun"
           }]
         }
       }
@@ -1401,6 +1401,15 @@ function receivedPostback(event) {
             
              case 'CUSTOM_salbaroron':
               CUSTOM_salbaroron(senderID); 
+            break;
+             case 'CUSTOM_salbaroron_tuv':
+              CUSTOM_salbaroron_tuv(senderID); 
+            break;
+             case 'CUSTOM_salbaroron_baruun':
+              CUSTOM_salbaroron_baruun(senderID); 
+            break;
+             case 'CUSTOM_salbaroron_zuun':
+              CUSTOM_salbaroron_zuun(senderID); 
             break;
         case 'CUSTOM_GET_STARTED_PAYLOAD':
             sendStartButtons(senderID); 
