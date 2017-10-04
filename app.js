@@ -870,9 +870,9 @@ function CUSTOM_salbarub(recipientId) {
       };  
 
       callSendAPI(messageData);
-  );
-  
-}
+  };
+              
+
 
 /*
  * Delivery Confirmation Event
