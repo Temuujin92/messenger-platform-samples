@@ -905,18 +905,18 @@ function receivedPostback(event) {
               case 'CUSTOM_1_2_2_2':
             CUSTOM_1_2_2_2(senderID); 
             break;
-       case 'CUSTOM_salbarub':
-            CUSTOM_salbarub(senderID); 
-            break; 
-              case 'Custom_salbaroron':
-            Custom_salbaroron(senderID); 
-            break;         
+//       case 'CUSTOM_salbarub':
+//            CUSTOM_salbarub(senderID); 
+//            break; 
+//              case 'Custom_salbaroron':
+//            Custom_salbaroron(senderID); 
+//            break;         
         case 'CUSTOM_GET_STARTED_PAYLOAD':
             sendStartButtons(senderID); 
             break; 
-             case 'CUSTOM_Back':
-            CUSTOM_new(senderID); 
-            break; 
+//             case 'CUSTOM_Back':
+//            CUSTOM_new(senderID); 
+//            break; 
         case 'CUSTOM_START_NEW_SERVICE':
             sendTypingOn(senderID);
             send123Buttons(senderID);
