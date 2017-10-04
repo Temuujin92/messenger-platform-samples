@@ -1549,9 +1549,19 @@ function receivedPostback(event) {
             sendTypingOn(senderID);
             sendNewsMessage(senderID);
             break;
-    case 'CUSTOM_3_3_1_1':
+         case 'CUSTOM_3_3_1_1':
             sendTextMessage2(senderID, "Android утасны интернэт тохиргоог дараах заавраар хийнэ Settings-More setting-Mobile network-Access point names Name-Skytel Apn / style, net, skytel / аль нэгийг бичээд хадгална. Утсаа унтрааж асаана.");
-            break;         
+            break;
+        
+         case 'CUSTOM_3_3_1_2':
+            sendTextMessage2(senderID, "IOS төхөөрөмжийн интернэт тохиргоог дараах заавраар хийнэ Settings - General - Network - Cellural Data Network - APN - хэсгийг сонгож style гэж бичнэ.");
+            break;
+              case 'CUSTOM_3_3_2_1':
+            sendTextMessage2(senderID, "Android утсанд сүлжээ орохгүй бол тохиргоог дараах заавраар хийнэMenu->Settings->More->Mobile networks->Search network automatically->Skytel сонгоно.");
+            break;
+              case 'CUSTOM_3_3_2_2':
+            sendTextMessage2(senderID, "IOS утсанд сүлжээ орохгүй бол тохиргоог дараах заавраар хийнэSettings-Carrier-Automatic-g idevhijuulne. Bas Settings->Cellular->Voice & Data->3G-g  сонгоно");
+            break;
         case 'CUSTOM_FROM_123_NEWS':
                     sendNewsMessage(senderID); 
         //sendTextMessage(senderID, "Та 123-г ашиглан 247 багц авахын тулд 247 гэсэн түлхүүр үгийг //123 тусгай дугаарт илгээхэд хангалттай. Дагалдах эрх үйлчилгээний 30 хоног. Үнэ 5000₮");
@@ -1746,7 +1756,15 @@ function sendTextMessage2(recipientId, messageText) {
     },
     message: {
       text: messageText,
-      metadata: "DEVELOPER_DEFINED_METADATA"
+      metadata: "DEVELOPER_DEFINED_METADATA",
+        quick_replies: [
+        {
+          "content_type":"text",
+          "title":"Үндсэн цэс",
+          "payload":"CUSTOM_Back"
+        },
+       
+      ]
     }
   };
 
