@@ -759,16 +759,12 @@ function CUSTOM_salbarub(recipientId) {
               template_type: "generic",
               elements: [{
                 title: "Төв плаза",
+                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
                 subtitle: "aaa",
                 item_url: `https://www.skytel.mn/content/${detail[0].id}/view`,               
-                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
-                buttons: [{
-                  type: "web_url",
-                  url: `https://www.skytel.mn/content/${detail[0].id}/view`,
-                  title: "Мэдээг унших"
-                }, {
+               buttons: [ {
                   type: "postback",
-                  title: "Тойм унших",
+                  title: "Буцах",
                   payload: `CUSTOM_NEWS_0`,
                 }],
               },{
