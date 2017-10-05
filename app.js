@@ -1763,8 +1763,8 @@ function sendTextMessage2(recipientId, messageText) {
         quick_replies: [
         {
           "content_type":"text",
-          "title":"Үндсэн цэс",
-          "payload":"CUSTOM_Backs"
+          "title":"Буцах",
+          "payload":"CUSTOM_Back"
         },
        
       ]
