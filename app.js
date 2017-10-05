@@ -282,8 +282,8 @@ function receivedMessage(event) {
      case 'salbar': 
             salbarMessage(senderID); 
             break;         
-       case 'ip76': 
-            ip76(senderID); 
+       case 'ip': 
+            ip(senderID); 
             break;      
         case 'мэдээ':
             sendNewsMessage(senderID); 
@@ -1396,7 +1396,7 @@ function CUSTOM_1_1_1_2(recipientId) {
   callSendAPI(messageData);
 }
 
-function ip76(recipientId) {
+function ip(recipientId) {
     networking.getLatestNews((detail) => {
       newsDetail = detail; 
       var messageData = {
