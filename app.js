@@ -1420,7 +1420,7 @@ function ip76(recipientId) {
                 }],
               },{
                  title: "5,000₮",
-                image_url: `https://www.skytel.mn/uploads/products/201611/200/uploaded_20c2948c322bbafc7b450082b9770738c73e982d.png,
+                image_url: `https://www.skytel.mn/uploads/products/201611/200/uploaded_20c2948c322bbafc7b450082b9770738c73e982d.png`,
                 subtitle: "5,000 НЭГЖ",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
                buttons: [ {
