@@ -1822,7 +1822,7 @@ function sendTextMessage2(recipientId, messageText) {
         {
           "content_type":"text",
           "title":"Буцах",
-          "payload":"CUSTOM_Back"
+          "payload":"CUSTOM_Backs"
         },
        
       ]
