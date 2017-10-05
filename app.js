@@ -1368,6 +1368,31 @@ function CUSTOM_3_3_2(recipientId) {
   };  
   callSendAPI(messageData);
 }
+function CUSTOM_1_1_1_2(recipientId) {
+ var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Та интэрнэт банк болон банкуудын гар утасны application ашиглан дараах дансаар төлбөр төлөн гүйлгээний утга алдаагүй тохиолдолд үйлчилгээний эрхээ 10 минутын дотор нээх боломжтой.Та доорх холбоосоор хандан дэлгэрэнгүй заавар авна уу.",
+          buttons:[
+                {
+                              "type": "web_url",
+                              "url": "https://www.skytel.mn/p/postpaid-info", 
+                              "title": "Энд дарна уу"
+                            }
+          ]
+        }
+      }
+    }
+  };  
+
+  callSendAPI(messageData);
+}
 /*
  * Delivery Confirmation Event
  *
@@ -1589,7 +1614,13 @@ function receivedPostback(event) {
               case 'CUSTOM_3_3_2_1':
             sendTextMessage2(senderID, "Android утсанд сүлжээ орохгүй бол тохиргоог дараах заавраар хийнэMenu->Settings->More->Mobile networks->Search network automatically->Skytel сонгоно.");
             break;
-              case 'CUSTOM_3_3_2_2':
+              case 'CUSTOM_3_2_1':
+            sendTextMessage2(senderID, "1515 дугаарт залгах юмуу online ажилтантай холбогдож үлдэгдлээ шалгана уу");
+            break;
+             case 'CUSTOM_3_2_3':
+            sendTextMessage2(senderID, "ERROR:691 Холболт хийгдэхэд алдаа гарлаа. Та нууц үгээ дахин оруулна уу? , Таны хэрэглэгчийн нэр, нууц үг буруу байна. Эсвэл үйлчилгээний хугацаа, мэдээлэл татаж авах эрх дууссан үед ийм алдаа гарна.ERROR:680 CCU-550 modem evdo for vista support татаж программыг ажиллуулахад  гэсэн алдаа гарвал татаж авсан програмыг ашиглахгүйгээр Vista үйлдлийн системийн dial up модемоор холболт хийгдэнэ. Windows 95, 98, Me NT, 2K & XP үйлдлийн систем дээр ажиллана.ERROR:718 Компьютерийг restart хийх (унтрааж асаах ) хэрэгтэй. Модем драйверыг дахин суулгана");
+            break;
+             case 'CUSTOM_3_3_2_2':
             sendTextMessage2(senderID, "IOS утсанд сүлжээ орохгүй бол тохиргоог дараах заавраар хийнэSettings-Carrier-Automatic-g idevhijuulne. Bas Settings->Cellular->Voice & Data->3G-g  сонгоно");
             break;
         case 'CUSTOM_FROM_123_NEWS':
