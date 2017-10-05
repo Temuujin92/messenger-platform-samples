@@ -284,7 +284,10 @@ function receivedMessage(event) {
             break;         
        case 'ip': 
             ip(senderID); 
-            break;      
+            break; 
+            case 'test': 
+            CUSTOM_test(senderID); 
+            break; 
         case 'мэдээ':
             sendNewsMessage(senderID); 
             break; 
@@ -296,7 +299,29 @@ function receivedMessage(event) {
     sendTextMessage(senderID, "Message with attachment received");
   }
 }
-
+function CUSTOM_test(recipientId){
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: recipientId,
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_1",
+            title: "Үндсэн үйлчилгээ"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
 
 function startMessage(recipientId) {
   var messageData = {
