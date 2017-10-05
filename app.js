@@ -1480,6 +1480,119 @@ function ip(recipientId) {
   
 
   }
+  function ip(recipientId) {
+    networking.getLatestNews((detail) => {
+      newsDetail = detail; 
+      var messageData = {
+        recipient: {
+          id: recipientId
+        },
+        message: {
+          attachment: {
+            type: "template",
+            payload: {
+              template_type: "generic",
+              elements: [{
+                title: "3000₮",
+                image_url: `https://www.skytel.mn/uploads/products/201611/200/uploaded_c89f88290eb7900f8223d030c7726ca7fad71a0b.png`,
+                subtitle: "3,000 НЭГЖ",
+                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,                
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "Залуус салбар СБДүүрэг, Мэдээлэл технологийн үндэсний паркын 1 давхар 7611-2005 ",
+                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
+                subtitle: "* Даваа-Баасан: 09:00-20:00 Бямба,Ням: 10:00-20:00",
+                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+               title: "ӨНӨР салбар*СХДүүрэг, 1-р хороолол, Голомт банкны байр* 7611-2002",
+                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
+                subtitle: "Даваа-Баасан: 09:00-20:00 Бямба,Ням: 10:00-18:00",
+                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "Скайтел үйлчилгээний төв ЧДүүрэг, 3-р хороо, Тэнгис кино театрийн замын урд талд  7611-2001",
+                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
+                subtitle: "Даваа-Баасан: 08:30-20:00 Бямба,Ням: 10:00-19:00",
+                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "Улсын их дэлгүүр салбар ЧДүүрэг, 3-р хороо, Энх тайвны өргөн чөлөө-25 Улсын их дэлгүүр 5-р давхар 7611-2010",
+                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
+                subtitle: "Даваа-Баасан: 09:00-21:30 Бямба,Ням: 09:30-21:30",
+                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "ОРГИЛ салбар ХУДүүрэг, Зайсан, Оргил худалдааны төвийн 1 давхар 7611-2009",
+                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
+                subtitle: "Даваа-Баасан: 10:00-20:00 Бямба,Ням: 10:00-19:00",
+                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "САНСАР салбар БЗДүүрэг, 15 хороолол, Сансарын Начин заан ломбардын байранд /Сансарын тунелийн эсрэг талд/ 76112006",
+                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
+                subtitle: "Даваа-Баасан: 09:00-19:00 Бямба,Ням: 10:00-18:00",
+                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "Имарт салбар*Баянзүрх дүүрэг, Технологийн гудамж, Имарт Чингис салбар 2 давхар",
+                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
+                subtitle: "Даваа-Ням: 10:00-20:00",
+                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "Налайх салбар Налайх дүүрэг, 2-р хороо, МХС ТӨК байр, 1-р давхар, Налайх Скайтел салбар 7611-2003",
+                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
+                subtitle: "Даваа-Баасан: 09:00-19:00 Бямба: 11:00-16:00 Ням:Амарна",
+                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              }]
+            }
+          }
+        }
+      };  
+
+      callSendAPI(messageData);
+  });
+  
+
+  }
 
 /*
  * Delivery Confirmation Event
