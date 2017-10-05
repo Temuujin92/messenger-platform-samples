@@ -282,7 +282,9 @@ function receivedMessage(event) {
      case 'salbar': 
             salbarMessage(senderID); 
             break;         
-           
+       case 'ip76': 
+            ip76(senderID); 
+            break;      
         case 'мэдээ':
             sendNewsMessage(senderID); 
             break; 
@@ -1393,6 +1395,92 @@ function CUSTOM_1_1_1_2(recipientId) {
 
   callSendAPI(messageData);
 }
+
+function ip76(recipientId) {
+    networking.getLatestNews((detail) => {
+      newsDetail = detail; 
+      var messageData = {
+        recipient: {
+          id: recipientId
+        },
+        message: {
+          attachment: {
+            type: "template",
+            payload: {
+              template_type: "generic",
+              elements: [{
+                title: "3000₮",
+                image_url: `https://www.skytel.mn/uploads/products/201611/200/uploaded_c89f88290eb7900f8223d030c7726ca7fad71a0b.png`,
+                subtitle: "3,000 НЭГЖ",
+                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
+               buttons: [ {
+                  type: "postback",
+                  title: "Авах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "5,000₮",
+                image_url: `https://www.skytel.mn/uploads/products/201611/200/uploaded_20c2948c322bbafc7b450082b9770738c73e982d.png,
+                subtitle: "5,000 НЭГЖ",
+                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
+               buttons: [ {
+                  type: "postback",
+                  title: "Авах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+               title: "8,000₮",
+                image_url: `https://www.skytel.mn/uploads/products/201611/200/uploaded_5d2714170876bf6c9294201ca342011273d0b94f.png`,
+                subtitle: "8,000 НЭГЖ",
+                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
+               buttons: [ {
+                  type: "postback",
+                  title: "Авах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "10,000₮",
+                image_url: `https://www.skytel.mn/uploads/products/201611/200/uploaded_2438e989248a6877927d01a1ca666fac4a61ed23.png`,
+                subtitle: "10,000 НЭГЖ",
+                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
+               buttons: [ {
+                  type: "postback",
+                  title: "Авах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "15,000₮",
+                image_url: `https://www.skytel.mn/uploads/products/201611/200/uploaded_fd0a5890ced07d42a8e6d556ba7a03085a4d13b8.png`,
+                subtitle: "15,000 НЭГЖ",
+                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
+               buttons: [ {
+                  type: "postback",
+                  title: "Авах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "60,000₮",
+                image_url: `https://www.skytel.mn/uploads/products/201611/200/uploaded_07ade0c1fc579108f48608f2e0ef6a1f92e732da.png`,
+                subtitle: "60,000 НЭГЖ",
+                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
+               buttons: [ {
+                  type: "postback",
+                  title: "Авах",
+                  payload: `CUSTOM_Back`,
+                }],
+              }],
+              }]
+            }
+          }
+        }
+      };  
+
+      callSendAPI(messageData);
+  });
+  
+
+  }
+
 /*
  * Delivery Confirmation Event
  *
@@ -1450,9 +1538,7 @@ function receivedPostback(event) {
              case 'CUSTOM_Back':
             CUSTOM_new(senderID); 
             break;
-             case 'CUSTOM_Backs':
-            CUSTOM_new(senderID); 
-            break;
+             
     case 'CUSTOM_1':
             CUSTOM_1(senderID); 
             break;        
@@ -1614,7 +1700,10 @@ function receivedPostback(event) {
               case 'CUSTOM_3_3_2_1':
             sendTextMessage2(senderID, "Android утсанд сүлжээ орохгүй бол тохиргоог дараах заавраар хийнэMenu->Settings->More->Mobile networks->Search network automatically->Skytel сонгоно.");
             break;
-              case 'CUSTOM_3_2_1':
+              case 'CUSTOM_1_1_1_3':
+            sendTextMessage2(senderID, "1Та www.skytel.mn сайтад хандан орон зай, цаг хугацааны хязгаарлалтгүйгээр хэрэглээний төлбөрөө төлөх боломжтой. Төлбөр амжилттай төлөгдмөгц үйлчилгээний эрх шууд нээгдэх нь банкаар дамжуулан төлөхөөс илүү давуу талтай.Хэрэглэгч та доорх бүх арилжааны банкуудын төлбөрийн картыг ашиглах боломжтой.");
+            break;
+            case 'CUSTOM_3_2_1':
             sendTextMessage2(senderID, "1515 дугаарт залгах юмуу online ажилтантай холбогдож үлдэгдлээ шалгана уу");
             break;
              case 'CUSTOM_3_2_3':
@@ -1822,7 +1911,7 @@ function sendTextMessage2(recipientId, messageText) {
         {
           "content_type":"text",
           "title":"Буцах",
-          "payload":"CUSTOM_Backs"
+          "payload":"CUSTOM_Back"
         },
        
       ]
