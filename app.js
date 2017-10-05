@@ -1416,7 +1416,7 @@ function CUSTOM_1_1_1_2(recipientId) {
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,                
                buttons: [ {
                   type: "postback",
-                  title: "Буцах",
+                  title: "Авах",
                   payload: `CUSTOM_Back`,
                 }],
               },{
@@ -1426,7 +1426,7 @@ function CUSTOM_1_1_1_2(recipientId) {
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,                  
                buttons: [ {
                   type: "postback",
-                  title: "Буцах",
+                  title: "Авах",
                   payload: `CUSTOM_Back`,
                 }],
               },{
@@ -1436,7 +1436,7 @@ function CUSTOM_1_1_1_2(recipientId) {
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
                buttons: [ {
                   type: "postback",
-                  title: "Буцах",
+                  title: "Авах",
                   payload: `CUSTOM_Back`,
                 }],
               },{
@@ -1446,7 +1446,7 @@ function CUSTOM_1_1_1_2(recipientId) {
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
                buttons: [ {
                   type: "postback",
-                  title: "Буцах",
+                  title: "Авах",
                   payload: `CUSTOM_Back`,
                 }],
               },{
@@ -1456,7 +1456,7 @@ function CUSTOM_1_1_1_2(recipientId) {
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
                buttons: [ {
                   type: "postback",
-                  title: "Буцах",
+                  title: "Авах",
                   payload: `CUSTOM_Back`,
                 }],
               },{
@@ -1466,7 +1466,7 @@ function CUSTOM_1_1_1_2(recipientId) {
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,              
                buttons: [ {
                   type: "postback",
-                  title: "Буцах",
+                  title: "Авах",
                   payload: `CUSTOM_Back`,
                 }],
               },{
