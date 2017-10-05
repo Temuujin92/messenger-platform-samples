@@ -1231,6 +1231,31 @@ function CUSTOM_salbaroron(recipientId) {
   };  
   callSendAPI(messageData);
 }
+function CUSTOM_3_1(recipientId) {
+ var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Гар утасны үнэ тариф",
+          buttons:[
+                {
+                              "type": "web_url",
+                              "url": "https://www.skytel.mn/shop/product", 
+                              "title": "Энд дарна уу"
+                            }
+          ]
+        }
+      }
+    }
+  };  
+
+  callSendAPI(messageData);
+}
 function CUSTOM_3_2(recipientId) {
     
    var messageData = {
@@ -1521,8 +1546,10 @@ function receivedPostback(event) {
               case 'CUSTOM_3_3_2':
             CUSTOM_3_3_2(senderID); 
             break;
-              
-            
+             case 'CUSTOM_3_1':
+            CUSTOM_3_1(senderID); 
+            break;   
+           
       
           case 'CUSTOM_salbarub':
               CUSTOM_salbarub(senderID); 
