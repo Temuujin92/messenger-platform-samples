@@ -1954,14 +1954,18 @@ function receivedPostback(event) {
               case 'CUSTOM_1_1_1_2':
             CUSTOM_1_1_1_2(senderID); 
             break; 
-              
+              case 'CUSTOM_1_1_1_3':
+            CUSTOM_1_1_1_3(senderID); 
+            break; 
               case 'CUSTOM_1_1_2_1':
             CUSTOM_1_1_2_1(senderID); 
             break; 
               case 'CUSTOM_1_1_2_2':
             CUSTOM_1_1_2_2(senderID); 
             break; 
-             
+              case 'CUSTOM_1_1_2_3':
+            CUSTOM_1_1_2_3(senderID); 
+            break; 
               case 'CUSTOM_1_2_1_1':
             CUSTOM_1_2_1_1(senderID); 
             break; 
@@ -2046,11 +2050,8 @@ function receivedPostback(event) {
               case 'CUSTOM_3_3_2_1':
             sendTextMessage2(senderID, "Android утсанд сүлжээ орохгүй бол тохиргоог дараах заавраар хийнэMenu->Settings->More->Mobile networks->Search network automatically->Skytel сонгоно.");
             break;
-              case 'CUSTOM_1_1_2_3':
-            sendTextMessage2(senderID, "•	Монголдоо хамгийн их Дата эрхтэй•	Дата эрхээ 3 хүртэлх дотны хүндээ хуваалцах /share/ боломжтой•	Монголдоо үүрэн болон суурин холбооны бүх сүлжээнд хүссэнээрээ ярина•	Суурь хураамжид татвар тооцсон тул НӨАТ нэмэгдэхгүй•	Төлбөр төлөх уян хатан боломжууд•	Олон улсын яриа, мессэж, дата роумингийн үйлчилгээг сонгох боломжтой");
-            break;
-            case 'CUSTOM_1_1_1_3':
-            sendTextMessage2(senderID, "Та www.skytel.mn сайтад хандан орон зай, цаг хугацааны хязгаарлалтгүйгээр хэрэглээний төлбөрөө төлөх боломжтой. Төлбөр амжилттай төлөгдмөгц үйлчилгээний эрх шууд нээгдэх нь банкаар дамжуулан төлөхөөс илүү давуу талтай.Хэрэглэгч та доорх бүх арилжааны банкуудын төлбөрийн картыг ашиглах боломжтой.");
+              case 'CUSTOM_1_1_1_3':
+            sendTextMessage2(senderID, "1Та www.skytel.mn сайтад хандан орон зай, цаг хугацааны хязгаарлалтгүйгээр хэрэглээний төлбөрөө төлөх боломжтой. Төлбөр амжилттай төлөгдмөгц үйлчилгээний эрх шууд нээгдэх нь банкаар дамжуулан төлөхөөс илүү давуу талтай.Хэрэглэгч та доорх бүх арилжааны банкуудын төлбөрийн картыг ашиглах боломжтой.");
             break;
             case 'CUSTOM_3_2_1':
             sendTextMessage2(senderID, "1515 дугаарт залгах юмуу online ажилтантай холбогдож үлдэгдлээ шалгана уу");
