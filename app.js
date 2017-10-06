@@ -276,7 +276,7 @@ function receivedMessage(event) {
         send123Buttons(senderID);
         break; 
     case 'Get Started':
-            startMessage(senderID); 
+            CUSTOM_new(senderID); 
             break;     
       case 'Салбар':
      case 'salbar': 
