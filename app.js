@@ -1105,6 +1105,26 @@ function CUSTOM_salbaroron_zuun(recipientId) {
                   title: "Буцах",
                   payload: `CUSTOM_Back`,
                 }],
+              },{
+                 title: "Дархан 2*Монгол улс, Дархан-Уул аймаг, дархан сум, Алтансагс төвийн 1-р давхар* 9110-1434",
+                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
+                subtitle: "Даваа-Баасан: 10:00-18:00 Бямба: 10:00-17:00 Ням: амарна",
+                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "Тариалан*Монгол улс, Хөвсгөл аймаг, Тариалан сум, 1-р баг Шивэртийн 4-4 тоот* 9110-1247",
+                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
+                subtitle: "Даваа-Баасан: 10:00-18:00 Бямба: 11:00-16:00 Ням: амарна",
+                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
               }]
             }
           }
@@ -1233,26 +1253,6 @@ function CUSTOM_salbaroron_baruun(recipientId) {
                  title: "Хархорин*Монгол улс, Өвөрхангай аймаг, Хархорин сум, 02-р баг Хархорин скайтел салбар* 9110-2026",
                 image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба: 11:00-16:00 Ням: амарна",
-                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
-               buttons: [ {
-                  type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
-                }],
-              },{
-                 title: "Хужирт*Монгол улс, Өвөрхангай аймаг, Хужирт сум* 9110-1259",
-                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
-                subtitle: "Даваа-Баасан: 09:00-18:00 Бямба: 11:00-16:00 Ням: амарна",
-                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
-               buttons: [ {
-                  type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
-                }],
-              },{
-                 title: "Уянга*Монгол улс, Өвөрхангай аймаг, Уянга сум, 08-р баг, Онги хороолол, Өнөр дэлгүүр * 9110-1334",
-                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
-                subtitle: "Даваа-Баасан: 10:00-18:00 Бямба: 10:00-16:00 Ням: амарна",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
                buttons: [ {
                   type: "postback",
