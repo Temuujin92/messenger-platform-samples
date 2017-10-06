@@ -1563,6 +1563,100 @@ function CUSTOM_3_1_1(recipientId) {
   callSendAPI(messageData);
 }
 
+function CUSTOM_1_3_1(recipientId) {
+    networking.getLatestNews((detail) => {
+      newsDetail = detail; 
+      var messageData = {
+        recipient: {
+          id: recipientId
+        },
+        message: {
+          attachment: {
+            type: "template",
+            payload: {
+              template_type: "generic",
+              elements: [{
+                title: "Facebook багц 30 хоног Үнэ:5000",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "Идэвхжүүлэхзаавар:Facebook send 123",
+                         
+                buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "100MB 10 хоног Үнэ:1000",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "Идэвхжүүлэхзаавар:100mbsend 123",
+              
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+               title: "300MB 15 хоног Үнэ:3000",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "Идэвхжүүлэхзаавар:300mbsend 123",
+                   
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "1GB 30 хоног Үнэ:10000",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "Идэвхжүүлэхзаавар:1GBsend 123",
+                             
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "Дархан-Уул*Монгол улс, Дархан-Уул аймаг, 14-р баг, Эрдэнэс Плаза 1-р давхар* 9110-1223",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "Даваа-Баасан: 09:00-20:00 Бямба, Ням: 10:00-18:00",
+                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "2GB 30 хоног Үнэ:13000",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "Идэвхжүүлэхзаавар:2GB send 123",
+                           
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "10 GB 60 хоног Үнэ:30000",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "Идэвхжүүлэхзаавар:10GBsend 123",
+                
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },
+              }]
+            }
+          }
+        }
+      };  
+
+      callSendAPI(messageData);
+  });
+  
+
+  }
   function ip(recipientId) {
     networking.getLatestNews((detail) => {
       newsDetail = detail; 
@@ -1753,9 +1847,7 @@ function receivedPostback(event) {
             CUSTOM_2_2_3(senderID); 
             break; 
              
-              case 'CUSTOM_2_3_2':
-            CUSTOM_2_3_2(senderID); 
-            break; 
+              
               case 'CUSTOM_1_1':
             CUSTOM_1_1(senderID); 
             break; 
