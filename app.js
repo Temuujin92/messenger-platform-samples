@@ -1971,9 +1971,9 @@ function CUSTOM_1_2_1_2(recipientId) {
             payload: {
               template_type: "generic",
               elements: [{
-                title: "10,000₮",
+                title: "500 Карт",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
-                subtitle: "Яриа: 250мин , Дата:200MB, Суурь хураамж:10,000₮",
+                subtitle: "Хоног:  , Нэгж:500, Үнэ:500₮",
                          
                 buttons: [ {
                   type: "postback",
