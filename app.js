@@ -2201,6 +2201,70 @@ function CUSTOM_1_2_1_3(recipientId) {
       callSendAPI(messageData);
   });
    }
+
+
+
+function CUSTOM_1_1_1_1(recipientId) {
+    networking.getLatestNews((detail) => {
+      newsDetail = detail; 
+      var messageData = {
+        recipient: {
+          id: recipientId
+        },
+        message: {
+          attachment: {
+            type: "template",
+            payload: {
+              template_type: "generic",
+              elements: [{
+                title: "Хэрэглээ шалгах",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "Илгээх утга = U , Тусгай дугаар = 1510, Хэрэглээг мөнгөн дүнгээр харуулна ",
+                         
+                buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                title: "Төлбөр шалгах",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                       subtitle: "Илгээх утга = B , Тусгай дугаар = 1510, Багцад дагалдах эрхээс үлдсэн хэрэглээг харуулна  ",
+                   
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+              title: "Дата шалгах",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                    subtitle: "Илгээх утга = D , Тусгай дугаар = 1510, Дата хэрэглээ болон дата багцын үлдэгдэлийг харуулна  ",
+                           
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                title: "Хэрэглээ шалгах",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "Илгээх утга = 2017/08, Тусгай дугаар = 1510, Өмнөх сарын төлбөр шалгах ",
+                           
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              }]
+            }
+          }
+        }
+      };  
+
+      callSendAPI(messageData);
+  });
+   }
   function ip(recipientId) {
     networking.getLatestNews((detail) => {
       newsDetail = detail; 
@@ -2385,7 +2449,7 @@ function receivedPostback(event) {
             CUSTOM_2_2_1(senderID); 
             break; 
              case 'CUSTOM_2_2_2':
-            CUSTOM_2_2_1(senderID); 
+            CUSTOM_2_2_2(senderID); 
             break; 
              case 'CUSTOM_2_2_3':
             CUSTOM_2_2_3(senderID); 
