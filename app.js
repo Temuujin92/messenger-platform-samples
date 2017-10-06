@@ -1646,6 +1646,79 @@ function CUSTOM_1_3_1(recipientId) {
   
 
   }
+function CUSTOM_1_3_2(recipientId) {
+    networking.getLatestNews((detail) => {
+      newsDetail = detail; 
+      var messageData = {
+        recipient: {
+          id: recipientId
+        },
+        message: {
+          attachment: {
+            type: "template",
+            payload: {
+              template_type: "generic",
+              elements: [{
+                title: "Facebook/Төлбөргүй/",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "* Шинээр account үүсгэ* Текст статус бичих * Check in хийх* Зураг харах* Facebook-н видео үзэх* Like, comment,share хийх* Онлайн хүмүүс харах* Friend request, notification харах",
+                         
+                buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "100MB 10 хоног Үнэ:1000",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "Идэвхжүүлэхзаавар:100mbsend 123",
+              
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+               title: "Messenger/төлбөргүй/",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "* Чатлах * Стикер илгээх * Зураг илгээх* Зураг хүлээн авах* Видео илгээх* Өөрт ирсэн видеог үзэх* Voice record илгээх* Өөрт ирсэн record сонсох* Байршил илгээх",
+                   
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "1GB 30 хоног Үнэ:10000",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "Идэвхжүүлэхзаавар:1GBsend 123",
+                             
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "2Messenger/төлбөртэй/",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "* Voice дуудлага хийх* Voice дуудлага хүлээн авах* Video дуудлага хийх* Video дуудлага хүлээн авах* Giphy хөдөлгөөнт зулаг илгээх",
+                           
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              }]
+            }
+          }
+        }
+      };  
+
+      callSendAPI(messageData);
+  });
+  
+
+  }
   function ip(recipientId) {
     networking.getLatestNews((detail) => {
       newsDetail = detail; 
