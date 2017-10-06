@@ -999,26 +999,6 @@ function CUSTOM_salbaroron_tuv(recipientId) {
                   title: "Буцах",
                   payload: `CUSTOM_Back`,
                 }],
-              },{
-                 title: "Дархан 2*Монгол улс, Дархан-Уул аймаг, дархан сум, Алтансагс төвийн 1-р давхар* 9110-1434",
-                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
-                subtitle: "Даваа-Баасан: 10:00-18:00 Бямба: 10:00-17:00 Ням: амарна",
-                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
-               buttons: [ {
-                  type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
-                }],
-              },{
-                 title: "Тариалан*Монгол улс, Хөвсгөл аймаг, Тариалан сум, 1-р баг Шивэртийн 4-4 тоот* 9110-1247",
-                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
-                subtitle: "Даваа-Баасан: 10:00-18:00 Бямба: 11:00-16:00 Ням: амарна",
-                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
-               buttons: [ {
-                  type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
-                }],
               }]
             }
           }
