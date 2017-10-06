@@ -1954,9 +1954,7 @@ function receivedPostback(event) {
               case 'CUSTOM_1_1_1_2':
             CUSTOM_1_1_1_2(senderID); 
             break; 
-              case 'CUSTOM_1_1_1_3':
-            CUSTOM_1_1_1_3(senderID); 
-            break; 
+             
               case 'CUSTOM_1_1_2_1':
             CUSTOM_1_1_2_1(senderID); 
             break; 
@@ -2051,8 +2049,9 @@ function receivedPostback(event) {
             sendTextMessage2(senderID, "Android утсанд сүлжээ орохгүй бол тохиргоог дараах заавраар хийнэMenu->Settings->More->Mobile networks->Search network automatically->Skytel сонгоно.");
             break;
               case 'CUSTOM_1_1_1_3':
-            sendTextMessage2(senderID, "1Та www.skytel.mn сайтад хандан орон зай, цаг хугацааны хязгаарлалтгүйгээр хэрэглээний төлбөрөө төлөх боломжтой. Төлбөр амжилттай төлөгдмөгц үйлчилгээний эрх шууд нээгдэх нь банкаар дамжуулан төлөхөөс илүү давуу талтай.Хэрэглэгч та доорх бүх арилжааны банкуудын төлбөрийн картыг ашиглах боломжтой.");
+            sendTextMessage2(senderID, "Та www.skytel.mn сайтад хандан орон зай, цаг хугацааны хязгаарлалтгүйгээр хэрэглээний төлбөрөө төлөх боломжтой. Төлбөр амжилттай төлөгдмөгц үйлчилгээний эрх шууд нээгдэх нь банкаар дамжуулан төлөхөөс илүү давуу талтай.Хэрэглэгч та доорх бүх арилжааны банкуудын төлбөрийн картыг ашиглах боломжтой.");
             break;
+            
             case 'CUSTOM_3_2_1':
             sendTextMessage2(senderID, "1515 дугаарт залгах юмуу online ажилтантай холбогдож үлдэгдлээ шалгана уу");
             break;
