@@ -1724,6 +1724,132 @@ function CUSTOM_1_3_2(recipientId) {
   
 
   }
+function CUSTOM_1_1_2_1(recipientId) {
+    networking.getLatestNews((detail) => {
+      newsDetail = detail; 
+      var messageData = {
+        recipient: {
+          id: recipientId
+        },
+        message: {
+          attachment: {
+            type: "template",
+            payload: {
+              template_type: "generic",
+              elements: [{
+                title: "Энгийн дугаар Үнэ:10000, Барьцаа(20000,50000)",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "Үнэ цэнэтэй энгийн дугаар Үнэ:100000, Барьцаа(50000)",
+                         
+                buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+           title: "Азын дугаар Үнэ:60000, Барьцаа(20000,50000)",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "Үнэ цэнэтэй азын дугаар Үнэ:200000, Барьцаа(50000)",
+                   
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+               title: "Алтан дугаар Үнэ:800000, Барьцаа(20000,50000)",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "Үнэ цэнэтэй алтан дугаар Үнэ:800000, Барьцаа(50000)",
+                           
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              }]
+            }
+          }
+        }
+      };  
+
+      callSendAPI(messageData);
+  });
+  
+
+  }
+function CUSTOM_1_1_2_2(recipientId) {
+    networking.getLatestNews((detail) => {
+      newsDetail = detail; 
+      var messageData = {
+        recipient: {
+          id: recipientId
+        },
+        message: {
+          attachment: {
+            type: "template",
+            payload: {
+              template_type: "generic",
+              elements: [{
+                title: "10,000₮",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "Яриа: 250мин , Дата:200MB, Суурь хураамж:10,000₮",
+                         
+                buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+           title: "20,000₮",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+             subtitle: "Яриа: 500мин , Дата:1GB, Мессэж:Хязгааргүй,Суурь хураамж:20,000₮",
+                   
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+               title: "40,000₮",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                  subtitle: "Яриа: 1000мин , Дата:4GB, Мессэж:Хязгааргүй,Суурь хураамж:40,000₮",
+                           
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+               title: "70,000₮",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                  subtitle: "Яриа: 2000мин , Дата:8GB, Мессэж:Хязгааргүй,Суурь хураамж:70,000₮",
+                           
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+               title: "40,000₮",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                  subtitle: "Яриа: 3000мин , Дата:12GB, Мессэж:Хязгааргүй,Суурь хураамж:",
+                           
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              }]
+            }
+          }
+        }
+      };  
+
+      callSendAPI(messageData);
+  });
+  
+
+  }
   function ip(recipientId) {
     networking.getLatestNews((detail) => {
       newsDetail = detail; 
@@ -1963,9 +2089,7 @@ function receivedPostback(event) {
               case 'CUSTOM_1_1_2_2':
             CUSTOM_1_1_2_2(senderID); 
             break; 
-              case 'CUSTOM_1_1_2_3':
-            CUSTOM_1_1_2_3(senderID); 
-            break; 
+             
               case 'CUSTOM_1_2_1_1':
             CUSTOM_1_2_1_1(senderID); 
             break; 
@@ -2050,7 +2174,10 @@ function receivedPostback(event) {
               case 'CUSTOM_3_3_2_1':
             sendTextMessage2(senderID, "Android утсанд сүлжээ орохгүй бол тохиргоог дараах заавраар хийнэMenu->Settings->More->Mobile networks->Search network automatically->Skytel сонгоно.");
             break;
-              case 'CUSTOM_1_1_1_3':
+              case 'CUSTOM_1_1_2_3':
+            sendTextMessage2(senderID, "•	Монголдоо хамгийн их Дата эрхтэй•	Дата эрхээ 3 хүртэлх дотны хүндээ хуваалцах /share/ боломжтой•	Монголдоо үүрэн болон суурин холбооны бүх сүлжээнд хүссэнээрээ ярина•	Суурь хураамжид татвар тооцсон тул НӨАТ нэмэгдэхгүй•	Төлбөр төлөх уян хатан боломжууд•	Олон улсын яриа, мессэж, дата роумингийн үйлчилгээг сонгох боломжтой");
+            break;
+            case 'CUSTOM_1_1_1_3':
             sendTextMessage2(senderID, "1Та www.skytel.mn сайтад хандан орон зай, цаг хугацааны хязгаарлалтгүйгээр хэрэглээний төлбөрөө төлөх боломжтой. Төлбөр амжилттай төлөгдмөгц үйлчилгээний эрх шууд нээгдэх нь банкаар дамжуулан төлөхөөс илүү давуу талтай.Хэрэглэгч та доорх бүх арилжааны банкуудын төлбөрийн картыг ашиглах боломжтой.");
             break;
             case 'CUSTOM_3_2_1':
