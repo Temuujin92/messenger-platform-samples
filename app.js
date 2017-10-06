@@ -1249,16 +1249,6 @@ function CUSTOM_salbaroron_baruun(recipientId) {
                   title: "Буцах",
                   payload: `CUSTOM_Back`,
                 }],
-              },{
-                 title: "Хархорин*Монгол улс, Өвөрхангай аймаг, Хархорин сум, 02-р баг Хархорин скайтел салбар* 9110-2026",
-                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
-                subtitle: "Даваа-Баасан: 09:00-19:00 Бямба: 11:00-16:00 Ням: амарна",
-                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
-               buttons: [ {
-                  type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
-                }],
               }]
             }
           }
