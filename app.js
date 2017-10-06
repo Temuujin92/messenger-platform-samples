@@ -1347,6 +1347,88 @@ function CUSTOM_3_2(recipientId) {
   };  
   callSendAPI(messageData);
 }
+function CUSTOM_3_2_2(recipientId) {
+    networking.getLatestNews((detail) => {
+      newsDetail = detail; 
+      var messageData = {
+        recipient: {
+          id: recipientId
+        },
+        message: {
+          attachment: {
+            type: "template",
+            payload: {
+              template_type: "generic",
+              elements: [{
+                title: "Та дараах дата багцуудаас сонголтоо хийж модемоо цэнэглэнэ үү",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "1GB 30 хоног 10000₮",
+                buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                   title: "Та дараах дата багцуудаас сонголтоо хийж модемоо цэнэглэнэ үү",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "2GB 30 хоног 13000₮",
+                           
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+              title: "Та дараах дата багцуудаас сонголтоо хийж модемоо цэнэглэнэ үү",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "3GB 30 хоног 15000₮",
+                       
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+            title: "Та дараах дата багцуудаас сонголтоо хийж модемоо цэнэглэнэ үү",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "5GB 30 хоног 20000₮",
+                     
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "Та дараах дата багцуудаас сонголтоо хийж модемоо цэнэглэнэ үү",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "10GB 60 хоног 30000₮",
+                             
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                   title: "Та дараах дата багцуудаас сонголтоо хийж модемоо цэнэглэнэ үү",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "20GB 90 хоног 50000₮",
+                             
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              }]
+            }
+          }
+        }
+      };  
+
+      callSendAPI(messageData);
+  });
+  
+
+  }
 function CUSTOM_3_3(recipientId) {
     
    var messageData = {
@@ -1773,6 +1855,9 @@ function receivedPostback(event) {
             break;
             case 'CUSTOM_3_2_1':
             sendTextMessage2(senderID, "1515 дугаарт залгах юмуу online ажилтантай холбогдож үлдэгдлээ шалгана уу");
+            break;
+             case 'CUSTOM_2_1_2':
+            sendTextMessage2(senderID, "Гар утасны лизингийн урамшуулал одоогоор дууссан байна. Удахгүй шинэ урамшуулал зарлах болно.");
             break;
              case 'CUSTOM_3_2_3':
             sendTextMessage2(senderID, "ERROR:691 Холболт хийгдэхэд алдаа гарлаа. Та нууц үгээ дахин оруулна уу? , Таны хэрэглэгчийн нэр, нууц үг буруу байна. Эсвэл үйлчилгээний хугацаа, мэдээлэл татаж авах эрх дууссан үед ийм алдаа гарна.ERROR:680 CCU-550 modem evdo for vista support татаж программыг ажиллуулахад  гэсэн алдаа гарвал татаж авсан програмыг ашиглахгүйгээр Vista үйлдлийн системийн dial up модемоор холболт хийгдэнэ. Windows 95, 98, Me NT, 2K & XP үйлдлийн систем дээр ажиллана.ERROR:718 Компьютерийг restart хийх (унтрааж асаах ) хэрэгтэй. Модем драйверыг дахин суулгана");
