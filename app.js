@@ -1616,16 +1616,6 @@ function CUSTOM_1_3_1(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Дархан-Уул*Монгол улс, Дархан-Уул аймаг, 14-р баг, Эрдэнэс Плаза 1-р давхар* 9110-1223",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
-                subtitle: "Даваа-Баасан: 09:00-20:00 Бямба, Ням: 10:00-18:00",
-                item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
-               buttons: [ {
-                  type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
-                }],
-              },{
                  title: "2GB 30 хоног Үнэ:13000",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Идэвхжүүлэхзаавар:2GB send 123",
@@ -1645,8 +1635,7 @@ function CUSTOM_1_3_1(recipientId) {
                   title: "Буцах",
                   payload: `CUSTOM_Back`,
                 }],
-              },
-              }]
+             }]
             }
           }
         }
