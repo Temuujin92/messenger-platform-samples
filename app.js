@@ -554,7 +554,7 @@ function CUSTOM_1_1(recipientId) {
             payload: "CUSTOM_1_1_2"
           }, {
             type: "postback",
-            title: "Нэмэлт үйлчилгээ",
+            title: "ДТҮ Нэмэлт үйлчилгээ",
             payload: "CUSTOM_1_1_3"
           }]
         }
@@ -586,7 +586,7 @@ function CUSTOM_1_2(recipientId) {
             payload: "CUSTOM_1_2_2"
           }, {
             type: "postback",
-            title: "Нэмэлт үйлчилгээ",
+            title: " УТҮ Нэмэлт үйлчилгээ",
             payload: "CUSTOM_1_2_3"
           }]
         }
@@ -687,6 +687,31 @@ function CUSTOM_1_1_2(recipientId) {
   callSendAPI(messageData);
 }
 function CUSTOM_1_1_3(recipientId) {
+ var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Нэмэлт үйлчилгээ",
+          buttons:[
+                {
+                              "type": "web_url",
+                              "url": "https://www.skytel.mn/p/extra", 
+                              "title": "Энд дарна уу"
+                            }
+          ]
+        }
+      }
+    }
+  };  
+
+  callSendAPI(messageData);
+}
+function CUSTOM_1_2_3(recipientId) {
  var messageData = {
     recipient: {
       id: recipientId
@@ -1669,30 +1694,10 @@ function CUSTOM_1_3_2(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "100MB 10 хоног Үнэ:1000",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
-                subtitle: "Идэвхжүүлэхзаавар:100mbsend 123",
-              
-               buttons: [ {
-                  type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
-                }],
-              },{
                title: "Messenger/төлбөргүй/",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "* Чатлах * Стикер илгээх * Зураг илгээх* Зураг хүлээн авах* Видео илгээх* Өөрт ирсэн видеог үзэх* Voice record илгээх* Өөрт ирсэн record сонсох* Байршил илгээх",
                    
-               buttons: [ {
-                  type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
-                }],
-              },{
-                 title: "1GB 30 хоног Үнэ:10000",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
-                subtitle: "Идэвхжүүлэхзаавар:1GBsend 123",
-                             
                buttons: [ {
                   type: "postback",
                   title: "Буцах",
