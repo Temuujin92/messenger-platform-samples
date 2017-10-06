@@ -579,7 +579,7 @@ function CUSTOM_1_2(recipientId) {
           buttons:[{
             type: "postback",
             payload: "CUSTOM_1_2_1",
-            title: "Үндсэн үйлчилгээ"
+            title: "Үндсэн үйлчилгээ УТҮ"
           }, {
             type: "postback",
             title: "Shake & Share",
@@ -1779,6 +1779,41 @@ function CUSTOM_1_1_2_1(recipientId) {
   
 
   }
+
+
+
+
+function CUSTOM_1_2_1(recipientId) {
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "УТҮ үндсэн үйлчилгээ",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_1_2_1_1",
+            title: "Өнгөлөг дата"
+          }, {
+            type: "postback",
+            title: "Өнгөлөг хоног",
+            payload: "CUSTOM_1_2_1_2"
+          }, {
+            type: "postback",
+            title: "Skyphone 3.0",
+            payload: "CUSTOM_1_2_1_3"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
 function CUSTOM_1_1_2_2(recipientId) {
     networking.getLatestNews((detail) => {
       newsDetail = detail; 
