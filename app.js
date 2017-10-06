@@ -2265,6 +2265,112 @@ function CUSTOM_1_1_1_1(recipientId) {
       callSendAPI(messageData);
   });
    }
+
+function CUSTOM_2_2_1(recipientId) {
+    networking.getLatestNews((detail) => {
+      newsDetail = detail; 
+      var messageData = {
+        recipient: {
+          id: recipientId
+        },
+        message: {
+          attachment: {
+            type: "template",
+            payload: {
+              template_type: "generic",
+              elements: [{
+                title: "Энгийн дугаар",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "Үнэ-3000 Нэгж-1000 Хоног-30 Урамшуулал- 180 хоног FACEBOOK үнэгүй ",
+                         
+                buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                title: "Азын дугаар",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                       subtitle: "Үнэ-10000 Нэгж-5000 Хоног-30 Урамшуулал- 180 хоног FACEBOOK үнэгүй ",
+                   
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              }]
+            }
+          }
+        }
+      };  
+
+      callSendAPI(messageData);
+  });
+   }
+
+  function CUSTOM_2_2_2(recipientId) {
+    networking.getLatestNews((detail) => {
+      newsDetail = detail; 
+      var messageData = {
+        recipient: {
+          id: recipientId
+        },
+        message: {
+          attachment: {
+            type: "template",
+            payload: {
+              template_type: "generic",
+              elements: [{
+                title: "5000 карт /хоногтой/",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "Урамшуулал- 10000 бонус нэгж Урамшууллын нэгжний хугацаа- 5 хоног Ашиглах төрөл-Сүлжээний яриа, сүлжээний мессеж, задгай дата ",
+                         
+                buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                title: "5000 карт /хоноггүй/",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                       subtitle: "Урамшуулал- 10000 бонус нэгж Урамшууллын нэгжний хугацаа- 5 хоног Ашиглах төрөл-Сүлжээний яриа, сүлжээний мессеж, задгай дата ",
+                   
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+              title: "10000 карт",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                    subtitle: "Урамшуулал- 100000 бонус нэгж Урамшууллын нэгжний хугацаа- 10 хоног Ашиглах төрөл-Сүлжээний яриа, сүлжээний мессеж, задгай дата ",
+                           
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                title: "15000 карт",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "Урамшуулал- 150000 бонус нэгж Урамшууллын нэгжний хугацаа- 10 хоног Ашиглах төрөл-Сүлжээний яриа, сүлжээний мессеж, задгай дата ",
+                           
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              }]
+            }
+          }
+        }
+      };  
+
+      callSendAPI(messageData);
+  });
+   } 
+                 
+                         
   function ip(recipientId) {
     networking.getLatestNews((detail) => {
       newsDetail = detail; 
