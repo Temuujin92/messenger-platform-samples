@@ -886,6 +886,7 @@ function CUSTOM_salbarub(recipientId) {
 
   }
            
+
 function CUSTOM_salbaroron_tuv(recipientId) {
     networking.getLatestNews((detail) => {
       newsDetail = detail; 
@@ -911,7 +912,7 @@ function CUSTOM_salbaroron_tuv(recipientId) {
               },{
                  title: "Сэлэнгэ*Монгол улс, Сэлэнгэ аймаг, 2-р баг, Сэлэнгэ Плаза, Сэлэнгэ Скйател салбар* 9110-2043",
                 image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
-                subtitle: "Даваа-Баасан: 09:00-19:00 Бямба: 11:00-16:00 Ням: амарна",
+                subtitle: "Даваа-Баасан: 09:00-19:00 Бямба: 11:00-16:00 Ням: амарна ",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
                buttons: [ {
                   type: "postback",
@@ -919,7 +920,7 @@ function CUSTOM_salbaroron_tuv(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-               title: "Зүүн хараа*Монгол улс, Сэлэнгэ аймаг, Мандал сум, 3-р баг, Буян тахь ХХК-ийн байр, Зүүн хараа скайтел салбар* 9110-1235",
+               title: "Зүүн хараа*Монгол улс, Сэлэнгэ аймаг, Мандал сум, 3-р баг, Буян тахь ХХК-ийн байр, Зүүн хараа скайтел салба* 9110-1235",
                 image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба: 11:00-16:00 Ням:амарна",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -987,7 +988,8 @@ function CUSTOM_salbaroron_tuv(recipientId) {
                   type: "postback",
                   title: "Буцах",
                   payload: `CUSTOM_Back`,
-                },{
+                }],
+              },{
                  title: "Замын-Үүд*Монгол улс, Дорноговь аймаг, 1-р баг, сумын тамгын газрын зүүн талд, Замын-Үүд скайтел салбар* 9110-1233",
                 image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба, Ням: 11:00-16:00",
@@ -996,16 +998,18 @@ function CUSTOM_salbaroron_tuv(recipientId) {
                   type: "postback",
                   title: "Буцах",
                   payload: `CUSTOM_Back`,
-                },{
+                }],
+              },{
                  title: "Дархан 2*Монгол улс, Дархан-Уул аймаг, дархан сум, Алтансагс төвийн 1-р давхар* 9110-1434",
                 image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
-                subtitle: " Даваа-Баасан: 10:00-18:00 Бямба: 10:00-17:00 Ням: амарна",
+                subtitle: "Даваа-Баасан: 10:00-18:00 Бямба: 10:00-17:00 Ням: амарна",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
                buttons: [ {
                   type: "postback",
                   title: "Буцах",
                   payload: `CUSTOM_Back`,
-                },{
+                }],
+              },{
                  title: "Тариалан*Монгол улс, Хөвсгөл аймаг, Тариалан сум, 1-р баг Шивэртийн 4-4 тоот* 9110-1247",
                 image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
                 subtitle: "Даваа-Баасан: 10:00-18:00 Бямба: 11:00-16:00 Ням: амарна",
@@ -1026,7 +1030,9 @@ function CUSTOM_salbaroron_tuv(recipientId) {
   
 
   }
-
+                         
+                         
+                         
 function CUSTOM_salbaroron_zuun(recipientId) {
     networking.getLatestNews((detail) => {
       newsDetail = detail; 
@@ -1144,7 +1150,7 @@ function CUSTOM_salbaroron_baruun(recipientId) {
             payload: {
               template_type: "generic",
               elements: [{
-                title: "БАЯН-ӨЛГИЙ Монгол улс, Баян-Өлгий аймаг, 5-р баг, МХС ТӨК-н байр1-р давхар, Баян-Өлгий Скайтел салбар 9110-1204 ",
+                title: "БАЯН-ӨЛГИЙ Монгол улс, Баян-Өлгий аймаг, 5-р баг, МХС ТӨК-н байр1-р давхар, Баян-Өлгий Скайтел салбар 9110-1204",
                 image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
                 subtitle: "Даваа-Баасан: 08:00-18:00 Бямба: 11:00-16:00 Ням: амарна",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1164,7 +1170,7 @@ function CUSTOM_salbaroron_baruun(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-               title: "Ховд*Монгол улс, Ховд аймаг, 1-р баг, Алагтолгой баг, сонголт төв, Ховд Скайтел салбар* 9110-1255",
+                title: "Ховд*Монгол улс, Ховд аймаг, 1-р баг, Алагтолгой баг, сонголт төв, Ховд Скайтел салбар* 9110-1255",
                 image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
                 subtitle: "Даваа-Баасан: 08:00-18:00 Бямба: 11:00-16:00 Ням: амарна",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
