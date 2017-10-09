@@ -1912,7 +1912,117 @@ function CUSTOM_1_1_2_2(recipientId) {
   });
    }
 
+function CUSTOM_1_2_1_1(recipientId) {
+  networking.getLatestNews((detail) => {
+      newsDetail = detail; 
+      var messageData = {
+        recipient: {
+          id: recipientId
+        },
+        message: {
+          attachment: {
+            type: "template",
+            payload: {
+              template_type: "generic",
+              elements: [{
+                title: "1000 карт",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "Хоног:1 , Нэгж:1000, Дагалдах эрх:1024mb+Facebook",
+                   
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+              title: "2000 карт",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+               subtitle: "Хоног:3 , Нэгж:1000, Дагалдах эрх:1024mb+Facebook",
+                           
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                title: "3000 карт",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+               subtitle: "Хоног:5 , Нэгж:2000, Дагалдах эрх:1024mb+Facebook",
+                           
+            buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+              title: "5000 карт",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                 subtitle: "Хоног:15 , Нэгж:2500, Дагалдах эрх:1024mb+Facebook",
+                           
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+             title: "247 карт",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+             subtitle: "Хоног:30 , Нэгж:5000, Дагалдах эрх:Сүлжээндээ үнэгүй",
+                           
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+           title: "10000 карт",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+          subtitle: "Хоног:30 , Нэгж:5000, Дагалдах эрх:1024mb+Facebook",
+                           
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+            title: "15000 карт",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+               subtitle: "Хоног:45 , Нэгж:5000, Дагалдах эрх:1024mb+Facebook",
+                           
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+            title: "50000 карт",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "Хоног:180 , Нэгж:10000, Дагалдах эрх:5GB+Facebook",
+                           
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+            title: "90000 карт",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "Хоног:360 , Нэгж:10000, Дагалдах эрх:15GB+Facebook",
+                           
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              }]
+            }
+          }
+        }
+      };  
 
+      callSendAPI(messageData);
+  });
+   }
 
 function CUSTOM_1_2_1_2(recipientId) {
     networking.getLatestNews((detail) => {
