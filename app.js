@@ -3032,7 +3032,7 @@ function maunfunc(recipientId) {
         quick_replies: [
         {
           "content_type":"text",
-          "title":"Салбар",
+          "title":"Салбар байршил",
           "payload":"salbarMessage2"
         },
          {
