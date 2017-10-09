@@ -273,7 +273,7 @@ function receivedMessage(event) {
       case 'хүн бну':  
       case 'hun bnu':
       case '123': 
-        send123Buttons(senderID);
+        maunfunc(senderID);
         break; 
     case 'Get Started':
             CUSTOM_new(senderID); 
@@ -2698,7 +2698,12 @@ function receivedPostback(event) {
              case 'CUSTOM_3_1':
             CUSTOM_3_1(senderID); 
             break;   
-           
+               case 'tulhuurug':
+            tulhuurug(senderID); 
+            break; 
+                case 'CUSTOM_3_1':
+            CUSTOM_3_1(senderID); 
+            break; 
         case 'CUSTOM_3_1_1':
             CUSTOM_3_1_1(senderID); 
             break; 
@@ -2986,7 +2991,90 @@ function sendTextMessage2(recipientId, messageText) {
 
   callSendAPI(messageData);
 }
+function maunfunc(recipientId) {
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      text: "Тавтай морил",
+      metadata: "DEVELOPER_DEFINED_METADATA",
+        quick_replies: [
+        {
+          "content_type":"text",
+          "title":"Салбар",
+          "payload":"salbarMessage"
+        },
+         {
+          "content_type":"text",
+          "title":"Түхлүүр үг",
+          "payload":"CUSTOM_Back"
+        },
+             {
+          "content_type":"text",
+          "title":"Харилцах",
+          "payload":"CUSTOM_Back"
+        }
+       
+      ]
+    }
+  };
 
+  callSendAPI(messageData);
+}
+function maunfunc(recipientId) {
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      text: "Тавтай морил",
+      metadata: "DEVELOPER_DEFINED_METADATA",
+        quick_replies: [
+        {
+          "content_type":"text",
+          "title":"Салбар",
+          "payload":"salbarMessage"
+        },
+         {
+          "content_type":"text",
+          "title":"Түхлүүр үг",
+          "payload":"tulhuurug"
+        },
+             {
+          "content_type":"text",
+          "title":"Харилцах",
+          "payload":"CUSTOM_Back"
+        }
+       
+      ]
+    }
+  };
+
+  callSendAPI(messageData);
+}
+
+function tulhuurug(recipientId) {
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      text: "Тавтай морил",
+      metadata: "DEVELOPER_DEFINED_METADATA",
+        quick_replies: [
+        {
+          "content_type":"text",
+          "title":"Буцах",
+          "payload":"CUSTOM_Back"
+        }
+       
+      ]
+    }
+  };
+
+  callSendAPI(messageData);
+}
 /*
  * Send a button message using the Send API.
  *
