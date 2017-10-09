@@ -2718,7 +2718,7 @@ function receivedPostback(event) {
             sendTextMessage2(senderID, "Android утсанд сүлжээ орохгүй бол тохиргоог дараах заавраар хийнэMenu->Settings->More->Mobile networks->Search network automatically->Skytel сонгоно.");
             break;
               case ' CUSTOM_1_2_2_2':
-            sendTextMessage2(senderID, "Тус үйлчилгээнд бүртгүүлэхдээ үйлчилгээний үндсэн болон гэрээт салбарт өөрийн иргэний үнэмлэх, төрсний гэрчилгээний хамт ирнэ.123 дугаарт дараах утгуудыг илгээнэ.");
+            sendTextMessage3(senderID, "Тус үйлчилгээнд бүртгүүлэхдээ үйлчилгээний үндсэн болон гэрээт салбарт өөрийн иргэний үнэмлэх, төрсний гэрчилгээний хамт ирнэ.123 дугаарт дараах утгуудыг илгээнэ.");
             break;
             
              case ' CUSTOM_1_2_2_1':
@@ -2949,7 +2949,27 @@ function sendTextMessage2(recipientId, messageText) {
 
   callSendAPI(messageData);
 }
+function sendTextMessage3(recipientId, messageText) {
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      text: messageText,
+      metadata: "DEVELOPER_DEFINED_METADATA",
+        quick_replies: [
+        {
+          "content_type":"text",
+          "title":"Буцах",
+          "payload":"CUSTOM_Back"
+        },
+       
+      ]
+    }
+  };
 
+  callSendAPI(messageData);
+}
 /*
  * Send a button message using the Send API.
  *
