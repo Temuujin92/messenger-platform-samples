@@ -595,7 +595,33 @@ function CUSTOM_1_2(recipientId) {
   };  
   callSendAPI(messageData);
 }
-
+function CUSTOM_1_2_2(recipientId) {
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Shaker and Share",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_1_2_2_1",
+            title: "Танилцуулга"
+          }, {
+            type: "postback",
+            title: "Бүртгүүлэх",
+            payload: "CUSTOM_1_2_2_2"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
 function CUSTOM_1_3(recipientId) {
     
    var messageData = {
@@ -2620,12 +2646,8 @@ function receivedPostback(event) {
               case 'CUSTOM_1_2_1_3':
             CUSTOM_1_2_1_3(senderID); 
             break; 
-              case 'CUSTOM_1_2_2_1':
-            CUSTOM_1_2_2_1(senderID); 
-            break; 
-              case 'CUSTOM_1_2_2_2':
-            CUSTOM_1_2_2_2(senderID); 
-            break;
+            
+           
             
               case 'CUSTOM_3_2':
             CUSTOM_3_2(senderID); 
