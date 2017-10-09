@@ -2710,6 +2710,9 @@ function receivedPostback(event) {
           case 'CUSTOM_salbarub':
               CUSTOM_salbarub(senderID); 
             break;
+              case 'salbarMessage':
+              salbarMessage(senderID); 
+            break;
             
              case 'CUSTOM_salbaroron':
               CUSTOM_salbaroron(senderID); 
@@ -2991,37 +2994,7 @@ function sendTextMessage2(recipientId, messageText) {
 
   callSendAPI(messageData);
 }
-function maunfunc(recipientId) {
-  var messageData = {
-    recipient: {
-      id: recipientId
-    },
-    message: {
-      text: "Тавтай морил",
-      metadata: "DEVELOPER_DEFINED_METADATA",
-        quick_replies: [
-        {
-          "content_type":"text",
-          "title":"Салбар",
-          "payload":"salbarMessage"
-        },
-         {
-          "content_type":"text",
-          "title":"Түхлүүр үг",
-          "payload":"CUSTOM_Back"
-        },
-             {
-          "content_type":"text",
-          "title":"Харилцах",
-          "payload":"CUSTOM_Back"
-        }
-       
-      ]
-    }
-  };
 
-  callSendAPI(messageData);
-}
 function maunfunc(recipientId) {
   var messageData = {
     recipient: {
