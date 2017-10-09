@@ -823,7 +823,33 @@ function salbarMessage(recipientId) {
   };  
   callSendAPI(messageData);
 }
-
+function salbarMessage2(recipientId) {
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Салбар",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_salbarub",
+            title: "Улаанбаатар хот"
+          }, {
+            type: "postback",
+            title: "Орон нутаг ",
+            payload: "CUSTOM_salbaroron"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
 
 function CUSTOM_salbarub(recipientId) {
     networking.getLatestNews((detail) => {
@@ -2710,8 +2736,8 @@ function receivedPostback(event) {
           case 'CUSTOM_salbarub':
               CUSTOM_salbarub(senderID); 
             break;
-              case 'salbarMessage':
-              salbarMessage(senderID); 
+              case 'salbarMessage2':
+              salbarMessage2(senderID); 
             break;
             
              case 'CUSTOM_salbaroron':
@@ -3007,7 +3033,7 @@ function maunfunc(recipientId) {
         {
           "content_type":"text",
           "title":"Салбар",
-          "payload":"salbarMessage"
+          "payload":"salbarMessage2"
         },
          {
           "content_type":"text",
