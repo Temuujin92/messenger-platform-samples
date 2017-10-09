@@ -2717,11 +2717,11 @@ function receivedPostback(event) {
               case 'CUSTOM_3_3_2_1':
             sendTextMessage2(senderID, "Android утсанд сүлжээ орохгүй бол тохиргоог дараах заавраар хийнэMenu->Settings->More->Mobile networks->Search network automatically->Skytel сонгоно.");
             break;
-              case ' CUSTOM_1_2_2_2':
-            sendTextMessage3(senderID, "Тус үйлчилгээнд бүртгүүлэхдээ үйлчилгээний үндсэн болон гэрээт салбарт өөрийн иргэний үнэмлэх, төрсний гэрчилгээний хамт ирнэ.123 дугаарт дараах утгуудыг илгээнэ.");
+              case 'CUSTOM_1_2_2_2':
+            sendTextMessage2(senderID, "Тус үйлчилгээнд бүртгүүлэхдээ үйлчилгээний үндсэн болон гэрээт салбарт өөрийн иргэний үнэмлэх, төрсний гэрчилгээний хамт ирнэ.123 дугаарт дараах утгуудыг илгээнэ.+91******         100MB дотны хүндээ бэлэглэхDATA               Өөрийн шилжүүлэн авсан, шилжүүлсэн, үлдэгпэл шалгахLove 91****** 1₮-өөр дуудлага хийх хосоо бүртгэхSingle               Хосоо хасахад/1000₮ хураамжтай./Love Хосын дугаараа шалгахBDAY                Төрсөн өдрийн урамшууллыг хэрэглээг шалгах");
             break;
             
-             case ' CUSTOM_1_2_2_1':
+             case 'CUSTOM_1_2_2_1':
             sendTextMessage2(senderID, "14-22 насны хэрэглэгч Shake&Share үйлчилгээнд бүртгүүлэн дараах давуу талуудыг авна.1. Сар бүр 23 нас хүртлээ 100MB дата багц2. Ойр дотны 3 дугаарт сар бүр 100MB бэлэглэх, мөн бэлгэлэх бүртээ 100MB өөртөө авах3. Хэдэн ч хэрэглэгчээс 100MB дата бэлгэнд авах боломж4. Төрсөн өдрөөрөө сүлжээндээ яриа мессэж задгай датанд ашиглах 1 сая нэгж бэлгэнд авах5. Shake&Share-т бүртгэлтэй 1 дугаартайгаа 1₮-өөр дуудлага хийхболомжийг эдлэнэ.");
             break;
            
@@ -2949,27 +2949,7 @@ function sendTextMessage2(recipientId, messageText) {
 
   callSendAPI(messageData);
 }
-function sendTextMessage3(recipientId, messageText) {
-  var messageData = {
-    recipient: {
-      id: recipientId
-    },
-    message: {
-      text: messageText,
-      metadata: "DEVELOPER_DEFINED_METADATA",
-        quick_replies: [
-        {
-          "content_type":"text",
-          "title":"Буцах",
-          "payload":"CUSTOM_Back"
-        },
-       
-      ]
-    }
-  };
 
-  callSendAPI(messageData);
-}
 /*
  * Send a button message using the Send API.
  *
