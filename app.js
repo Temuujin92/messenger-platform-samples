@@ -1893,7 +1893,7 @@ function CUSTOM_1_1_2_2(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-               title: "40,000₮",
+               title: "100,000₮",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                   subtitle: "Яриа: 3000мин , Дата:12GB, Мессэж:Хязгааргүй,Суурь хураамж:",
                            
@@ -1913,7 +1913,7 @@ function CUSTOM_1_1_2_2(recipientId) {
    }
 
 function CUSTOM_1_2_1_1(recipientId) {
- networking.getLatestNews((detail) => {
+  networking.getLatestNews((detail) => {
       newsDetail = detail; 
       var messageData = {
         recipient: {
@@ -1925,19 +1925,9 @@ function CUSTOM_1_2_1_1(recipientId) {
             payload: {
               template_type: "generic",
               elements: [{
-                title: "10,000₮",
+                title: "1000 карт",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
-                subtitle: "Яриа: 250мин , Дата:200MB, Суурь хураамж:10,000₮",
-                         
-                buttons: [ {
-                  type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
-                }],
-              },{
-           title: "20,000₮",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
-             subtitle: "Яриа: 500мин , Дата:1GB, Мессэж:Хязгааргүй,Суурь хураамж:20,000₮",
+                subtitle: "Хоног:1 , Нэгж:1000, Дагалдах эрх:1024mb+Facebook",
                    
                buttons: [ {
                   type: "postback",
@@ -1945,9 +1935,10 @@ function CUSTOM_1_2_1_1(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-               title: "40,000₮",
+              title: "2000 карт",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
-                  subtitle: "Яриа: 1000мин , Дата:4GB, Мессэж:Хязгааргүй,Суурь хураамж:40,000₮",
+               subtitle: "Хоног:3 , Нэгж:1000, Дагалдах эрх:1024mb+Facebook
+",
                            
                buttons: [ {
                   type: "postback",
@@ -1955,9 +1946,10 @@ function CUSTOM_1_2_1_1(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-               title: "70,000₮",
+                title: "3000 карт",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
-                  subtitle: "Яриа: 2000мин , Дата:8GB, Мессэж:Хязгааргүй,Суурь хураамж:70,000₮",
+               subtitle: "Хоног:5 , Нэгж:2000, Дагалдах эрх:1024mb+Facebook
+",
                            
                buttons: [ {
                   type: "postback",
@@ -1965,9 +1957,63 @@ function CUSTOM_1_2_1_1(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-               title: "40,000₮",
+              title: "5000 карт",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
-                  subtitle: "Яриа: 3000мин , Дата:12GB, Мессэж:Хязгааргүй,Суурь хураамж:",
+                 subtitle: "Хоног:15 , Нэгж:2500, Дагалдах эрх:1024mb+Facebook
+",
+                           
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+             title: "247 карт",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+             subtitle: "Хоног:30 , Нэгж:5000, Дагалдах эрх:Сүлжээндээ үнэгүй",
+                           
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+           title: "10000 карт",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+          subtitle: "Хоног:30 , Нэгж:5000, Дагалдах эрх:1024mb+Facebook",
+                           
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+            title: "15000 карт",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+               subtitle: "Хоног:45 , Нэгж:5000, Дагалдах эрх:1024mb+Facebook
+",
+                           
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+            title: "50000 карт",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "Хоног:180 , Нэгж:10000, Дагалдах эрх:5GB+Facebook
+",
+                           
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+            title: "90000 карт",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "Хоног:360 , Нэгж:10000, Дагалдах эрх:15GB+Facebook
+",
                            
                buttons: [ {
                   type: "postback",
@@ -2574,18 +2620,14 @@ function receivedPostback(event) {
       case 'CUSTOM_2_1_1':
             CUSTOM_2_1_1(senderID); 
             break; 
-             case 'CUSTOM_2_1_2':
-            CUSTOM_2_1_2(senderID); 
-            break; 
+           
              case 'CUSTOM_2_2_1':
             CUSTOM_2_2_1(senderID); 
             break; 
              case 'CUSTOM_2_2_2':
             CUSTOM_2_2_2(senderID); 
             break; 
-             case 'CUSTOM_2_2_3':
-            CUSTOM_2_2_3(senderID); 
-            break; 
+           
              
               
               case 'CUSTOM_1_1':
@@ -2634,9 +2676,7 @@ function receivedPostback(event) {
               case 'CUSTOM_1_1_2_2':
             CUSTOM_1_1_2_2(senderID); 
             break; 
-              case 'CUSTOM_1_1_2_3':
-            CUSTOM_1_1_2_3(senderID); 
-            break; 
+            
               case 'CUSTOM_1_2_1_1':
             CUSTOM_1_2_1_1(senderID); 
             break; 
@@ -2719,6 +2759,9 @@ function receivedPostback(event) {
             break;
               case 'CUSTOM_1_2_2_2':
             sendTextMessage2(senderID, "Тус үйлчилгээнд бүртгүүлэхдээ үйлчилгээний үндсэн болон гэрээт салбарт өөрийн иргэний үнэмлэх, төрсний гэрчилгээний хамт ирнэ.123 дугаарт дараах утгуудыг илгээнэ.+91******         100MB дотны хүндээ бэлэглэхDATA               Өөрийн шилжүүлэн авсан, шилжүүлсэн, үлдэгпэл шалгахLove 91****** 1₮-өөр дуудлага хийх хосоо бүртгэхSingle               Хосоо хасахад/1000₮ хураамжтай./Love Хосын дугаараа шалгахBDAY                Төрсөн өдрийн урамшууллыг хэрэглээг шалгах");
+            break;
+              case 'CUSTOM_1_1_2_3':
+            sendTextMessage2(senderID, "•	Монголдоо хамгийн их Дата эрхтэй•	Дата эрхээ 3 хүртэлх дотны хүндээ хуваалцах /share/ боломжтой•	Монголдоо үүрэн болон суурин холбооны бүх сүлжээнд хүссэнээрээ ярина•	Суурь хураамжид татвар тооцсон тул НӨАТ нэмэгдэхгүй•	Төлбөр төлөх уян хатан боломжууд•	Олон улсын яриа, мессэж, дата роумингийн үйлчилгээг сонгох боломжтой•	21Mbps хүртэлх хурдаар интернэт ашиглах боломжтой");
             break;
             
              case 'CUSTOM_1_2_2_1':
