@@ -3035,16 +3035,7 @@ function maunfunc(recipientId) {
           "title":"Салбар байршил",
           "payload":"salbarMessage2"
         },
-         {
-          "content_type":"text",
-          "title":"Түхлүүр үг",
-          "payload":"tulhuurug"
-        },
-             {
-          "content_type":"text",
-          "title":"Харилцах",
-          "payload":"CUSTOM_Back"
-        }
+         
        
       ]
     }
