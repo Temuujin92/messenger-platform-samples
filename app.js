@@ -1937,8 +1937,7 @@ function CUSTOM_1_2_1_1(recipientId) {
               },{
               title: "2000 карт",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
-               subtitle: "Хоног:3 , Нэгж:1000, Дагалдах эрх:1024mb+Facebook
-",
+               subtitle: "Хоног:3 , Нэгж:1000, Дагалдах эрх:1024mb+Facebook",
                            
                buttons: [ {
                   type: "postback",
@@ -1948,10 +1947,9 @@ function CUSTOM_1_2_1_1(recipientId) {
               },{
                 title: "3000 карт",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
-               subtitle: "Хоног:5 , Нэгж:2000, Дагалдах эрх:1024mb+Facebook
-",
+               subtitle: "Хоног:5 , Нэгж:2000, Дагалдах эрх:1024mb+Facebook",
                            
-               buttons: [ {
+            buttons: [ {
                   type: "postback",
                   title: "Буцах",
                   payload: `CUSTOM_Back`,
@@ -1959,8 +1957,7 @@ function CUSTOM_1_2_1_1(recipientId) {
               },{
               title: "5000 карт",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
-                 subtitle: "Хоног:15 , Нэгж:2500, Дагалдах эрх:1024mb+Facebook
-",
+                 subtitle: "Хоног:15 , Нэгж:2500, Дагалдах эрх:1024mb+Facebook",
                            
                buttons: [ {
                   type: "postback",
@@ -1990,8 +1987,7 @@ function CUSTOM_1_2_1_1(recipientId) {
               },{
             title: "15000 карт",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
-               subtitle: "Хоног:45 , Нэгж:5000, Дагалдах эрх:1024mb+Facebook
-",
+               subtitle: "Хоног:45 , Нэгж:5000, Дагалдах эрх:1024mb+Facebook",
                            
                buttons: [ {
                   type: "postback",
@@ -2001,8 +1997,7 @@ function CUSTOM_1_2_1_1(recipientId) {
               },{
             title: "50000 карт",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
-                subtitle: "Хоног:180 , Нэгж:10000, Дагалдах эрх:5GB+Facebook
-",
+                subtitle: "Хоног:180 , Нэгж:10000, Дагалдах эрх:5GB+Facebook",
                            
                buttons: [ {
                   type: "postback",
@@ -2012,8 +2007,7 @@ function CUSTOM_1_2_1_1(recipientId) {
               },{
             title: "90000 карт",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
-                subtitle: "Хоног:360 , Нэгж:10000, Дагалдах эрх:15GB+Facebook
-",
+                subtitle: "Хоног:360 , Нэгж:10000, Дагалдах эрх:15GB+Facebook",
                            
                buttons: [ {
                   type: "postback",
