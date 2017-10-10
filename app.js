@@ -359,8 +359,8 @@ function receivedMessage(event) {
             sendNewsMessage(senderID); 
             break; 
 
-     // default:
-      //  sendTextMessage(senderID, messageText);
+      default:
+        maunfunc(senderID);
     }
   } else if (messageAttachments) {
     sendTextMessage(senderID, "Message with attachment received");
