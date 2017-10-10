@@ -280,7 +280,7 @@ function receivedMessage(event) {
             break;     
       case 'Салбар':
      case 'salbar':
-         CUSTOM_salbar_2(senderID); 
+         salbarMessage(senderID); 
             break;
          
        case 'ip': 
@@ -2299,20 +2299,24 @@ function maunfunc(recipientId) {
       id: recipientId
     },
     message: {
-      text: "Тавтай морил",
-      metadata: "DEVELOPER_DEFINED_METADATA",
-        quick_replies: [
-        {
-          "content_type":"text",
-          "title":"Салбар байршил",
-          "payload":"CUSTOM_salbar_2"
-        },
-         
-       
-      ]
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Салбар",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_salbar_2",
+            title: "Салбарууд"
+          }, {
+            type: "postback",
+            title: "tulhuur ug",
+            payload: "tulhuurug"
+          }]
+        }
+      }
     }
-  };
-
+  };  
   callSendAPI(messageData);
 }
 
@@ -2779,9 +2783,9 @@ function receivedPostback(event) {
           case 'CUSTOM_salbarub':
               CUSTOM_salbarub(senderID); 
             break;
-//              case 'CUSTOM_salbar_2':
-//              CUSTOM_salbar_2(senderID); 
-//            break;
+              case 'CUSTOM_salbar_2':
+              CUSTOM_salbar_2(senderID); 
+            break;
             
              case 'CUSTOM_salbaroron':
               CUSTOM_salbaroron(senderID); 
