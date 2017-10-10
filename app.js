@@ -1950,10 +1950,11 @@ function CUSTOM_1_2_1_1(recipientId) {
             type: "template",
             payload: {
               template_type: "generic",
+                 text: "Яриа-60₮,Мессэж сүлжээндээ-0, Бусад сүлжээнд 20₮,Дата-1MB 6₮",
               elements: [{
                 title: "1000 карт",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
-                subtitle: "Хоног:1 , Нэгж:1000, Дагалдах эрх:1024mb+Facebook",
+                subtitle: "Хоног:1 , Нэгж:1000, Дагалдах эрх:",
                    
                buttons: [ {
                   type: "postback",
@@ -2326,7 +2327,7 @@ function tulhuurug(recipientId) {
       id: recipientId
     },
     message: {
-      text: "Салбар                 Төлбөр Шинэ дугаар  Shake and share Урамшуулал Карт Нэгж  Смарт home УТҮ ДТҮ  Модем  Тохиргоо           Үнэ Лизинг Дата   Монголдоо  Өнгөлөг ",
+      text: "Салбар                           Төлбөр Шинэ дугаар  Shake and share Урамшуулал Карт Нэгж  Смарт home УТҮ ДТҮ  Модем  Тохиргоо           Үнэ Лизинг Дата   Монголдоо  Өнгөлөг ",
      
     }
   };
@@ -2676,9 +2677,7 @@ function receivedPostback(event) {
               case 'CUSTOM_3_2_2':
             CUSTOM_3_2_2(senderID); 
             break; 
-      case 'CUSTOM_2_1_1':
-            CUSTOM_2_1_1(senderID); 
-            break; 
+    
            
              case 'CUSTOM_2_2_1':
             CUSTOM_2_2_1(senderID); 
@@ -2810,7 +2809,7 @@ function receivedPostback(event) {
             sendTextMessage2(senderID, "Шинэ хэрэглэгчийн төрөл:•	SKYPHONE 3.0   •	ӨНГӨЛӨГ ДАТА   •	 ӨНГӨЛӨГ ХОНОГАнхаарах зүйлс:- Shake & Share үйлчилгээний энгийн шинэ дугаар 30 хоногтой үүснэ.");
             break;
       case 'CUSTOM_2_2_3':
-            sendTextMessage2(senderID, "Та Shake and share үйлчилгээний шинэ хэрэглэгч болоод дараах урамшуулалд хамрагдаарай(Энгийн дугаар-1,000₮-30хоног-1,000нэгж-180 хоног FACEBOOK)Мөн shake and share-н хэрэглэгчид маань дансаа цэнэглээд 09.30-хүртэл Shake хийх 3 эрхээ 6 болгох  боломжтой.");
+            sendTextMessage2(senderID, "Та Shake and share үйлчилгээний шинэ хэрэглэгч болоод дараах урамшуулалд хамрагдаарай(Энгийн дугаар-1,000₮-30хоног-1,000нэгж-180 хоног FACEBOOK)");
             break;
               case 'CUSTOM_2_3_1':
             sendTextMessage2(senderID, "2017/09/15-2017/12/31 дуустал  үргэлжлэх Smart Home урамшууллын мэдээлэлтэй танилцана уу.Скаймедиа үйлчилгээний гэрээ байгуулсан хэрэглэгч скайтелийн дугаараа бүртгэлтэй дугаарт бүртгүүлэн админ болж  5 гишүүн СКАЙтелийн дугаар бүртгэж групп үүсгэж ХООРОНДОО ХЯЗГААРГҮЙ ЯРИА, САР БҮР ДАТА, КИНО ГАЛЛЕРЕЙ багцын урамшуулал авна.Админ болон гишүүн дугаар нь Скайтелийн УТҮ болон ДТҮ-ний дугаар байна.Гишүүн дугаар нь IP76 дугаар, модемийн (NEX, Skynet) дугаар байх боломжгүй.");
