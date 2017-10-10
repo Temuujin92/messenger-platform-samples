@@ -279,12 +279,11 @@ function receivedMessage(event) {
             CUSTOM_new(senderID); 
             break;     
       case 'Салбар':
-     case 'salbar': 
+     case 'salbar':
+
             salbarMessage(senderID); 
             break;
-             case 'Салбар байршил': 
-            salbarMessage(senderID); 
-            break; 
+         
        case 'ip': 
             ip(senderID); 
             break; 
@@ -826,7 +825,7 @@ function salbarMessage(recipientId) {
   };  
   callSendAPI(messageData);
 }
-function salbarMessage2(recipientId) {
+function salbar_2(recipientId) {
     
    var messageData = {
     recipient: {
@@ -2739,8 +2738,8 @@ function receivedPostback(event) {
           case 'CUSTOM_salbarub':
               CUSTOM_salbarub(senderID); 
             break;
-              case 'salbarMessage2':
-              salbarMessage2(senderID); 
+              case 'salbar_2':
+              salbar_2(senderID); 
             break;
             
              case 'CUSTOM_salbaroron':
@@ -3036,7 +3035,7 @@ function maunfunc(recipientId) {
         {
           "content_type":"text",
           "title":"Салбар байршил",
-          "payload":"salbarMessage2"
+          "payload":"salbar_2"
         },
          
        
