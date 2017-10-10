@@ -2179,7 +2179,7 @@ function CUSTOM_1_2_1_2(recipientId) {
               elements: [{
                 title: "500 карт",
                 image_url: `https://external.fuln4-1.fna.fbcdn.net/safe_image.php?d=AQCE_gpLzrqfcPSX&url=http%3A%2F%2Fimagizer.imageshack.us%2F240x250f%2F924%2FWnhlm9.jpg&_nc_hash=AQAheXeemFAEjgi9`,
-                subtitle: "Хоног: , Нэгж:500, Үнэ: 500₮",
+                subtitle: "Хоног:, Нэгж:500, Үнэ: 500₮",
                          
                 buttons: [ {
                   type: "postback",
