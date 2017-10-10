@@ -281,7 +281,10 @@ function receivedMessage(event) {
       case 'Салбар':
      case 'salbar': 
             salbarMessage(senderID); 
-            break;         
+            break;
+             case 'Салбар байршил': 
+            salbarMessage2(senderID); 
+            break; 
        case 'ip': 
             ip(senderID); 
             break; 
