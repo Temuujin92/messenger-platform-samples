@@ -2417,7 +2417,7 @@ function maunfunc(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "Та доорх цэснээс сонгоно уу",
+          text: "Салбар",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_new",
