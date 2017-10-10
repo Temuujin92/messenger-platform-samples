@@ -343,7 +343,7 @@ function receivedMessage(event) {
             break;
              case 'Өнгөлөг':
             case 'өнгөлөг':
-         CUSTOM_1_2_2(senderID); 
+         CUSTOM_1_2_1(senderID); 
             break;
                  case 'Дата':
             case 'дата':
