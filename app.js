@@ -1948,7 +1948,7 @@ function CUSTOM_1_2_1_1(recipientId) {
         message: {
           attachment: {
             type: "template",
-               text: "Яриа-60₮,Мессэж сүлжээндээ-0, Бусад сүлжээнд 20₮,Дата-1MB 6₮",
+
             payload: {
               template_type: "generic",
                 
