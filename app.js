@@ -1804,7 +1804,7 @@ function CUSTOM_1_3_2(recipientId) {
         "top_element_style": "compact",
               elements: [{
                 title: "Facebook/Төлбөргүй/",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+               
                 subtitle: "Шинээр account үүсгэх Текст статус бичих Check in хийх Зураг харах Facebook-н видео үзэх Like, comment,share хийх Онлайн хүмүүс харах Friend request, notification харах",
                          
                 buttons: [ {
