@@ -1809,28 +1809,28 @@ function CUSTOM_1_3_2(recipientId) {
                          
                 buttons: [ {
                   type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
+                  title: "Цааш үзэх",
+                  payload: `CUSTOM_viewmore_1`,
                 }],
               },{
                title: "Messenger/төлбөргүй/",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+             
                 subtitle: "Чатлах Стикер илгээх  Зураг илгээх Зураг хүлээн авах Видео илгээх* Өөрт ирсэн видеог үзэх Voice record илгээх Өөрт ирсэн record сонсох Байршил илгээх",
                    
                buttons: [ {
                   type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
+                  title: "Цааш үзэх",
+                  payload: `CUSTOM_viewmore_2`,
                 }],
               },{
                  title: "Messenger/төлбөртэй/",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+              
                 subtitle: "Voice дуудлага хийх* Voice дуудлага хүлээн авах* Video дуудлага хийх* Video дуудлага хүлээн авах* Giphy хөдөлгөөнт зулаг илгээх",
                            
                buttons: [ {
                   type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
+                  title: "Цааш үзэх",
+                  payload: `CUSTOM_viewmore_3`,
                 }],
               }]
             }
@@ -2995,7 +2995,15 @@ function receivedPostback(event) {
               case 'CUSTOM_1_1_1_3':
             sendTextMessage2(senderID, "Та www.skytel.mn сайтад хандан орон зай, цаг хугацааны хязгаарлалтгүйгээр хэрэглээний төлбөрөө төлөх боломжтой. Төлбөр амжилттай төлөгдмөгц үйлчилгээний эрх шууд нээгдэх нь банкаар дамжуулан төлөхөөс илүү давуу талтай.Хэрэглэгч та доорх бүх арилжааны банкуудын төлбөрийн картыг ашиглах боломжтой.");
             break;
-           
+             case 'CUSTOM_viewmore_1':
+            sendTextMessage2(senderID, "Шинээр account үүсгэх Текст статус бичих Check in хийх Зураг харах Facebook-н видео үзэх Like, comment,share хийх Онлайн хүмүүс харах Friend request, notification харах.");
+            break;
+         case 'CUSTOM_viewmore_2':
+            sendTextMessage2(senderID, "Чатлах Стикер илгээх  Зураг илгээх Зураг хүлээн авах Видео илгээх* Өөрт ирсэн видеог үзэх Voice record илгээх Өөрт ирсэн record сонсох Байршил илгээх.");
+            break;
+             case 'CUSTOM_viewmore_3':
+            sendTextMessage2(senderID, "Voice дуудлага хийх* Voice дуудлага хүлээн авах* Video дуудлага хийх* Video дуудлага хүлээн авах* Giphy хөдөлгөөнт зулаг илгээх");
+            break;
             case 'CUSTOM_3_2_1':
             sendTextMessage2(senderID, "1515 дугаарт залгах юмуу online ажилтантай холбогдож үлдэгдлээ шалгана уу");
             break;
