@@ -292,7 +292,7 @@ function receivedMessage(event) {
             break;
              case 'Shake and Share':
             case 'shake and share':
-         CUSTOM_1_2_2_1(senderID); 
+         CUSTOM_1_2_2_1_key(senderID); 
             break;
               case 'Урамшуулал':
             case 'урамшуулал':
@@ -481,7 +481,52 @@ function startUramshuulal(recipientId) {
   };  
   callSendAPI(messageData);
 }
-
+function CUSTOM_1_2_2_1_key(recipientId) {
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Shake and Share",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_1_2_2_1",
+            title: "Shake and Share"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
+function   CUSTOM_2_1_1_key(recipientId) {
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Шинэ дугаар",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_2_1_1",
+            title: "Шинэ дугаар"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
 function CUSTOM_2_1(recipientId) {
     
    var messageData = {
