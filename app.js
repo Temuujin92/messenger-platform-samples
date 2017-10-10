@@ -826,8 +826,7 @@ function salbarMessage(recipientId) {
   callSendAPI(messageData);
 }
 function salbar_2(recipientId) {
-    
-   var messageData = {
+ var messageData = {
     recipient: {
       id: recipientId
     },
@@ -3035,7 +3034,7 @@ function maunfunc(recipientId) {
         {
           "content_type":"text",
           "title":"Салбар байршил",
-          "payload":"salbar_2"
+          "payload":"tulhuurug"
         },
          
        
