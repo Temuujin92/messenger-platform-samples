@@ -2063,6 +2063,7 @@ function CUSTOM_1_2_1_1(recipientId) {
 
             payload: {
               template_type: "generic",
+                   image_aspect_ratio: "square",
                 
               elements: [{
                 title: "1000 карт",
@@ -2176,6 +2177,7 @@ function CUSTOM_1_2_1_2(recipientId) {
             type: "template",
             payload: {
               template_type: "generic",
+                   image_aspect_ratio: "square",
               elements: [{
                 title: "500 карт",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
@@ -2298,6 +2300,7 @@ function CUSTOM_1_2_1_3(recipientId) {
             type: "template",
             payload: {
               template_type: "generic",
+                image_aspect_ratio: "square",
               elements: [{
                 title: "500 карт",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
