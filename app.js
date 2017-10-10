@@ -2178,8 +2178,8 @@ function CUSTOM_1_2_1_2(recipientId) {
               template_type: "generic",
               elements: [{
                 title: "500 карт",
-                image_url: `https://external.fuln4-1.fna.fbcdn.net/safe_image.php?d=AQCE_gpLzrqfcPSX&url=http%3A%2F%2Fimagizer.imageshack.us%2F240x250f%2F924%2FWnhlm9.jpg&_nc_hash=AQAheXeemFAEjgi9`,
-                subtitle: "Хоног: 0, Нэгж:500, Үнэ: 500₮",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "Хоног: , Нэгж:500, Үнэ: 500₮ ",
                          
                 buttons: [ {
                   type: "postback",
@@ -2417,7 +2417,7 @@ function maunfunc(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "Салбар",
+          text: "Та доорх цэснээс сонгоно уу",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_new",
@@ -3008,7 +3008,7 @@ function receivedPostback(event) {
             sendTextMessage2(senderID, "Android утасны интернэт тохиргоог дараах заавраар хийнэ Settings-More setting-Mobile network-Access point names Name-Skytel Apn / style, net, skytel / аль нэгийг бичээд хадгална. Утсаа унтрааж асаана.");
             break;
                case 'CUSTOM_2_1_1':
-            sendTextMessage2(senderID, "Шинэ хэрэглэгчийн төрөл:•	SKYPHONE 3.0   •	ӨНГӨЛӨГ ДАТА   •	 ӨНГӨЛӨГ ХОНОГАнхаарах зүйлс:- Shake & Share үйлчилгээний энгийн шинэ дугаар 30 хоногтой үүснэ.");
+            sendTextMessage2(senderID, "Та манай ДТҮ-ний шинэ хэрэглэгч болсноор дараах урамшуулалд хамрагдах боломжтой.Энгийн дугаарынбүртгэлийн хураамж 0₮/Барьцаа төлбөр байршуулна/. Эхний 3 сар суурь хураамж 30% хөнгөлнө ");
             break;
       case 'CUSTOM_2_2_3':
             sendTextMessage2(senderID, "Та Shake and share үйлчилгээний шинэ хэрэглэгч болоод дараах урамшуулалд хамрагдаарай(Энгийн дугаар-1,000₮-30хоног-1,000нэгж-180 хоног FACEBOOK)");
