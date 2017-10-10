@@ -2310,7 +2310,7 @@ function maunfunc(recipientId) {
             title: "Салбарууд"
           }, {
             type: "postback",
-            title: "tulhuur ug",
+            title: "Түлхүүр үг",
             payload: "tulhuurug"
           }]
         }
@@ -2326,16 +2326,8 @@ function tulhuurug(recipientId) {
       id: recipientId
     },
     message: {
-      text: "Тавтай морил",
-      metadata: "DEVELOPER_DEFINED_METADATA",
-        quick_replies: [
-        {
-          "content_type":"text",
-          "title":"Буцах",
-          "payload":"CUSTOM_Back"
-        }
-       
-      ]
+      text: "Салбар  Төлбөр Шинэ дугаар  Shake and share Урамшуулал Карт Нэгж  Смарт home УТҮ ДТҮ  Модем  Тохиргоо           Үнэ Лизинг Дата   Монголдоо  Өнгөлөг ",
+     
     }
   };
 
