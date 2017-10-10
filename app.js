@@ -1800,11 +1800,12 @@ function CUSTOM_1_3_2(recipientId) {
           attachment: {
             type: "template",
             payload: {
-              template_type: "generic",
+            "template_type": "list",
+        "top_element_style": "compact",
               elements: [{
                 title: "Facebook/Төлбөргүй/",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
-                subtitle: "* Шинээр account үүсгэ* Текст статус бичих * Check in хийх* Зураг харах* Facebook-н видео үзэх* Like, comment,share хийх* Онлайн хүмүүс харах* Friend request, notification харах",
+                subtitle: "Шинээр account үүсгэх Текст статус бичих Check in хийх Зураг харах Facebook-н видео үзэх Like, comment,share хийх Онлайн хүмүүс харах Friend request, notification харах",
                          
                 buttons: [ {
                   type: "postback",
@@ -1814,7 +1815,7 @@ function CUSTOM_1_3_2(recipientId) {
               },{
                title: "Messenger/төлбөргүй/",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
-                subtitle: "* Чатлах * Стикер илгээх * Зураг илгээх* Зураг хүлээн авах* Видео илгээх* Өөрт ирсэн видеог үзэх* Voice record илгээх* Өөрт ирсэн record сонсох* Байршил илгээх",
+                subtitle: "Чатлах Стикер илгээх  Зураг илгээх Зураг хүлээн авах Видео илгээх* Өөрт ирсэн видеог үзэх Voice record илгээх Өөрт ирсэн record сонсох Байршил илгээх",
                    
                buttons: [ {
                   type: "postback",
@@ -1822,9 +1823,9 @@ function CUSTOM_1_3_2(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "2Messenger/төлбөртэй/",
+                 title: "Messenger/төлбөртэй/",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
-                subtitle: "* Voice дуудлага хийх* Voice дуудлага хүлээн авах* Video дуудлага хийх* Video дуудлага хүлээн авах* Giphy хөдөлгөөнт зулаг илгээх",
+                subtitle: "Voice дуудлага хийх* Voice дуудлага хүлээн авах* Video дуудлага хийх* Video дуудлага хүлээн авах* Giphy хөдөлгөөнт зулаг илгээх",
                            
                buttons: [ {
                   type: "postback",
@@ -1915,16 +1916,16 @@ function CUSTOM_1_2_1(recipientId) {
           text: "УТҮ үндсэн үйлчилгээ",
           buttons:[{
             type: "postback",
-            payload: "CUSTOM_1_2_1_1",
+            payload: "Custom_middle_1",
             title: "Өнгөлөг дата"
           }, {
             type: "postback",
             title: "Өнгөлөг хоног",
-            payload: "CUSTOM_1_2_1_2"
+            payload: "Custom_middle_2"
           }, {
             type: "postback",
             title: "Skyphone 3.0",
-            payload: "CUSTOM_1_2_1_3"
+            payload: "Custom_middle_3"
           }]
         }
       }
@@ -2374,6 +2375,10 @@ function maunfunc(recipientId) {
           text: "Салбар",
           buttons:[{
             type: "postback",
+            payload: "CUSTOM_new",
+            title: "Үндсэн хуудас"
+          },{
+            type: "postback",
             payload: "CUSTOM_salbar_2",
             title: "Салбарууд"
           }, {
@@ -2387,7 +2392,84 @@ function maunfunc(recipientId) {
   };  
   callSendAPI(messageData);
 }
-
+function Custom_middle_1(recipientId) {
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Өнгөлөг Дата",
+          buttons:[{
+            type: "postback",
+            payload: "Custom_middle_1_1",
+            title: "Тариф"
+          },{
+            type: "postback",
+            payload: "CUSTOM_1_2_1_1",
+            title: "Өнгөлөг Дата"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
+function Custom_middle_2(recipientId) {
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Өнгөлөг Хоног",
+          buttons:[{
+            type: "postback",
+            payload: "Custom_middle_2_1",
+            title: "Тариф"
+          },{
+            type: "postback",
+            payload: "CUSTOM_1_2_1_2",
+            title: "Өнгөлөг Хоног"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
+function Custom_middle_3(recipientId) {
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Skyphone 3.0",
+          buttons:[{
+            type: "postback",
+            payload: "Custom_middle_3_1",
+            title: "Тариф"
+          },{
+            type: "postback",
+            payload: "CUSTOM_1_2_1_3",
+            title: "Skyphone 3.0"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
 function tulhuurug(recipientId) {
   var messageData = {
     recipient: {
@@ -2897,6 +2979,15 @@ function receivedPostback(event) {
             sendTextMessage2(senderID, "•	Монголдоо хамгийн их Дата эрхтэй•	Дата эрхээ 3 хүртэлх дотны хүндээ хуваалцах /share/ боломжтой•	Монголдоо үүрэн болон суурин холбооны бүх сүлжээнд хүссэнээрээ ярина•	Суурь хураамжид татвар тооцсон тул НӨАТ нэмэгдэхгүй•	Төлбөр төлөх уян хатан боломжууд•	Олон улсын яриа, мессэж, дата роумингийн үйлчилгээг сонгох боломжтой•	21Mbps хүртэлх хурдаар интернэт ашиглах боломжтой");
             break;
             
+              case 'Custom_middle_1_1':
+            sendTextMessage2(senderID, "Яриа-60₮, Мессэж-(Бусад сүлжээ20₮,Сүлжээндээ 0₮),Дата-1MB 6₮");
+            break;
+            case 'Custom_middle_2_1':
+            sendTextMessage2(senderID, "Яриа-60₮, Мессэж-20₮,Дата-1MB 12₮");
+            break;
+            case 'Custom_middle_3_1':
+            sendTextMessage2(senderID, "Яриа-30₮, Мессэж-(Бусад сүлжээ 20₮,Сүлжээндээ 0₮),Дата-1MB 12₮");
+            break;
              case 'CUSTOM_1_2_2_1':
             sendTextMessage2(senderID, "14-22 насны хэрэглэгч Shake&Share үйлчилгээнд бүртгүүлэн дараах давуу талуудыг авна.1. Сар бүр 23 нас хүртлээ 100MB дата багц2. Ойр дотны 3 дугаарт сар бүр 100MB бэлэглэх, мөн бэлгэлэх бүртээ 100MB өөртөө авах3. Хэдэн ч хэрэглэгчээс 100MB дата бэлгэнд авах боломж4. Төрсөн өдрөөрөө сүлжээндээ яриа мессэж задгай датанд ашиглах 1 сая нэгж бэлгэнд авах5. Shake&Share-т бүртгэлтэй 1 дугаартайгаа 1₮-өөр дуудлага хийхболомжийг эдлэнэ.");
             break;
