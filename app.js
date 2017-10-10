@@ -282,7 +282,73 @@ function receivedMessage(event) {
      case 'salbar':
          salbarMessage(senderID); 
             break;
-         
+            case 'Төлбөр':
+            case 'төлбөр':
+         CUSTOM_1_1_1_1(senderID); 
+            break;
+           case 'Шинэ дугаар':
+            case 'шинэ дугаар':
+         CUSTOM_2_1_1(senderID); 
+            break;
+             case 'Shake and Share':
+            case 'shake and share':
+         CUSTOM_1_2_2_1(senderID); 
+            break;
+              case 'Урамшуулал':
+            case 'урамшуулал':
+         CUSTOM_2(senderID); 
+            break;
+              case 'Карт':
+            case 'карт':
+         CUSTOM_2_2_2(senderID); 
+            break;
+             case 'Нэгж':
+            case 'нэгж':
+         CUSTOM_2_2_2(senderID); 
+            break;    
+          case 'Смарт home':
+            case 'смарт home':
+         CUSTOM_2_3(senderID); 
+            break;
+             case 'УТҮ':
+            CUSTOM_1_2(senderID); 
+            break; 
+                case 'ДТҮ':
+            CUSTOM_1_1(senderID); 
+            break;
+              case 'Модем':
+            case 'модем':
+         CUSTOM_3_2(senderID); 
+            break;
+            
+               case 'Тохиргоо':
+            case 'тохиргоо':
+         CUSTOM_3_3(senderID); 
+            break;
+              case 'Үнэ':
+            case 'үнэ':
+         CUSTOM_3_1(senderID); 
+            break;
+               case 'Лизинг':
+            case 'лизинг':
+         CUSTOM_2_1_2(senderID); 
+            break;
+               case 'Дата':
+            case 'дата':
+         CUSTOM_1_3(senderID); 
+            break;
+                 case 'Монголдоо':
+            case 'монголдоо':
+         CUSTOM_1_1_2(senderID); 
+            break;
+             case 'Өнгөлөг':
+            case 'өнгөлөг':
+         CUSTOM_1_2_2(senderID); 
+            break;
+                 case 'Дата':
+            case 'дата':
+         CUSTOM_1_3(senderID); 
+            break;
        case 'ip': 
             ip(senderID); 
             break; 
