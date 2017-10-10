@@ -2893,9 +2893,6 @@ function receivedPostback(event) {
               case 'CUSTOM_1_2_1_3':
             CUSTOM_1_2_1_3(senderID); 
             break; 
-               case 'Custom_middle_1':
-            Custom_middle_1(senderID); 
-            break; 
             
            
             
