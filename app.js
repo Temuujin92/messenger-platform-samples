@@ -2066,7 +2066,7 @@ function CUSTOM_1_2_1_1(recipientId) {
                 
               elements: [{
                 title: "1000 карт",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_a0e6334629accebab4e78569ab2da6640ebb69d6.png`,
                 subtitle: "Хоног:1 , Нэгж:1000, Дагалдах эрх:",
                    
                buttons: [ {
@@ -2076,7 +2076,7 @@ function CUSTOM_1_2_1_1(recipientId) {
                 }],
               },{
               title: "2000 карт",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_9a38a0807860d530143a6f5146f71b0670cb2974.png`,
                subtitle: "Хоног:3 , Нэгж:1000, Дагалдах эрх:1024mb+Facebook",
                            
                buttons: [ {
@@ -2086,7 +2086,7 @@ function CUSTOM_1_2_1_1(recipientId) {
                 }],
               },{
                 title: "3000 карт",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_bf98815ac7832e96f94233039120012d1bfb0eb5.png`,
                subtitle: "Хоног:5 , Нэгж:2000, Дагалдах эрх:1024mb+Facebook",
                            
             buttons: [ {
@@ -2096,7 +2096,7 @@ function CUSTOM_1_2_1_1(recipientId) {
                 }],
               },{
               title: "5000 карт",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_eeec299743d691ae0c6567cd2e89329739e5f9e7.png`,
                  subtitle: "Хоног:15 , Нэгж:2500, Дагалдах эрх:1024mb+Facebook",
                            
                buttons: [ {
@@ -2106,7 +2106,7 @@ function CUSTOM_1_2_1_1(recipientId) {
                 }],
               },{
              title: "247 карт",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `http://www.skytel.mn:8080/uploads/products/201704/200/uploaded_c6888eb5268b0a1fec26930a09a444cf124e5bcc.png`,
              subtitle: "Хоног:30 , Нэгж:5000, Дагалдах эрх:Сүлжээндээ үнэгүй",
                            
                buttons: [ {
@@ -2116,7 +2116,7 @@ function CUSTOM_1_2_1_1(recipientId) {
                 }],
               },{
            title: "10000 карт",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_638cc78929de4f075374690bc67ac421b44ed4f4.png`,
           subtitle: "Хоног:30 , Нэгж:5000, Дагалдах эрх:1024mb+Facebook",
                            
                buttons: [ {
@@ -2126,7 +2126,7 @@ function CUSTOM_1_2_1_1(recipientId) {
                 }],
               },{
             title: "15000 карт",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_78ea3d3d8dff80624be9db48d08de102981c400b.png`,
                subtitle: "Хоног:45 , Нэгж:5000, Дагалдах эрх:1024mb+Facebook",
                            
                buttons: [ {
@@ -2136,7 +2136,7 @@ function CUSTOM_1_2_1_1(recipientId) {
                 }],
               },{
             title: "50000 карт",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_90b396f63b8ab79433aa69d623fc0c467841bfd1.png`,
                 subtitle: "Хоног:180 , Нэгж:10000, Дагалдах эрх:5GB+Facebook",
                            
                buttons: [ {
@@ -2146,7 +2146,7 @@ function CUSTOM_1_2_1_1(recipientId) {
                 }],
               },{
             title: "90000 карт",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_9bb3a85c1fbee834d24439f29bbc22ace90712f9.png`,
                 subtitle: "Хоног:360 , Нэгж:10000, Дагалдах эрх:15GB+Facebook",
                            
                buttons: [ {
@@ -2188,7 +2188,7 @@ function CUSTOM_1_2_1_2(recipientId) {
                 }],
               },{
                 title: "1000 карт",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_a0e6334629accebab4e78569ab2da6640ebb69d6.png`,
                 subtitle: "Хоног:5 , Нэгж:1000, Үнэ: 1000₮ ",
                    
                buttons: [ {
@@ -2198,7 +2198,7 @@ function CUSTOM_1_2_1_2(recipientId) {
                 }],
               },{
               title: "2000 карт",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_9a38a0807860d530143a6f5146f71b0670cb2974.png`,
                 subtitle: "Хоног: 20, Нэгж:2000, Үнэ: 2000₮ ",
                            
                buttons: [ {
@@ -2208,7 +2208,7 @@ function CUSTOM_1_2_1_2(recipientId) {
                 }],
               },{
                 title: "3000 карт",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_bf98815ac7832e96f94233039120012d1bfb0eb5.png`,
                 subtitle: "Хоног:30 , Нэгж:3000, Үнэ: 3000₮ ",
                            
                buttons: [ {
@@ -2218,7 +2218,7 @@ function CUSTOM_1_2_1_2(recipientId) {
                 }],
               },{
               title: "5000 карт",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_eeec299743d691ae0c6567cd2e89329739e5f9e7.png`,
                 subtitle: "Хоног: 50, Нэгж:5000, Үнэ: 5000₮ ",
                            
                buttons: [ {
@@ -2228,7 +2228,7 @@ function CUSTOM_1_2_1_2(recipientId) {
                 }],
               },{
              title: "6000 карт",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `http://www.skytel.mn:8080/uploads/products/201704/200/uploaded_03a3254fd07471e48093550a324782f317be4a72.png`,
                 subtitle: "Хоног:60 , Нэгж:6000, Үнэ: 6000₮ ",
                            
                buttons: [ {
@@ -2238,7 +2238,7 @@ function CUSTOM_1_2_1_2(recipientId) {
                 }],
               },{
            title: "10000 карт",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_638cc78929de4f075374690bc67ac421b44ed4f4.png`,
                 subtitle: "Хоног:100 , Нэгж:10000, Үнэ: 10000₮ ",
                            
                buttons: [ {
@@ -2248,7 +2248,7 @@ function CUSTOM_1_2_1_2(recipientId) {
                 }],
               },{
             title: "15000 карт",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_78ea3d3d8dff80624be9db48d08de102981c400b.png`,
                 subtitle: "Хоног:150 , Нэгж:15000, Үнэ: 15000₮ ",
                            
                buttons: [ {
@@ -2258,7 +2258,7 @@ function CUSTOM_1_2_1_2(recipientId) {
                 }],
               },{
             title: "50000 карт",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_90b396f63b8ab79433aa69d623fc0c467841bfd1.png`,
                 subtitle: "Хоног:180 , Нэгж:50000, Үнэ: 50000₮ ",
                            
                buttons: [ {
@@ -2268,7 +2268,7 @@ function CUSTOM_1_2_1_2(recipientId) {
                 }],
               },{
             title: "90000 карт",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_9bb3a85c1fbee834d24439f29bbc22ace90712f9.png`,
                 subtitle: "Хоног:360 , Нэгж:90000, Үнэ: 90000₮ ",
                            
                buttons: [ {
@@ -2310,7 +2310,7 @@ function CUSTOM_1_2_1_3(recipientId) {
                 }],
               },{
                 title: "1000 карт",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_a0e6334629accebab4e78569ab2da6640ebb69d6.png`,
                 subtitle: "Хоног:2 , Нэгж:1000, Үнэ: 1000₮ ",
                    
                buttons: [ {
@@ -2320,7 +2320,7 @@ function CUSTOM_1_2_1_3(recipientId) {
                 }],
               },{
               title: "2000 карт",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_9a38a0807860d530143a6f5146f71b0670cb2974.png`,
                 subtitle: "Хоног: 5, Нэгж:2000, Үнэ: 2000₮ ",
                            
                buttons: [ {
@@ -2330,7 +2330,7 @@ function CUSTOM_1_2_1_3(recipientId) {
                 }],
               },{
                 title: "3000 карт",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_bf98815ac7832e96f94233039120012d1bfb0eb5.png`,
                 subtitle: "Хоног:10 , Нэгж:3000, Үнэ: 3000₮ ",
                            
                buttons: [ {
@@ -2340,7 +2340,7 @@ function CUSTOM_1_2_1_3(recipientId) {
                 }],
               },{
               title: "5000 карт",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_eeec299743d691ae0c6567cd2e89329739e5f9e7.png`,
                 subtitle: "Хоног: 30, Нэгж:5000, Үнэ: 5000₮ ",
                            
                buttons: [ {
@@ -2350,7 +2350,7 @@ function CUSTOM_1_2_1_3(recipientId) {
                 }],
               },{
              title: "6000 карт",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `http://www.skytel.mn:8080/uploads/products/201704/200/uploaded_03a3254fd07471e48093550a324782f317be4a72.png`,
                 subtitle: "Хоног:3  0 , Нэгж:6000, Үнэ: 6000₮ ",
                            
                buttons: [ {
@@ -2360,7 +2360,7 @@ function CUSTOM_1_2_1_3(recipientId) {
                 }],
               },{
            title: "10000 карт",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_638cc78929de4f075374690bc67ac421b44ed4f4.png`,
                 subtitle: "Хоног:30 , Нэгж:10000, Үнэ: 10000₮ ",
                            
                buttons: [ {
@@ -2370,7 +2370,7 @@ function CUSTOM_1_2_1_3(recipientId) {
                 }],
               },{
             title: "15000 карт",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_78ea3d3d8dff80624be9db48d08de102981c400b.png`,
                 subtitle: "Хоног:45 , Нэгж:15000, Үнэ: 15000₮ ",
                            
                buttons: [ {
@@ -2380,7 +2380,7 @@ function CUSTOM_1_2_1_3(recipientId) {
                 }],
               },{
             title: "50000 карт",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_90b396f63b8ab79433aa69d623fc0c467841bfd1.png`,
                 subtitle: "Хоног:180 , Нэгж:50000, Үнэ: 50000₮ ",
                            
                buttons: [ {
@@ -2390,7 +2390,7 @@ function CUSTOM_1_2_1_3(recipientId) {
                 }],
               },{
             title: "90000 карт",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_9bb3a85c1fbee834d24439f29bbc22ace90712f9.png`,
                 subtitle: "Хоног:360 , Нэгж:90000, Үнэ: 90000₮ ",
                            
                buttons: [ {
