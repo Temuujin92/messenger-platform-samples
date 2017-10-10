@@ -280,7 +280,7 @@ function receivedMessage(event) {
             break;     
       case 'Салбар':
      case 'salbar':
-         salbarMessage(senderID); 
+         CUSTOM_salbar_2(senderID); 
             break;
          
        case 'ip': 
@@ -2779,9 +2779,9 @@ function receivedPostback(event) {
           case 'CUSTOM_salbarub':
               CUSTOM_salbarub(senderID); 
             break;
-              case 'CUSTOM_salbar_2':
-              CUSTOM_salbar_2(senderID); 
-            break;
+//              case 'CUSTOM_salbar_2':
+//              CUSTOM_salbar_2(senderID); 
+//            break;
             
              case 'CUSTOM_salbaroron':
               CUSTOM_salbaroron(senderID); 
