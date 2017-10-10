@@ -3034,7 +3034,7 @@ function maunfunc(recipientId) {
         {
           "content_type":"text",
           "title":"Салбар байршил",
-          "payload":"tulhuurug"
+          "payload":"CUSTOM_3_1"
         },
          
        
