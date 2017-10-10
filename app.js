@@ -1948,9 +1948,10 @@ function CUSTOM_1_2_1_1(recipientId) {
         message: {
           attachment: {
             type: "template",
+               text: "Яриа-60₮,Мессэж сүлжээндээ-0, Бусад сүлжээнд 20₮,Дата-1MB 6₮",
             payload: {
               template_type: "generic",
-                 text: "Яриа-60₮,Мессэж сүлжээндээ-0, Бусад сүлжээнд 20₮,Дата-1MB 6₮",
+                
               elements: [{
                 title: "1000 карт",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
