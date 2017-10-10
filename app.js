@@ -2294,7 +2294,50 @@ function CUSTOM_1_2_1_3(recipientId) {
       callSendAPI(messageData);
   });
    }
+function maunfunc(recipientId) {
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      text: "Тавтай морил",
+      metadata: "DEVELOPER_DEFINED_METADATA",
+        quick_replies: [
+        {
+          "content_type":"text",
+          "title":"Салбар байршил",
+          "payload":"salbar_2"
+        },
+         
+       
+      ]
+    }
+  };
 
+  callSendAPI(messageData);
+}
+
+function tulhuurug(recipientId) {
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      text: "Тавтай морил",
+      metadata: "DEVELOPER_DEFINED_METADATA",
+        quick_replies: [
+        {
+          "content_type":"text",
+          "title":"Буцах",
+          "payload":"CUSTOM_Back"
+        }
+       
+      ]
+    }
+  };
+
+  callSendAPI(messageData);
+}
 
 
 function CUSTOM_1_1_1_1(recipientId) {
@@ -3022,50 +3065,7 @@ function sendTextMessage2(recipientId, messageText) {
   callSendAPI(messageData);
 }
 
-function maunfunc(recipientId) {
-  var messageData = {
-    recipient: {
-      id: recipientId
-    },
-    message: {
-      text: "Тавтай морил",
-      metadata: "DEVELOPER_DEFINED_METADATA",
-        quick_replies: [
-        {
-          "content_type":"text",
-          "title":"Салбар байршил",
-          "payload":"CUSTOM_3_1"
-        },
-         
-       
-      ]
-    }
-  };
 
-  callSendAPI(messageData);
-}
-
-function tulhuurug(recipientId) {
-  var messageData = {
-    recipient: {
-      id: recipientId
-    },
-    message: {
-      text: "Тавтай морил",
-      metadata: "DEVELOPER_DEFINED_METADATA",
-        quick_replies: [
-        {
-          "content_type":"text",
-          "title":"Буцах",
-          "payload":"CUSTOM_Back"
-        }
-       
-      ]
-    }
-  };
-
-  callSendAPI(messageData);
-}
 /*
  * Send a button message using the Send API.
  *
