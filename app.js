@@ -461,7 +461,7 @@ function startUramshuulal(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "Урамшуулал",
+          text: "дараах цэснээс сонгоно уу",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_2_1",
@@ -538,7 +538,7 @@ function CUSTOM_2_1(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "ДТҮ-ний урамшуулал",
+          text: "дараах цэснээс сонгоно уу",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_2_1_1",
@@ -565,7 +565,7 @@ function CUSTOM_2_2(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "УТҮ-ний урамшуулал",
+          text: "дараах цэснээс сонгоно уу",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_2_2_1",
@@ -596,7 +596,7 @@ function CUSTOM_2_3(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "Smart home",
+          text: "дараах цэснээс сонгоно уу",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_2_3_1",
@@ -624,7 +624,7 @@ function CUSTOM_1(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "Үндсэн үйлчилгээ",
+          text: "дараах цэснээс сонгоно уу",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_1_1",
@@ -655,7 +655,7 @@ function CUSTOM_1_1(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "Дараа төлбөрт үйлчилгээ",
+          text: "дараах цэснээс сонгоно уу",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_1_1_1",
@@ -687,7 +687,7 @@ function CUSTOM_1_2(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "Урьдчилсан төлбөрт үйлчилгээ",
+          text: "дараах цэснээс сонгоно уу",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_1_2_1",
@@ -773,7 +773,7 @@ function CUSTOM_1_1_1(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "Төлбөр тооцоо",
+          text: "дараах цэснээс сонгоно уу,
           buttons:[{
             type: "postback",
             payload: "CUSTOM_1_1_1_1",
@@ -804,7 +804,7 @@ function CUSTOM_1_1_2(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "Монголдоо",
+          text: "дараах цэснээс сонгоно уу",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_1_1_2_1",
@@ -885,7 +885,7 @@ function CUSTOM_3(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "Гар утас, төхөөрөмж",
+          text: "дараах цэснээс сонгоно уу",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_3_1_1",
@@ -1461,7 +1461,7 @@ function CUSTOM_salbaroron(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "Орон нутаг салбар",
+          text: "дараах цэснээс сонгоно уу",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_salbaroron_tuv",
@@ -1517,7 +1517,7 @@ function CUSTOM_3_2(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "Модем",
+          text: "дараах цэснээс сонгоно уу",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_3_2_1",
@@ -1630,7 +1630,7 @@ function CUSTOM_3_3(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "Модем",
+          text: "гар утасны тохиргоо",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_3_3_1",
@@ -1657,7 +1657,7 @@ function CUSTOM_3_3_1(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "Модем",
+          text: "гар утасны тохиргоо",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_3_3_1_1",
@@ -2420,7 +2420,7 @@ function maunfunc(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "Салбар",
+          text: "та дараах цэснээс сонгоно уу",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_new",
@@ -3029,7 +3029,7 @@ function receivedPostback(event) {
             sendTextMessage2(senderID, "Android утсанд сүлжээ орохгүй бол тохиргоог дараах заавраар хийнэMenu->Settings->More->Mobile networks->Search network automatically->Skytel сонгоно.");
             break;
               case 'CUSTOM_1_2_2_2':
-            sendTextMessage2(senderID, "Тус үйлчилгээнд бүртгүүлэхдээ үйлчилгээний үндсэн болон гэрээт салбарт өөрийн иргэний үнэмлэх, төрсний гэрчилгээний хамт ирнэ.123 дугаарт дараах утгуудыг илгээнэ.+91******         100MB дотны хүндээ бэлэглэхDATA               Өөрийн шилжүүлэн авсан, шилжүүлсэн, үлдэгпэл шалгахLove 91****** 1₮-өөр дуудлага хийх хосоо бүртгэхSingle               Хосоо хасахад/1000₮ хураамжтай./Love Хосын дугаараа шалгахBDAY                Төрсөн өдрийн урамшууллыг хэрэглээг шалгах");
+            sendTextMessage2(senderID, "Тус үйлчилгээнд бүртгүүлэхдээ үйлчилгээний үндсэн болон гэрээт салбарт өөрийн иргэний үнэмлэх, төрсний гэрчилгээний хамт ирнэ.                      123 дугаарт дараах утгуудыг илгээнэ.                               +91******100MB дотны хүндээ бэлэглэх                             DATA Өөрийн шилжүүлэн авсан, шилжүүлсэн, үлдэгпэл шалгах                                 Love 91****** 1₮-өөр дуудлага хийх хосоо бүртгэх                                      Single Хосоо хасахад/1000₮ хураамжтай.                                Love Хосын дугаараа шалгах                               BDAYТөрсөн өдрийн урамшууллыг хэрэглээг шалгах");
             break;
               case 'CUSTOM_1_1_2_3':
             sendTextMessage2(senderID, "•	Монголдоо хамгийн их Дата эрхтэй•	Дата эрхээ 3 хүртэлх дотны хүндээ хуваалцах /share/ боломжтой•	Монголдоо үүрэн болон суурин холбооны бүх сүлжээнд хүссэнээрээ ярина•	Суурь хураамжид татвар тооцсон тул НӨАТ нэмэгдэхгүй•	Төлбөр төлөх уян хатан боломжууд•	Олон улсын яриа, мессэж, дата роумингийн үйлчилгээг сонгох боломжтой•	21Mbps хүртэлх хурдаар интернэт ашиглах боломжтой");
