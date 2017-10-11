@@ -773,7 +773,7 @@ function CUSTOM_1_1_1(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "дараах цэснээс сонгоно уу,
+          text: "дараах цэснээс сонгоно уу",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_1_1_1_1",
