@@ -1200,7 +1200,89 @@ function CUSTOM_salbaroron_tuv(recipientId) {
   
 
   }
+  function CUSTOM_3_2_2(recipientId) {
+    networking.getLatestNews((detail) => {
+      newsDetail = detail; 
+      var messageData = {
+        recipient: {
+          id: recipientId
+        },
+        message: {
+          attachment: {
+            type: "template",
+            payload: {
+              template_type: "generic",
+              elements: [{
+                title: "Админ дугаараас гишүүн бүртгэх хүсэлт илгээх",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "+91XXXXXХ Гэж бичээд  555 дугаарт мессеж илгээнэ",
+                            
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "Гэрээний дугаар харах",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "Geree гэж бичээд  555 дугаарт мессеж илгээнэ",
                          
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+               title: "Бүртгэлтэй гишүүн дугааруудын жагсаалт харах",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "All  гэж бичээд  555 дугаарт мессеж илгээнэ",
+                            
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "Гишүүн дугаар хасах",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "Даваа-Баасан: 09:00-19:00 Бямба: 11:00-16:00 Ням:амарна",
+                item_url: `-91XXXXXXгэж бичээд  555 дугаарт мессеж илгээнэ`,               
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "Дата үлдэгдэл шалгах",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "DATA гэж бичээд  555 дугаарт мессеж илгээнэ",
+                            
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "Гишүүн дугаар группт нэмэх хүсэлт хүлээн авах",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "Ok гэж бичээд  555 дугаарт мессеж илгээнэ",
+                         
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },]
+            }
+          }
+        }
+      };  
+
+      callSendAPI(messageData);
+  });
+  
+
+  }                       
                          
                          
 function CUSTOM_salbaroron_zuun(recipientId) {
@@ -2982,6 +3064,9 @@ function receivedPostback(event) {
               case 'CUSTOM_salbar_2':
               CUSTOM_salbar_2(senderID); 
             break;
+            case 'CUSTOM_2_3_2':
+              CUSTOM_2_3_2(senderID); 
+            break;
             
              case 'CUSTOM_salbaroron':
               CUSTOM_salbaroron(senderID); 
@@ -3019,9 +3104,8 @@ function receivedPostback(event) {
               case 'CUSTOM_2_3_1':
             sendTextMessage2(senderID, "2017/09/15-2017/12/31 дуустал  үргэлжлэх Smart Home урамшууллын мэдээлэлтэй танилцана уу.Скаймедиа үйлчилгээний гэрээ байгуулсан хэрэглэгч скайтелийн дугаараа бүртгэлтэй дугаарт бүртгүүлэн админ болж  5 гишүүн СКАЙтелийн дугаар бүртгэж групп үүсгэж ХООРОНДОО ХЯЗГААРГҮЙ ЯРИА, САР БҮР ДАТА, КИНО ГАЛЛЕРЕЙ багцын урамшуулал авна.Админ болон гишүүн дугаар нь Скайтелийн УТҮ болон ДТҮ-ний дугаар байна.Гишүүн дугаар нь IP76 дугаар, модемийн (NEX, Skynet) дугаар байх боломжгүй.");
             break;
-             case 'CUSTOM_2_3_2':
-            sendTextMessage2(senderID, "СКАЙМЕДИА-н гэрээ байгуулж админ дугаар бүртгүүлнэ. 	Админ дугаар нь гишүүн дугааруудаа бүртгэж, хасах, харах эрхтэй байна.	Админ дугаар нь 5 гишүүн дугаар нэмэх боломжтой.	 Гишүүн дугаар нь Скайтелийн УТҮ болон ДТҮ-ний дугаар байна.	Гишүүн дугаар нь группт нэмэх хүсэлт ирснээс хойш 30 минутын дотор баталгаажуулна.	Админ дугаар нь гишүүн хасахдаа зөвхөн тухайн сарын сүүлийн өдөр хасах боломжтой.	Группээс гишүүн дугаар нэмэх, хасахад төлбөргүй	Нэг дугаар нь зөвхөн нэг группт бүртгэгдэх боломжтой.	Гишүүдийн гэрийн хаяг нэг байх шаардлагагүй.");
-            break;
+             
+         
          case 'CUSTOM_3_3_1_2':
             sendTextMessage2(senderID, "IOS төхөөрөмжийн интернэт тохиргоог дараах заавраар хийнэ Settings - General - Network - Cellural Data Network - APN - хэсгийг сонгож style гэж бичнэ.");
             break;
