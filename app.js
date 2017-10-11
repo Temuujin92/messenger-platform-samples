@@ -1245,8 +1245,8 @@ function CUSTOM_salbaroron_tuv(recipientId) {
               },{
                  title: "Гишүүн дугаар хасах",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
-                subtitle: "Даваа-Баасан: 09:00-19:00 Бямба: 11:00-16:00 Ням:амарна",
-                item_url: `-91XXXXXXгэж бичээд  555 дугаарт мессеж илгээнэ`,               
+                subtitle: "-91XXXXXXгэж бичээд  555 дугаарт мессеж илгээнэ",
+                        
                buttons: [ {
                   type: "postback",
                   title: "Буцах",
