@@ -1200,7 +1200,7 @@ function CUSTOM_salbaroron_tuv(recipientId) {
   
 
   }
-  function CUSTOM_3_2_2(recipientId) {
+  function CUSTOM_2_3_2(recipientId) {
     networking.getLatestNews((detail) => {
       newsDetail = detail; 
       var messageData = {
