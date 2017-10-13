@@ -2506,32 +2506,42 @@ function maunfunc(recipientId) {
             payload: {
               template_type: "generic",
               elements: [{
-                   
-                buttons: [ {
+                title: "Үндсэн хуудас",
+                  subtitle: "",
+                         buttons: [ {
                   type: "postback",
-                  title: "Үндсэн хуудас",
+                  title: "Дарах",
                   payload: `CUSTOM_new`,
                 }],
               },{
-                  
+                title: "Төлбөр шалгах",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                       subtitle: "Илгээх утга = B , Тусгай дугаар = 1510, Багцад дагалдах эрхээс үлдсэн хэрэглээг харуулна  ",
+                   
                buttons: [ {
                   type: "postback",
-                  title: "CUSTOM_salbar_2",
+                  title: "Буцах",
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                          
+              title: "Дата шалгах",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                    subtitle: "Илгээх утга = D , Тусгай дугаар = 1510, Дата хэрэглээ болон дата багцын үлдэгдэлийг харуулна  ",
+                           
                buttons: [ {
                   type: "postback",
-                  title: "Түлхүүр үг",
-                  payload: `tulhuurug`,
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
                 }],
               },{
-                          
+                title: "Хэрэглээ шалгах",
+                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                subtitle: "Илгээх утга = 2017/08, Тусгай дугаар = 1510, Өмнөх сарын төлбөр шалгах ",
+                           
                buttons: [ {
                   type: "postback",
-                  title: "Ажилтантай чадлах",
-                  payload: `operator`,
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
                 }],
               }]
             }
