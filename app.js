@@ -2507,26 +2507,20 @@ function maunfunc(recipientId) {
               template_type: "open_graph",
               elements: [{
              
-                         buttons: [ {
-                  type: "postback",
-                  title: "Дарах",
-                  payload: `CUSTOM_new`,
-                }],        
-                  buttons: [ {
-                  type: "postback",
-                  title: "Дарах",
-                  payload: `CUSTOM_new`,
-                }],
-                          buttons: [ {
-                  type: "postback",
-                  title: "Дарах",
-                  payload: `CUSTOM_new`,
-                }],
-                          buttons: [ {
-                  type: "postback",
-                  title: "Дарах",
-                  payload: `CUSTOM_new`,
-                }]
+                  "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://en.wikipedia.org/wiki/Rickrolling",
+                "title":"View More"
+              }              
+            ],  
+                  "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://en.wikipedia.org/wiki/Rickrolling",
+                "title":"View More"
+              }              
+            ]
              
               
               }]
