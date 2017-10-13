@@ -2494,43 +2494,39 @@ function CUSTOM_1_2_1_3(recipientId) {
    }
 
 function maunfunc(recipientId) {
-    networking.getLatestNews((detail) => {
-      newsDetail = detail; 
-      var messageData = {
-        recipient: {
-          id: recipientId
+    var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      text: "Skytel холбогдсонд баярлалаа",
+      metadata: "ZOL_DEFINED_METADATA",
+      quick_replies: [
+        {
+          "content_type":"text",
+          "title":"Үндсэн хуудас",
+          "payload":"CUSTOM_new"
         },
-        message: {
-          attachment: {
-            type: "template",
-            payload: {
-              template_type: "open_graph",
-              elements: [{
-             
-                  "buttons":[
-              {
-                "type":"web_url",
-                "url":"https://en.wikipedia.org/wiki/Rickrolling",
-                "title":"View More"
-              }              
-            ],  
-                  "buttons":[
-              {
-                "type":"web_url",
-                "url":"https://en.wikipedia.org/wiki/Rickrolling",
-                "title":"View More"
-              }              
-            ]
-             
-              
-              }]
-            }
-          }
+        {
+          "content_type":"text",
+          "title":"Салбарууд",
+          "payload":"CUSTOM_salbar_2"
+        },
+        {
+          "content_type":"text",
+          "title":"Түлхүүр үг",
+          "payload":"tulhuurug"
+        },
+        {
+          "content_type":"text",
+          "title":"Ажилтантай чадлах",
+          "payload":"operator"
         }
-      };  
+      ]
+    }
+  };
 
-      callSendAPI(messageData);
-  });
+  callSendAPI(messageData);
    }
 
 function Custom_middle_1(recipientId) {
