@@ -2494,42 +2494,35 @@ function CUSTOM_1_2_1_3(recipientId) {
    }
 
 function maunfunc(recipientId) {
-    var messageData = {
+  var messageData = {
     recipient: {
       id: recipientId
     },
     message: {
-      text: "Skytel холбогдсонд баярлалаа",
-      metadata: "ZOL_DEFINED_METADATA",
-            
-      quick_replies: [
-        {
-          "content_type":"text",
-          "title":"Үндсэн хуудас",
-          "payload":"CUSTOM_new"
-        },
-        {
-          "content_type":"text",
-          "title":"Салбарууд",
-          "payload":"CUSTOM_salbar_2"
-        },
-        {
-          "content_type":"text",
-          "title":"Түлхүүр үг",
-          "payload":"tulhuurug"
-        },
-        {
-          "content_type":"text",
-          "title":"Ажилтантай чадлах",
-          "payload":"operator"
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "та дараах цэснээс сонгоно уу",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_new",
+            title: "Үндсэн хуудас"
+          },{
+            type: "postback",
+            payload: "CUSTOM_salbar_2",
+            title: "Салбарууд"
+          }, {
+            type: "postback",
+            title: "Ажилтантай чадлах",
+            payload: "operator"
+          }]
         }
-      ]
-            
+      }
     }
-  };
-
+  };  
   callSendAPI(messageData);
-   }
+}
 
 function Custom_middle_1(recipientId) {
   var messageData = {
