@@ -237,6 +237,11 @@ function receivedMessage(event) {
     console.log("Quick reply for message %s with payload %s",
       messageId, quickReplyPayload);
 	  switch (quickReplyPayload) {
+              
+               case 'CUSTOM_new':
+            CUSTOM_new(senderID); 
+            break;
+              
 		case 'CUSTOM_QUICK_DATA_1GB':
 			sendTextMessage(senderID, "1gb гэсэн түлхүүр үгийг 123 дугаарт илгээнэ. Дагалдах эрх үйлчилгээний хоног 30. Үнэ 10.000₮"); 
             break;
@@ -2494,35 +2499,43 @@ function CUSTOM_1_2_1_3(recipientId) {
    }
 
 function maunfunc(recipientId) {
-  var messageData = {
+    var messageData = {
     recipient: {
       id: recipientId
     },
     message: {
-      attachment: {
-        type: "template",
-        payload: {
-          template_type: "button",
-          text: "та дараах цэснээс сонгоно уу",
-          buttons:[{
-            type: "postback",
-            payload: "CUSTOM_new",
-            title: "Үндсэн хуудас"
-          },{
-            type: "postback",
-            payload: "CUSTOM_salbar_2",
-            title: "Салбарууд"
-          }, {
-            type: "postback",
-            title: "Түлхүүр үг",
-            payload: "tulhuurug"
-          }]
+
+      text: "Skytel холбогдсонд баярлалаа",
+      metadata: "ZOL_DEFINED_METADATA",
+            
+      quick_replies: [
+        {
+          "content_type":"text",
+          "title":"Үндсэн хуудас",
+          "payload":"CUSTOM_new"
+        },
+        {
+          "content_type":"text",
+          "title":"Салбарууд",
+          "payload":"CUSTOM_salbar_2"
+        },
+        {
+          "content_type":"text",
+          "title":"Түлхүүр үг",
+          "payload":"tulhuurug"
+        },
+        {
+          "content_type":"text",
+          "title":"Ажилтантай чадлах",
+          "payload":"operator"
         }
-      }
+      ]
+            
     }
-  };  
+  };
+
   callSendAPI(messageData);
-}
+   }
 
 function Custom_middle_1(recipientId) {
   var messageData = {
@@ -2929,9 +2942,7 @@ function receivedPostback(event) {
     }
     
     switch (payload){
-       case 'CUSTOM_new':
-            CUSTOM_new(senderID); 
-            break;
+      
              case 'CUSTOM_Back':
             CUSTOM_new(senderID); 
             break;
