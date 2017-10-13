@@ -241,7 +241,15 @@ function receivedMessage(event) {
                case 'CUSTOM_new':
             CUSTOM_new(senderID); 
             break;
-              
+             case 'CUSTOM_salbar_2':
+              CUSTOM_salbar_2(senderID); 
+            break; 
+                case 'tulhuurug':
+            tulhuurug(senderID); 
+            break; 
+               case 'operator':
+              operator(senderID); 
+            break;
 		case 'CUSTOM_QUICK_DATA_1GB':
 			sendTextMessage(senderID, "1gb гэсэн түлхүүр үгийг 123 дугаарт илгээнэ. Дагалдах эрх үйлчилгээний хоног 30. Үнэ 10.000₮"); 
             break;
@@ -3062,9 +3070,7 @@ function receivedPostback(event) {
              case 'CUSTOM_3_1':
             CUSTOM_3_1(senderID); 
             break;   
-               case 'tulhuurug':
-            tulhuurug(senderID); 
-            break; 
+             
                 case 'CUSTOM_3_1':
             CUSTOM_3_1(senderID); 
             break; 
@@ -3074,15 +3080,11 @@ function receivedPostback(event) {
           case 'CUSTOM_salbarub':
               CUSTOM_salbarub(senderID); 
             break;
-              case 'CUSTOM_salbar_2':
-              CUSTOM_salbar_2(senderID); 
-            break;
+            
             case 'CUSTOM_2_3_2':
               CUSTOM_2_3_2(senderID); 
             break;
-             case 'operator':
-              operator(senderID); 
-            break;
+            
            
              case 'CUSTOM_salbaroron':
               CUSTOM_salbaroron(senderID); 
