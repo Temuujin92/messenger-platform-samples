@@ -237,10 +237,10 @@ function receivedMessage(event) {
     console.log("Quick reply for message %s with payload %s",
       messageId, quickReplyPayload);
 	  switch (quickReplyPayload) {
-              
-               case 'CUSTOM_new':
+              case 'CUSTOM_new':
             CUSTOM_new(senderID); 
             break;
+              
              case 'CUSTOM_salbar_2':
               CUSTOM_salbar_2(senderID); 
             break; 
