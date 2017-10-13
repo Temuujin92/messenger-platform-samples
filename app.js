@@ -2504,45 +2504,31 @@ function maunfunc(recipientId) {
           attachment: {
             type: "template",
             payload: {
-              template_type: "generic",
+              template_type: "open_graph",
               elements: [{
-                title: "Үндсэн хуудас",
-                  subtitle: "",
+             
                          buttons: [ {
                   type: "postback",
                   title: "Дарах",
                   payload: `CUSTOM_new`,
-                }],
-              },{
-                title: "Төлбөр шалгах",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
-                       subtitle: "Илгээх утга = B , Тусгай дугаар = 1510, Багцад дагалдах эрхээс үлдсэн хэрэглээг харуулна  ",
-                   
-               buttons: [ {
+                }],        
+                  buttons: [ {
                   type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
+                  title: "Дарах",
+                  payload: `CUSTOM_new`,
                 }],
-              },{
-              title: "Дата шалгах",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
-                    subtitle: "Илгээх утга = D , Тусгай дугаар = 1510, Дата хэрэглээ болон дата багцын үлдэгдэлийг харуулна  ",
-                           
-               buttons: [ {
+                          buttons: [ {
                   type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
+                  title: "Дарах",
+                  payload: `CUSTOM_new`,
                 }],
-              },{
-                title: "Хэрэглээ шалгах",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
-                subtitle: "Илгээх утга = 2017/08, Тусгай дугаар = 1510, Өмнөх сарын төлбөр шалгах ",
-                           
-               buttons: [ {
+                          buttons: [ {
                   type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
-                }],
+                  title: "Дарах",
+                  payload: `CUSTOM_new`,
+                }]
+             
+              
               }]
             }
           }
