@@ -2515,6 +2515,10 @@ function maunfunc(recipientId) {
             type: "postback",
             title: "Түлхүүр үг",
             payload: "tulhuurug"
+          }, {
+            type: "postback",
+            title: "Ажилтантай чадлах",
+            payload: "operator"
           }]
         }
       }
@@ -3067,7 +3071,10 @@ function receivedPostback(event) {
             case 'CUSTOM_2_3_2':
               CUSTOM_2_3_2(senderID); 
             break;
-            
+             case 'operator':
+              operator(senderID); 
+            break;
+           
              case 'CUSTOM_salbaroron':
               CUSTOM_salbaroron(senderID); 
             break;
@@ -3131,6 +3138,7 @@ function receivedPostback(event) {
              case 'CUSTOM_1_2_2_1':
             sendTextMessage2(senderID, "14-22 насны хэрэглэгч Shake&Share үйлчилгээнд бүртгүүлэн дараах давуу талуудыг авна.1. Сар бүр 23 нас хүртлээ 100MB дата багц2. Ойр дотны 3 дугаарт сар бүр 100MB бэлэглэх, мөн бэлгэлэх бүртээ 100MB өөртөө авах3. Хэдэн ч хэрэглэгчээс 100MB дата бэлгэнд авах боломж4. Төрсөн өдрөөрөө сүлжээндээ яриа мессэж задгай датанд ашиглах 1 сая нэгж бэлгэнд авах5. Shake&Share-т бүртгэлтэй 1 дугаартайгаа 1₮-өөр дуудлага хийхболомжийг эдлэнэ.");
             break;
+          
            
               case 'CUSTOM_1_1_1_3':
             sendTextMessage2(senderID, "Та www.skytel.mn сайтад хандан орон зай, цаг хугацааны хязгаарлалтгүйгээр хэрэглээний төлбөрөө төлөх боломжтой. Төлбөр амжилттай төлөгдмөгц үйлчилгээний эрх шууд нээгдэх нь банкаар дамжуулан төлөхөөс илүү давуу талтай.Хэрэглэгч та доорх бүх арилжааны банкуудын төлбөрийн картыг ашиглах боломжтой.");
@@ -3364,7 +3372,29 @@ function sendTextMessage2(recipientId, messageText) {
 
   callSendAPI(messageData);
 }
+function operator(recipientId) {
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Та доорх холбоос дээр дарна уу",
+          buttons:[{
+            type: "web_url",
+            url: "https://www.skytel.mn/",
+            title: "Дарах"
+          }]
+        }
+      }
+    }
+  };  
 
+  callSendAPI(messageData);
+}
 
 /*
  * Send a button message using the Send API.
