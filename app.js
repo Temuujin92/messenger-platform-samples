@@ -2492,40 +2492,57 @@ function CUSTOM_1_2_1_3(recipientId) {
       callSendAPI(messageData);
   });
    }
+
 function maunfunc(recipientId) {
-  var messageData = {
-    recipient: {
-      id: recipientId
-    },
-    message: {
-      attachment: {
-        type: "template",
-        payload: {
-          template_type: "button",
-          text: "та дараах цэснээс сонгоно уу",
-          buttons:[{
-            type: "postback",
-            payload: "CUSTOM_new",
-            title: "Үндсэн хуудас"
-          },{
-            type: "postback",
-            payload: "CUSTOM_salbar_2",
-            title: "Салбарууд"
-          }, {
-            type: "postback",
-            title: "Түлхүүр үг",
-            payload: "tulhuurug"
-          }, {
-            type: "postback",
-            title: "Ажилтантай чадлах",
-            payload: "operator"
-          }]
+    networking.getLatestNews((detail) => {
+      newsDetail = detail; 
+      var messageData = {
+        recipient: {
+          id: recipientId
+        },
+        message: {
+          attachment: {
+            type: "template",
+            payload: {
+              template_type: "generic",
+              elements: [{
+                   
+                buttons: [ {
+                  type: "postback",
+                  title: "Үндсэн хуудас",
+                  payload: `CUSTOM_new`,
+                }],
+              },{
+                  
+               buttons: [ {
+                  type: "postback",
+                  title: "CUSTOM_salbar_2",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                          
+               buttons: [ {
+                  type: "postback",
+                  title: "Түлхүүр үг",
+                  payload: `tulhuurug`,
+                }],
+              },{
+                          
+               buttons: [ {
+                  type: "postback",
+                  title: "Ажилтантай чадлах",
+                  payload: `operator`,
+                }],
+              }]
+            }
+          }
         }
-      }
-    }
-  };  
-  callSendAPI(messageData);
-}
+      };  
+
+      callSendAPI(messageData);
+  });
+   }
+
 function Custom_middle_1(recipientId) {
   var messageData = {
     recipient: {
