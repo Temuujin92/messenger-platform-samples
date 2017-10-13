@@ -2087,7 +2087,7 @@ function CUSTOM_1_1_2_2(recipientId) {
               template_type: "generic",
               elements: [{
                 title: "10,000₮",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/app/images/beldsen/individual/postpaid-10k.png`,
                 subtitle: "Яриа: 250мин , Дата:200MB, Суурь хураамж:10,000₮",
                          
                 buttons: [ {
@@ -2097,7 +2097,7 @@ function CUSTOM_1_1_2_2(recipientId) {
                 }],
               },{
            title: "20,000₮",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/app/images/beldsen/individual/postpaid-20k.png`,
              subtitle: "Яриа: 500мин , Дата:1GB, Мессэж:Хязгааргүй,Суурь хураамж:20,000₮",
                    
                buttons: [ {
@@ -2107,7 +2107,7 @@ function CUSTOM_1_1_2_2(recipientId) {
                 }],
               },{
                title: "40,000₮",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/app/images/beldsen/individual/postpaid-40k.png`,
                   subtitle: "Яриа: 1000мин , Дата:4GB, Мессэж:Хязгааргүй,Суурь хураамж:40,000₮",
                            
                buttons: [ {
@@ -2117,7 +2117,7 @@ function CUSTOM_1_1_2_2(recipientId) {
                 }],
               },{
                title: "70,000₮",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/app/images/beldsen/individual/postpaid-70k.png`,
                   subtitle: "Яриа: 2000мин , Дата:8GB, Мессэж:Хязгааргүй,Суурь хураамж:70,000₮",
                            
                buttons: [ {
@@ -2127,7 +2127,7 @@ function CUSTOM_1_1_2_2(recipientId) {
                 }],
               },{
                title: "100,000₮",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/app/images/beldsen/individual/postpaid-100k.png`,
                   subtitle: "Яриа: 3000мин , Дата:12GB, Мессэж:Хязгааргүй,Суурь хураамж:",
                            
                buttons: [ {
