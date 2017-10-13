@@ -2500,7 +2500,7 @@ function maunfunc(recipientId) {
     },
     message: {
       text: "Skytel холбогдсонд баярлалаа",
-      metadata: "ZOL_DEFINED_METADATA",
+    payload: {
       quick_replies: [
         {
           "content_type":"text",
@@ -2523,6 +2523,7 @@ function maunfunc(recipientId) {
           "payload":"operator"
         }
       ]
+    }
     }
   };
 
