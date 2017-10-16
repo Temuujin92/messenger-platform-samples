@@ -2532,7 +2532,7 @@ function maunfunc(recipientId) {
     },
     message: {
 
-      text: "Сайн байна уу? СКАЙтел-н үйлчилгээний лавлахтай холбогдсон танд баярлалаа. СКАЙтел БОТ танд үйлчилж байна.",
+      text: resultObj.first_name,
       metadata: "ZOL_DEFINED_METADATA",
             
       quick_replies: [
