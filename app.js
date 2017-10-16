@@ -474,11 +474,11 @@ function startUramshuulal(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "дараах цэснээс сонгоно уу",
+          text: "Дараах цэснээс сонгоно уу",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_2_1",
-            title: "ДТУ-ний урамшуулал"
+            title: "ДТҮ-ний урамшуулал"
           }, {
             type: "postback",
             title: "Урьдчилсан төлбөртийн урамшуулал",
@@ -551,7 +551,7 @@ function CUSTOM_2_1(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "дараах цэснээс сонгоно уу",
+          text: "Дараах цэснээс сонгоно уу",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_2_1_1",
@@ -578,7 +578,7 @@ function CUSTOM_2_2(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "дараах цэснээс сонгоно уу",
+          text: "Дараах цэснээс сонгоно уу",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_2_2_1",
@@ -609,7 +609,7 @@ function CUSTOM_2_3(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "дараах цэснээс сонгоно уу",
+          text: "Дараах цэснээс сонгоно уу",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_2_3_1",
@@ -637,14 +637,14 @@ function CUSTOM_1(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "дараах цэснээс сонгоно уу",
+          text: "Дараах цэснээс сонгоно уу",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_1_1",
-            title: "Дараа төлбөрт үйлчилгээ"
+            title: "Дараа төлбөрт"
           }, {
             type: "postback",
-            title: "Урьдчилсан төлбөрт үйлчилгээ",
+            title: "Урьдчилсан төлбөрт",
             payload: "CUSTOM_1_2"
           }, {
             type: "postback",
@@ -668,14 +668,14 @@ function CUSTOM_1_1(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "дараах цэснээс сонгоно уу",
+          text: "Дараах цэснээс сонгоно уу",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_1_1_1",
             title: "Төлбөр тооцоо"
           }, {
             type: "postback",
-            title: "Монголдоо",
+            title: "МОНГОЛдоо",
             payload: "CUSTOM_1_1_2"
           }, {
             type: "postback",
@@ -700,7 +700,7 @@ function CUSTOM_1_2(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "дараах цэснээс сонгоно уу",
+          text: "Дараах цэснээс сонгоно уу",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_1_2_1",
@@ -786,7 +786,7 @@ function CUSTOM_1_1_1(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "дараах цэснээс сонгоно уу",
+          text: "Дараах цэснээс сонгоно уу",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_1_1_1_1",
@@ -817,7 +817,7 @@ function CUSTOM_1_1_2(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "дараах цэснээс сонгоно уу",
+          text: "Дараах цэснээс сонгоно уу",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_1_1_2_1",
@@ -898,7 +898,7 @@ function CUSTOM_3(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "дараах цэснээс сонгоно уу",
+          text: "Дараах цэснээс сонгоно уу",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_3_1_1",
@@ -1227,7 +1227,7 @@ function CUSTOM_salbaroron_tuv(recipientId) {
               template_type: "generic",
               elements: [{
                 title: "Админ дугаараас гишүүн бүртгэх хүсэлт илгээх",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/uploads/images/1(8).jpg`,
                 subtitle: "+91XXXXXХ Гэж бичээд  555 дугаарт мессеж илгээнэ",
                             
                buttons: [ {
@@ -1237,7 +1237,7 @@ function CUSTOM_salbaroron_tuv(recipientId) {
                 }],
               },{
                  title: "Гэрээний дугаар харах",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/uploads/images/1(8).jpg`,
                 subtitle: "Geree гэж бичээд  555 дугаарт мессеж илгээнэ",
                          
                buttons: [ {
@@ -1247,7 +1247,7 @@ function CUSTOM_salbaroron_tuv(recipientId) {
                 }],
               },{
                title: "Бүртгэлтэй гишүүн дугааруудын жагсаалт харах",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/uploads/images/1(8).jpg`,
                 subtitle: "All  гэж бичээд  555 дугаарт мессеж илгээнэ",
                             
                buttons: [ {
@@ -1257,7 +1257,7 @@ function CUSTOM_salbaroron_tuv(recipientId) {
                 }],
               },{
                  title: "Гишүүн дугаар хасах",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/uploads/images/1(8).jpg`,
                 subtitle: "-91XXXXXXгэж бичээд  555 дугаарт мессеж илгээнэ",
                         
                buttons: [ {
@@ -1267,7 +1267,7 @@ function CUSTOM_salbaroron_tuv(recipientId) {
                 }],
               },{
                  title: "Дата үлдэгдэл шалгах",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/uploads/images/1(8).jpg`,
                 subtitle: "DATA гэж бичээд  555 дугаарт мессеж илгээнэ",
                             
                buttons: [ {
@@ -1277,7 +1277,7 @@ function CUSTOM_salbaroron_tuv(recipientId) {
                 }],
               },{
                  title: "Гишүүн дугаар группт нэмэх хүсэлт хүлээн авах",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/uploads/images/1(8).jpg`,
                 subtitle: "Ok гэж бичээд  555 дугаарт мессеж илгээнэ",
                          
                buttons: [ {
@@ -1556,7 +1556,7 @@ function CUSTOM_salbaroron(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "дараах цэснээс сонгоно уу",
+          text: "Дараах цэснээс сонгоно уу",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_salbaroron_tuv",
@@ -1612,7 +1612,7 @@ function CUSTOM_3_2(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "дараах цэснээс сонгоно уу",
+          text: "Дараах цэснээс сонгоно уу",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_3_2_1",
@@ -1621,10 +1621,6 @@ function CUSTOM_3_2(recipientId) {
             type: "postback",
             title: "Цэнэглэх заавар",
             payload: "CUSTOM_3_2_2"
-          }, {
-            type: "postback",
-            title: "Тохиргоо ",
-            payload: "CUSTOM_3_2_3"
           }]
         }
       }
@@ -1999,7 +1995,7 @@ function CUSTOM_1_1_2_1(recipientId) {
               template_type: "generic",
               elements: [{
                 title: "Энгийн дугаар Үнэ:10000, Барьцаа(20000,50000)",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/app/images/beldsen/cover/postpaid_cover.jpg`,
                 subtitle: "Үнэ цэнэтэй энгийн дугаар Үнэ:100000, Барьцаа(50000)",
                          
                 buttons: [ {
@@ -2009,7 +2005,7 @@ function CUSTOM_1_1_2_1(recipientId) {
                 }],
               },{
                   title: "Азын дугаар Үнэ:60000, Барьцаа(20000,50000)",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/app/images/beldsen/cover/postpaid_cover.jpg`,
                 subtitle: "Үнэ цэнэтэй азын дугаар Үнэ:200000, Барьцаа(50000)",
                    
                buttons: [ {
@@ -2019,7 +2015,7 @@ function CUSTOM_1_1_2_1(recipientId) {
                 }],
               },{
                title: "Алтан дугаар Үнэ:800000, Барьцаа(20000,50000)",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/app/images/beldsen/cover/postpaid_cover.jpg`,
                 subtitle: "Үнэ цэнэтэй алтан дугаар Үнэ:800000, Барьцаа(50000)",
                            
                buttons: [ {
@@ -2513,7 +2509,7 @@ function maunfunc(recipientId) {
     },
     message: {
 
-      text: "Skytel холбогдсонд баярлалаа",
+      text: "Сайн байна уу? СКАЙтел-н үйлчилгээний лавлахтай холбогдсон танд баярлалаа. СКАЙтел БОТ танд үйлчилж байна.",
       metadata: "ZOL_DEFINED_METADATA",
             
       quick_replies: [
@@ -2652,7 +2648,7 @@ function CUSTOM_1_1_1_1(recipientId) {
               template_type: "generic",
               elements: [{
                 title: "Хэрэглээ шалгах",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/app/images/beldsen/home/7.png`,
                 subtitle: "Илгээх утга = U , Тусгай дугаар = 1510, Хэрэглээг мөнгөн дүнгээр харуулна ",
                          
                 buttons: [ {
@@ -2662,7 +2658,7 @@ function CUSTOM_1_1_1_1(recipientId) {
                 }],
               },{
                 title: "Төлбөр шалгах",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/app/images/beldsen/useful/14.png`,
                        subtitle: "Илгээх утга = B , Тусгай дугаар = 1510, Багцад дагалдах эрхээс үлдсэн хэрэглээг харуулна  ",
                    
                buttons: [ {
@@ -2714,7 +2710,7 @@ function CUSTOM_2_2_1(recipientId) {
               template_type: "generic",
               elements: [{
                 title: "Энгийн дугаар",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/app/images/beldsen/useful/17.png`,
                 subtitle: "Үнэ-3000 Нэгж-1000 Хоног-30 Урамшуулал- 180 хоног FACEBOOK үнэгүй ",
                          
                 buttons: [ {
@@ -2724,7 +2720,7 @@ function CUSTOM_2_2_1(recipientId) {
                 }],
               },{
                 title: "Азын дугаар",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/app/images/beldsen/useful/17.png`,
                        subtitle: "Үнэ-10000 Нэгж-5000 Хоног-30 Урамшуулал- 180 хоног FACEBOOK үнэгүй ",
                    
                buttons: [ {
@@ -2756,7 +2752,7 @@ function CUSTOM_2_2_1(recipientId) {
               template_type: "generic",
               elements: [{
                 title: "5000 карт /хоногтой/",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
                 subtitle: "Урамшуулал- 10000 бонус нэгж Урамшууллын нэгжний хугацаа- 5 хоног Ашиглах төрөл-Сүлжээний яриа, сүлжээний мессеж, задгай дата ",
                          
                 buttons: [ {
@@ -2766,7 +2762,7 @@ function CUSTOM_2_2_1(recipientId) {
                 }],
               },{
                 title: "5000 карт /хоноггүй/",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
                        subtitle: "Урамшуулал- 10000 бонус нэгж Урамшууллын нэгжний хугацаа- 5 хоног Ашиглах төрөл-Сүлжээний яриа, сүлжээний мессеж, задгай дата ",
                    
                buttons: [ {
@@ -2776,7 +2772,7 @@ function CUSTOM_2_2_1(recipientId) {
                 }],
               },{
               title: "10000 карт",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
                     subtitle: "Урамшуулал- 100000 бонус нэгж Урамшууллын нэгжний хугацаа- 10 хоног Ашиглах төрөл-Сүлжээний яриа, сүлжээний мессеж, задгай дата ",
                            
                buttons: [ {
@@ -2786,7 +2782,7 @@ function CUSTOM_2_2_1(recipientId) {
                 }],
               },{
                 title: "15000 карт",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
                 subtitle: "Урамшуулал- 150000 бонус нэгж Урамшууллын нэгжний хугацаа- 10 хоног Ашиглах төрөл-Сүлжээний яриа, сүлжээний мессеж, задгай дата ",
                            
                buttons: [ {
@@ -3134,7 +3130,7 @@ function receivedPostback(event) {
             sendTextMessage2(senderID, "Тус үйлчилгээнд бүртгүүлэхдээ үйлчилгээний үндсэн болон гэрээт салбарт өөрийн иргэний үнэмлэх, төрсний гэрчилгээний хамт ирнэ.                      123 дугаарт дараах утгуудыг илгээнэ.                               +91******100MB дотны хүндээ бэлэглэх                             DATA Өөрийн шилжүүлэн авсан, шилжүүлсэн, үлдэгпэл шалгах                                 Love 91****** 1₮-өөр дуудлага хийх хосоо бүртгэх                                      Single Хосоо хасахад/1000₮ хураамжтай.                                Love Хосын дугаараа шалгах                               BDAYТөрсөн өдрийн урамшууллыг хэрэглээг шалгах");
             break;
               case 'CUSTOM_1_1_2_3':
-            sendTextMessage2(senderID, "•	Монголдоо хамгийн их Дата эрхтэй•	Дата эрхээ 3 хүртэлх дотны хүндээ хуваалцах /share/ боломжтой•	Монголдоо үүрэн болон суурин холбооны бүх сүлжээнд хүссэнээрээ ярина•	Суурь хураамжид татвар тооцсон тул НӨАТ нэмэгдэхгүй•	Төлбөр төлөх уян хатан боломжууд•	Олон улсын яриа, мессэж, дата роумингийн үйлчилгээг сонгох боломжтой•	21Mbps хүртэлх хурдаар интернэт ашиглах боломжтой");
+            sendTextMessage2(senderID, "•	МОНГОЛдоо хамгийн их Дата эрхтэй•	Дата эрхээ 3 хүртэлх дотны хүндээ хуваалцах /share/ боломжтой•	МОНГОЛдоо үүрэн болон суурин холбооны бүх сүлжээнд хүссэнээрээ ярина•	Суурь хураамжид татвар тооцсон тул НӨАТ нэмэгдэхгүй•	Төлбөр төлөх уян хатан боломжууд•	Олон улсын яриа, мессэж, дата роумингийн үйлчилгээг сонгох боломжтой•	21Mbps хүртэлх хурдаар интернэт ашиглах боломжтой");
             break;
             
               case 'Custom_middle_1_1':
