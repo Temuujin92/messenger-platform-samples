@@ -481,7 +481,7 @@ function startUramshuulal(recipientId) {
             title: "ДТҮ-ний урамшуулал"
           }, {
             type: "postback",
-            title: "Урьдчилсан төлбөртийн урамшуулал",
+            title: "УТҮ-ний урамшуулал",
             payload: "CUSTOM_2_2"
           }, {
             type: "postback",
@@ -1642,7 +1642,7 @@ function CUSTOM_3_2_2(recipientId) {
               template_type: "generic",
               elements: [{
                 title: "Та дараах дата багцуудаас сонголтоо хийж модемоо цэнэглэнэ үү",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/app/images/messenger-bot/guys.png`,
                 subtitle: "1GB 30 хоног 10000₮",
                 buttons: [ {
                   type: "postback",
@@ -1651,7 +1651,7 @@ function CUSTOM_3_2_2(recipientId) {
                 }],
               },{
                    title: "Та дараах дата багцуудаас сонголтоо хийж модемоо цэнэглэнэ үү",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/app/images/messenger-bot/guys.png`,
                 subtitle: "2GB 30 хоног 13000₮",
                            
                buttons: [ {
@@ -1661,7 +1661,7 @@ function CUSTOM_3_2_2(recipientId) {
                 }],
               },{
               title: "Та дараах дата багцуудаас сонголтоо хийж модемоо цэнэглэнэ үү",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/app/images/messenger-bot/guys.png`,
                 subtitle: "3GB 30 хоног 15000₮",
                        
                buttons: [ {
@@ -1671,7 +1671,7 @@ function CUSTOM_3_2_2(recipientId) {
                 }],
               },{
             title: "Та дараах дата багцуудаас сонголтоо хийж модемоо цэнэглэнэ үү",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/app/images/messenger-bot/guys.png`,
                 subtitle: "5GB 30 хоног 20000₮",
                      
                buttons: [ {
@@ -1681,7 +1681,7 @@ function CUSTOM_3_2_2(recipientId) {
                 }],
               },{
                  title: "Та дараах дата багцуудаас сонголтоо хийж модемоо цэнэглэнэ үү",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/app/images/messenger-bot/guys.png`,
                 subtitle: "10GB 60 хоног 30000₮",
                              
                buttons: [ {
@@ -1691,7 +1691,7 @@ function CUSTOM_3_2_2(recipientId) {
                 }],
               },{
                    title: "Та дараах дата багцуудаас сонголтоо хийж модемоо цэнэглэнэ үү",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/app/images/messenger-bot/guys.png`,
                 subtitle: "20GB 90 хоног 50000₮",
                              
                buttons: [ {
@@ -1856,7 +1856,7 @@ function CUSTOM_1_3_1(recipientId) {
               template_type: "generic",
               elements: [{
                 title: "Facebook багц 30 хоног Үнэ:5000",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/app/images/messenger-bot/fb_package.png`,
                 subtitle: "Идэвхжүүлэхзаавар:Facebook send 123",
                          
                 buttons: [ {
@@ -1866,7 +1866,7 @@ function CUSTOM_1_3_1(recipientId) {
                 }],
               },{
                  title: "100MB 10 хоног Үнэ:1000",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/app/images/messenger-bot/data_package.png`,
                 subtitle: "Идэвхжүүлэхзаавар:100mbsend 123",
               
                buttons: [ {
@@ -1876,7 +1876,7 @@ function CUSTOM_1_3_1(recipientId) {
                 }],
               },{
                title: "300MB 15 хоног Үнэ:3000",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/app/images/messenger-bot/data_package.png`,
                 subtitle: "Идэвхжүүлэхзаавар:300mbsend 123",
                    
                buttons: [ {
@@ -1886,7 +1886,7 @@ function CUSTOM_1_3_1(recipientId) {
                 }],
               },{
                  title: "1GB 30 хоног Үнэ:10000",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/app/images/messenger-bot/data_package.png`,
                 subtitle: "Идэвхжүүлэхзаавар:1GBsend 123",
                              
                buttons: [ {
@@ -1896,7 +1896,7 @@ function CUSTOM_1_3_1(recipientId) {
                 }],
               },{
                  title: "2GB 30 хоног Үнэ:13000",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/app/images/messenger-bot/data_package.png`,
                 subtitle: "Идэвхжүүлэхзаавар:2GB send 123",
                            
                buttons: [ {
@@ -1906,7 +1906,7 @@ function CUSTOM_1_3_1(recipientId) {
                 }],
               },{
                  title: "10 GB 60 хоног Үнэ:30000",
-                image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
+                image_url: `https://www.skytel.mn/app/images/messenger-bot/data_package.png`,
                 subtitle: "Идэвхжүүлэхзаавар:10GBsend 123",
                 
                buttons: [ {
@@ -2502,14 +2502,62 @@ function CUSTOM_1_2_1_3(recipientId) {
   });
    }
 
+
+
 function maunfunc(recipientId) {
+    
+    var params = {
+              ida: recipientId
+            };
+
+            var options = {
+                method: 'GET',
+                rejectUnauthorized: false,
+                url: 'https://graph.facebook.com/v2.6/1320615541397171?fields=first_name,last_name&access_token=EAAM2wysYkZCABAM52M2b9j6ctpRZBmNTy0QByntDrwornV45SngAVAuifdIZC55RCIbeG27UMiVE5MBR8JaNKQ768W6a5lbAghZBOynWYpcxKoKrXhpt2gfHCj2dxju8wngZBU3ggRPyfWewfsEsIcoVxZAzcK0SrFHDH4MZAZAWOQZDZD',
+                headers: {
+                    "AUTH_TOKEN": value, 
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                qs: params
+            };
+
+            request(options, function (error, response, body) {
+                
+                console.log("Options:")
+                console.log(options);
+
+                if(!error){
+                  console.log('Successfully connected to the FB info:', response && response.statusCode);
+                  try{
+                    if(response.statusCode == 200){
+                      var resultObj = JSON.parse(body);
+                     
+
+                    }else{
+                        errorCallback(null, "Ямар нэг алдаа гарлаа! Алдааны код: "+response.statusCode); 
+                    }
+
+                  }catch(err){
+                    errorCallback(err, "Дилерээс ирсэн хариуг боловсруулах үед алдаа гарлаа!"); 
+                  }
+
+                }else{
+                    errorCallback(error, "Сервертэй холбогдох үед алдаа гарлаа!"); 
+                }
+          });
+    
+    
+    
+    
+    
     var messageData = {
     recipient: {
       id: recipientId
     },
     message: {
 
-      text: "Сайн байна уу? СКАЙтел-н үйлчилгээний лавлахтай холбогдсон танд баярлалаа. СКАЙтел БОТ танд үйлчилж байна.",
+      text: resultObj.firstname,
       metadata: "ZOL_DEFINED_METADATA",
             
       quick_replies: [
