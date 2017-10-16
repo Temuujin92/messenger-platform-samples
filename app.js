@@ -704,14 +704,14 @@ function CUSTOM_1_2(recipientId) {
           buttons:[{
             type: "postback",
             payload: "CUSTOM_1_2_1",
-            title: "Урьдчилсан төлбөрт үйлчилгээ"
+            title: "Урьдчилсан төлбөрт"
           }, {
             type: "postback",
             title: "Shake & Share",
             payload: "CUSTOM_1_2_2"
           }, {
             type: "postback",
-            title: "Урьдчилсан төлбөрт үйлчилгээ",
+            title: "Нэмэлт үйлчилгээ",
             payload: "CUSTOM_1_2_3"
           }]
         }
