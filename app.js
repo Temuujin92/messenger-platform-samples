@@ -679,7 +679,7 @@ function CUSTOM_1_1(recipientId) {
             payload: "CUSTOM_1_1_2"
           }, {
             type: "postback",
-            title: "Дараа төлбөрт үйлчилгээ",
+            title: "Дараа төлбөрт",
             payload: "CUSTOM_1_1_3"
           }]
         }
@@ -731,7 +731,7 @@ function CUSTOM_1_2_2(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "Shaker and Share",
+          text: "Shake and Share",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_1_2_2_1",
@@ -793,7 +793,7 @@ function CUSTOM_1_1_1(recipientId) {
             title: "Төлбөр шалгах заавар"
           }, {
             type: "postback",
-            title: "Mobile, интернет банк",
+            title: "Mobile интернет банк",
             payload: "CUSTOM_1_1_1_2"
           }, {
             type: "postback",
@@ -2532,7 +2532,7 @@ function maunfunc(recipientId) {
     },
     message: {
 
-      text: 'Сайн байна уу?'+resultObj.first_name+' '+resultObj.last_name+'СКАЙтел-н үйлчилгээний лавлахтай холбогдсон танд баярлалаа. СКАЙтел БОТ танд үйлчилж байна.' ,
+      text: 'Сайн байна уу? '+resultObj.first_name+' '+resultObj.last_name+' СКАЙтел-н үйлчилгээний лавлахтай холбогдсон танд баярлалаа. СКАЙтел БОТ танд үйлчилж байна.' ,
       metadata: "ZOL_DEFINED_METADATA",
             
       quick_replies: [
