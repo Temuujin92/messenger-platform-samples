@@ -2553,7 +2553,7 @@ function maunfunc(recipientId) {
         },
         {
           "content_type":"text",
-          "title":"Ажилтантай чадлах",
+          "title":"Ажилтантай чатлах",
           "payload":"operator"
         }
       ]
