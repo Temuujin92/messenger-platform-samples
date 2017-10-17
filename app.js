@@ -679,7 +679,7 @@ function CUSTOM_1_1(recipientId) {
             payload: "CUSTOM_1_1_2"
           }, {
             type: "postback",
-            title: "Дараа төлбөрт",
+            title: "Нэмэлт үйлчилгээ",
             payload: "CUSTOM_1_1_3"
           }]
         }
@@ -3149,7 +3149,7 @@ function receivedPostback(event) {
             sendNewsMessage(senderID);
             break;
          case 'CUSTOM_3_3_1_1':
-            sendTextMessage2(senderID, "Android утасны интернэт тохиргоог дараах заавраар хийнэ Settings-More setting-Mobile network-Access point names Name-Skytel Apn / style, net, skytel / аль нэгийг бичээд хадгална. Утсаа унтрааж асаана.");
+            sendTextMessage2(senderID, "Settings-More setting-Mobile network-Access point names Name-Skytel Apn / style, net, skytel / аль нэгийг бичээд хадгална. Утсаа унтрааж асаана.");
             break;
                case 'CUSTOM_2_1_1':
             sendTextMessage2(senderID, "Та манай Дараа төлбөрт үйлчилгээний шинэ хэрэглэгч болсноор дараах урамшуулалд хамрагдах боломжтой.Энгийн дугаарынбүртгэлийн хураамж 0₮/Барьцаа төлбөр байршуулна/. Эхний 3 сар суурь хураамж 30% хөнгөлнө ");
@@ -3163,10 +3163,10 @@ function receivedPostback(event) {
              
          
          case 'CUSTOM_3_3_1_2':
-            sendTextMessage2(senderID, "IOS төхөөрөмжийн интернэт тохиргоог дараах заавраар хийнэ Settings - General - Network - Cellural Data Network - APN - хэсгийг сонгож style гэж бичнэ.");
+            sendTextMessage2(senderID, "Settings - General - Network - Cellural Data Network - APN - хэсгийг сонгож style гэж бичнэ.");
             break;
               case 'CUSTOM_3_3_2_1':
-            sendTextMessage2(senderID, "Android утсанд сүлжээ орохгүй бол тохиргоог дараах заавраар хийнэMenu->Settings->More->Mobile networks->Search network automatically->Skytel сонгоно.");
+            sendTextMessage2(senderID, "Menu->Settings->More->Mobile networks->Search network automatically->Skytel сонгоно.");
             break;
               case 'CUSTOM_1_2_2_2':
             sendTextMessage2(senderID, "Тус үйлчилгээнд бүртгүүлэхдээ үйлчилгээний үндсэн болон гэрээт салбарт өөрийн иргэний үнэмлэх, төрсний гэрчилгээний хамт ирнэ.                      123 дугаарт дараах утгуудыг илгээнэ.                               +91******100MB дотны хүндээ бэлэглэх                             DATA Өөрийн шилжүүлэн авсан, шилжүүлсэн, үлдэгпэл шалгах                                 Love 91****** 1₮-өөр дуудлага хийх хосоо бүртгэх                                      Single Хосоо хасахад/1000₮ хураамжтай.                                Love Хосын дугаараа шалгах                               BDAYТөрсөн өдрийн урамшууллыг хэрэглээг шалгах");
@@ -3211,7 +3211,7 @@ function receivedPostback(event) {
             sendTextMessage2(senderID, "ERROR:691 Холболт хийгдэхэд алдаа гарлаа. Та нууц үгээ дахин оруулна уу? , Таны хэрэглэгчийн нэр, нууц үг буруу байна. Эсвэл үйлчилгээний хугацаа, мэдээлэл татаж авах эрх дууссан үед ийм алдаа гарна.ERROR:680 CCU-550 modem evdo for vista support татаж программыг ажиллуулахад  гэсэн алдаа гарвал татаж авсан програмыг ашиглахгүйгээр Vista үйлдлийн системийн dial up модемоор холболт хийгдэнэ. Windows 95, 98, Me NT, 2K & XP үйлдлийн систем дээр ажиллана.ERROR:718 Компьютерийг restart хийх (унтрааж асаах ) хэрэгтэй. Модем драйверыг дахин суулгана");
             break;
              case 'CUSTOM_3_3_2_2':
-            sendTextMessage2(senderID, "IOS утсанд сүлжээ орохгүй бол тохиргоог дараах заавраар хийнэSettings-Carrier-Automatic-g idevhijuulne. Bas Settings->Cellular->Voice & Data->3G-g  сонгоно");
+            sendTextMessage2(senderID, " Settings-Carrier-Automatic-g idevhijuulne. Bas Settings->Cellular->Voice & Data->3G-g  сонгоно.");
             break;
         case 'CUSTOM_FROM_123_NEWS':
                     sendNewsMessage(senderID); 
