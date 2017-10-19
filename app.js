@@ -2720,7 +2720,7 @@ function CUSTOM_1_1_1_1(recipientId) {
               elements: [{
                 title: "Хэрэглээ шалгах",
                 image_url: `https://www.skytel.mn/app/images/beldsen/home/7.png`,
-                subtitle: "Илгээх утга = U , Тусгай дугаар = 1510, Багцад дагалдах эрхээс үлдсэн хэрэглээг харуулна",
+                subtitle: "Илгээх утга = U , Тусгай дугаар = 1510, Багцад дагалдах эрхээс үлдсэн хэрэглээ",
                          
                 buttons: [ {
                   type: "postback",
@@ -2730,7 +2730,7 @@ function CUSTOM_1_1_1_1(recipientId) {
               },{
                 title: "Төлбөр шалгах",
                 image_url: `https://www.skytel.mn/app/images/beldsen/useful/14.png`,
-                       subtitle: "Илгээх утга = B , Тусгай дугаар = 1510,  Хэрэглээг мөнгөн дүнгээр харуулна  ",
+                       subtitle: "Илгээх утга = B , Тусгай дугаар = 1510,  Хэрэглээг мөнгөн дүнгээр   ",
                    
                buttons: [ {
                   type: "postback",
@@ -2740,7 +2740,7 @@ function CUSTOM_1_1_1_1(recipientId) {
               },{
               title: "Дата шалгах",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
-                    subtitle: "Илгээх утга = D , Тусгай дугаар = 1510, Дата хэрэглээ болон дата багцын үлдэгдэлийг харуулна  ",
+                    subtitle: "Илгээх утга = D , Тусгай дугаар = 1510, Дата хэрэглээ болон дата багцын үлдэгдэл  ",
                            
                buttons: [ {
                   type: "postback",
@@ -2750,7 +2750,7 @@ function CUSTOM_1_1_1_1(recipientId) {
               },{
                 title: "Хэрэглээ шалгах",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
-                subtitle: "Илгээх утга = 2017/08, Тусгай дугаар = 1510, Өмнөх сарын төлбөр шалгах ",
+                subtitle: "Илгээх утга = 2017/08, Тусгай дугаар = 1510, Өмнөх сарын төлбөр  ",
                            
                buttons: [ {
                   type: "postback",
