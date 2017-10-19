@@ -1791,6 +1791,35 @@ function CUSTOM_3_3_2(recipientId) {
   };  
   callSendAPI(messageData);
 }
+
+
+function CUSTOM_3_2_1(recipientId) {
+ var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Та 1515 лавлах төв, эсвэл online ажилтантай холбогдоно уу.",
+          buttons:[
+                {
+                              "type": "web_url",
+                              "url": "https://www.skytel.mn/", 
+                              "title": "Энд дарна уу"
+                            }
+          ]
+        }
+      }
+    }
+  };  
+
+  callSendAPI(messageData);
+}
+
+
 function CUSTOM_1_1_1_2(recipientId) {
  var messageData = {
     recipient: {
@@ -1801,7 +1830,7 @@ function CUSTOM_1_1_1_2(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "Та интэрнэт банк болон банкуудын гар утасны application ашиглан дараах дансаар төлбөр төлөн гүйлгээний утга алдаагүй тохиолдолд үйлчилгээний эрхээ 10 минутын дотор нээх боломжтой.Та доорх холбоосоор хандан дэлгэрэнгүй заавар авна уу.",
+          text: "Та интэрнэт банк болон гар утасны application ашиглан төлбөрөө төлөх боломжтой. Гүйлгээний утга алдаагүй зөв тохиолдолд үйлчилгээний эрх 10 минутын дотор нээгдэнэ.Та доорх холбоосоор хандан дэлгэрэнгүй заавар авна уу.",
           buttons:[
                 {
                               "type": "web_url",
@@ -2691,7 +2720,7 @@ function CUSTOM_1_1_1_1(recipientId) {
               elements: [{
                 title: "Хэрэглээ шалгах",
                 image_url: `https://www.skytel.mn/app/images/beldsen/home/7.png`,
-                subtitle: "Илгээх утга = U , Тусгай дугаар = 1510, Хэрэглээг мөнгөн дүнгээр харуулна ",
+                subtitle: "Илгээх утга = U , Тусгай дугаар = 1510, Багцад дагалдах эрхээс үлдсэн хэрэглээг харуулна",
                          
                 buttons: [ {
                   type: "postback",
@@ -2701,7 +2730,7 @@ function CUSTOM_1_1_1_1(recipientId) {
               },{
                 title: "Төлбөр шалгах",
                 image_url: `https://www.skytel.mn/app/images/beldsen/useful/14.png`,
-                       subtitle: "Илгээх утга = B , Тусгай дугаар = 1510, Багцад дагалдах эрхээс үлдсэн хэрэглээг харуулна  ",
+                       subtitle: "Илгээх утга = B , Тусгай дугаар = 1510,  Хэрэглээг мөнгөн дүнгээр харуулна  ",
                    
                buttons: [ {
                   type: "postback",
@@ -3122,7 +3151,9 @@ function receivedPostback(event) {
             case 'CUSTOM_2_3_2':
               CUSTOM_2_3_2(senderID); 
             break;
-            
+             case 'CUSTOM_3_2_1':
+              CUSTOM_3_2_1(senderID); 
+            break;
            
              case 'CUSTOM_salbaroron':
               CUSTOM_salbaroron(senderID); 
@@ -3152,10 +3183,10 @@ function receivedPostback(event) {
             sendTextMessage2(senderID, "Settings-More setting-Mobile network-Access point names Name-Skytel Apn / style, net, skytel / аль нэгийг бичээд хадгална. Утсаа унтрааж асаана.");
             break;
                case 'CUSTOM_2_1_1':
-            sendTextMessage2(senderID, "Та манай Дараа төлбөрт үйлчилгээний шинэ хэрэглэгч болсноор дараах урамшуулалд хамрагдах боломжтой.Энгийн дугаарынбүртгэлийн хураамж 0₮/Барьцаа төлбөр байршуулна/. Эхний 3 сар суурь хураамж 30% хөнгөлнө ");
+            sendTextMessage2(senderID, "Та манай ДТҮ-ний шинэ хэрэглэгч болсноор МОНГОЛдоо үйлчилгээний энгийн дугаарын бүртгэлийн хураамж 0₮ мөн сонгосон багцын суурь хураамжаас эхний 3 сард 30% хөнгөлнө.");
             break;
       case 'CUSTOM_2_2_3':
-            sendTextMessage2(senderID, "Та Shake and share үйлчилгээний шинэ хэрэглэгч болоод дараах урамшуулалд хамрагдаарай(Энгийн дугаар-1,000₮-30хоног-1,000нэгж-180 хоног FACEBOOK)");
+            sendTextMessage2(senderID, "Та Shake and share үйлчилгээний энгийн дугаар-1,000₮-р  30хоног-1,000нэгж-180 хоног FACEBOOK эрхтэй  авах боломжтой.");
             break;
               case 'CUSTOM_2_3_1':
             sendTextMessage2(senderID, "2017/09/15-2017/12/31 дуустал  үргэлжлэх Smart Home урамшууллын мэдээлэлтэй танилцана уу.Скаймедиа үйлчилгээний гэрээ байгуулсан хэрэглэгч скайтелийн дугаараа бүртгэлтэй дугаарт бүртгүүлэн админ болж  5 гишүүн СКАЙтелийн дугаар бүртгэж групп үүсгэж ХООРОНДОО ХЯЗГААРГҮЙ ЯРИА, САР БҮР ДАТА, КИНО ГАЛЛЕРЕЙ багцын урамшуулал авна.Админ болон гишүүн дугаар нь Скайтелийн Урьдчилсан төлбөрт үйлчилгээ болон Дараа төлбөрт үйлчилгээний дугаар байна.Гишүүн дугаар нь IP76 дугаар, модемийн (NEX, Skynet) дугаар байх боломжгүй.");
@@ -3190,7 +3221,7 @@ function receivedPostback(event) {
           
            
               case 'CUSTOM_1_1_1_3':
-            sendTextMessage2(senderID, "Та www.skytel.mn сайтад хандан орон зай, цаг хугацааны хязгаарлалтгүйгээр хэрэглээний төлбөрөө төлөх боломжтой. Гүйлгээ амжилттай бол үйлчилгээний эрх шууд нээгдэх нь банкаар дамжуулан төлөхөөс илүү давуу талтай.");
+            sendTextMessage2(senderID, "Та www.skytel.mn сайтад хандан орон зай, цаг хугацааны хязгаарлалтгүйгээр хэрэглээний төлбөрөө төлөх боломжтой. Төлбөр амжилттай төлөгдмөгц үйлчилгээний эрх шууд нээгдэх нь банкаар дамжуулан төлөхөөс илүү давуу талтай.Та бүх арилжааны банкуудын төлбөрийн картыг ашиглах боломжтой.");
             break;
              case 'CUSTOM_viewmore_1':
             sendTextMessage2(senderID, "Шинээр account үүсгэх Текст статус бичих Check in хийх Зураг харах Facebook-н видео үзэх Like, comment,share хийх Онлайн хүмүүс харах Friend request, notification харах.");
@@ -3201,8 +3232,7 @@ function receivedPostback(event) {
              case 'CUSTOM_viewmore_3':
             sendTextMessage2(senderID, "Voice дуудлага хийх* Voice дуудлага хүлээн авах* Video дуудлага хийх* Video дуудлага хүлээн авах* Giphy хөдөлгөөнт зулаг илгээх");
             break;
-            case 'CUSTOM_3_2_1':
-            sendTextMessage2(senderID, "1515 дугаарт залгах юмуу online ажилтантай холбогдож үлдэгдлээ шалгана уу");
+     
             break;
              case 'CUSTOM_2_1_2':
             sendTextMessage2(senderID, "Гар утасны лизингийн урамшуулал одоогоор дууссан байна. Удахгүй шинэ урамшуулал зарлах болно.");
