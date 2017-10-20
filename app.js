@@ -1020,7 +1020,7 @@ function CUSTOM_salbarub(recipientId) {
               },{
                  title: "Скайтел үйлчилгээний төв ЧДүүрэг, 3-р хороо, Тэнгис кино театрийн замын урд талд  7611-2001",
                 image_url: `https://www.skytel.mn/app/images/messenger-bot/branches/5.jpg`,
-                subtitle: "Даваа-Баасан: 08:30-20:00 Бямба,Ням: 10:00-19:00",
+                subtitle: "Даваа-Баасан: 08:30-18:00 Бямба,Ням: 10:00-19:00",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
                buttons: [ {
                   type: "postback",
@@ -1060,7 +1060,7 @@ function CUSTOM_salbarub(recipientId) {
               },{
                  title: "Имарт салбар*Баянзүрх дүүрэг, Технологийн гудамж, Имарт Чингис салбар 2 давхар",
                 image_url: `https://www.skytel.mn/app/images/messenger-bot/branches/1.jpg`,
-                subtitle: "Даваа-Ням: 10:00-20:00",
+                subtitle: "Даваа-Ням: 10:00-22:00",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
                buttons: [ {
                   type: "postback",
