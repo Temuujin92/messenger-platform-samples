@@ -740,6 +740,10 @@ function CUSTOM_1_2_2(recipientId) {
             type: "postback",
             title: "Бүртгүүлэх заавар",
             payload: "CUSTOM_1_2_2_2"
+          }, {
+            type: "postback",
+            title: "Үйлчилгээ ашиглах",
+            payload: "CUSTOM_1_2_2_3"
           }]
         }
       }
@@ -793,7 +797,7 @@ function CUSTOM_1_1_1(recipientId) {
             title: "Төлбөр шалгах заавар"
           }, {
             type: "postback",
-            title: "Mobile,интернет банк",
+            title: "Mobile,интернэт банк",
             payload: "CUSTOM_1_1_1_2"
           }, {
             type: "postback",
@@ -1897,6 +1901,91 @@ function CUSTOM_3_1_1(recipientId) {
   callSendAPI(messageData);
 }
 
+
+function CUSTOM_1_2_2_3(recipientId) {
+    networking.getLatestNews((detail) => {
+      newsDetail = detail; 
+      var messageData = {
+        recipient: {
+          id: recipientId
+        },
+        message: {
+          attachment: {
+            type: "template",
+            payload: {
+              template_type: "generic",
+              elements: [{
+                title: "Хосын дугаар бүртгэх Түлхүүр үг: 9******* Тусгай дугаар 123",
+                image_url: `https://www.skytel.mn/uploads/images/5(1).png`,
+                subtitle: "Хосын дугаар цуцлах: Single Тусгай дугаар: 123",
+                         
+                buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "100MB 10 хоног Үнэ:1000",
+                image_url: `https://www.skytel.mn/uploads/images/5(1).png`,
+                subtitle: "Идэвхжүүлэх заавар:100mbsend 123",
+              
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+               title: "300MB 15 хоног Үнэ:3000",
+                image_url: `https://www.skytel.mn/uploads/images/5(1).png`,
+                subtitle: "Идэвхжүүлэх заавар:300mbsend 123",
+                   
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "1GB 30 хоног Үнэ:10000",
+                image_url: `https://www.skytel.mn/uploads/images/5(1).png`,
+                subtitle: "Идэвхжүүлэх заавар:1GBsend 123",
+                             
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "2GB 30 хоног Үнэ:13000",
+                image_url: `https://www.skytel.mn/uploads/images/5(1).png`,
+                subtitle: "Идэвхжүүлэх заавар:2GB send 123",
+                           
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+              },{
+                 title: "10 GB 60 хоног Үнэ:30000",
+                image_url: `https://www.skytel.mn/app/images/messenger-bot/data_package.png`,
+                subtitle: "Идэвхжүүлэх заавар:10GBsend 123",
+                
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
+             }]
+            }
+          }
+        }
+      };  
+
+      callSendAPI(messageData);
+  });
+  
+
+  }
+
 function CUSTOM_1_3_1(recipientId) {
     networking.getLatestNews((detail) => {
       newsDetail = detail; 
@@ -1980,6 +2069,7 @@ function CUSTOM_1_3_1(recipientId) {
   
 
   }
+
 function CUSTOM_1_3_2(recipientId) {
     networking.getLatestNews((detail) => {
       newsDetail = detail; 
@@ -3120,6 +3210,9 @@ function receivedPostback(event) {
               case 'CUSTOM_1_1_1_2':
             CUSTOM_1_1_1_2(senderID); 
             break; 
+             case 'CUSTOM_1_2_2_3':
+            CUSTOM_1_2_2_3(senderID); 
+            break; 
              
               case 'CUSTOM_1_1_2_1':
             CUSTOM_1_1_2_1(senderID); 
@@ -3226,7 +3319,7 @@ function receivedPostback(event) {
             sendTextMessage2(senderID, "Menu->Settings->More->Mobile networks->Search network automatically->Skytel сонгоно.");
             break;
               case 'CUSTOM_1_2_2_2':
-            sendTextMessage2(senderID, "Тус үйлчилгээнд бүртгүүлэхдээ үйлчилгээний үндсэн болон гэрээт салбарт өөрийн иргэний үнэмлэх, төрсний гэрчилгээний хамт ирнэ.");
+            sendTextMessage2(senderID, "Та  14-22насны хэрэглэгч бөгөөд SHAKE & SHARE  үйлчилгээнд шилжих бол өөрт ойрхон үйлчилгээний салбарт өөрийн цахим үнэмлэх эсвэл төрсний гэрчилгээтэйгээ хандан SHAKE & SHARE үйлчилгээнд бүртгүүлэх боломжтой. Бүртгүүлэхэд төлбөргүй.");
             break;
               case 'CUSTOM_1_1_2_3':
             sendTextMessage2(senderID, "•	МОНГОЛдоо хамгийн их Дата эрхтэй•	Дата эрхээ 3 хүртэлх дотны хүндээ хуваалцах /share/ боломжтой•	МОНГОЛдоо үүрэн болон суурин холбооны бүх сүлжээнд хүссэнээрээ ярина•	Суурь хураамжид татвар тооцсон тул НӨАТ нэмэгдэхгүй•	Төлбөр төлөх уян хатан боломжууд•	Олон улсын яриа, мессэж, дата роумингийн үйлчилгээг сонгох боломжтой•	21Mbps хүртэлх хурдаар интернэт ашиглах боломжтой");
