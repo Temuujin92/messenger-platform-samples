@@ -250,6 +250,23 @@ function receivedMessage(event) {
                case 'operator':
               operator(senderID); 
             break;
+             case 'tulhuur1':
+              CUSTOM_2_1(senderID); 
+            break;
+                 case 'tulhuur2':
+              CUSTOM_1_1_1_3(senderID); 
+            break;
+                 case 'tulhuur3':
+              CUSTOM_2_1(senderID); 
+            break;
+                 case 'tulhuur4':
+              CUSTOM_1_3(senderID); 
+            break;
+                 case 'tulhuur5':
+              CUSTOM_3_3(senderID); 
+            break;
+              
+              
 		case 'CUSTOM_QUICK_DATA_1GB':
 			sendTextMessage(senderID, "1gb гэсэн түлхүүр үгийг 123 дугаарт илгээнэ. Дагалдах эрх үйлчилгээний хоног 30. Үнэ 10.000₮"); 
             break;
@@ -295,10 +312,7 @@ function receivedMessage(event) {
      case 'salbar':
          salbarMessage(senderID); 
             break;
-            case 'Төлбөр':
-            case 'төлбөр':
-         CUSTOM_1_1_1_1(senderID); 
-            break;
+          
            case 'Шинэ дугаар':
             case 'шинэ дугаар':
          CUSTOM_2_1_1_key(senderID); 
@@ -307,10 +321,7 @@ function receivedMessage(event) {
             case 'shake and share':
          CUSTOM_1_2_2_1_key(senderID); 
             break;
-              case 'Урамшуулал':
-            case 'урамшуулал':
-         CUSTOM_2_1(senderID); 
-            break;
+             
               case 'Карт':
             case 'карт':
          CUSTOM_2_2_2(senderID); 
@@ -334,10 +345,7 @@ function receivedMessage(event) {
          CUSTOM_3_2(senderID); 
             break;
             
-               case 'Тохиргоо':
-            case 'тохиргоо':
-         CUSTOM_3_3(senderID); 
-            break;
+
               case 'Үнэ':
             case 'үнэ':
          CUSTOM_3_1(senderID); 
@@ -346,31 +354,20 @@ function receivedMessage(event) {
             case 'лизинг':
          CUSTOM_2_1_2(senderID); 
             break;
-               case 'Дата':
-            case 'дата':
-         CUSTOM_1_3(senderID); 
-            break;
+             
                  case 'Монголдоо':
             case 'монголдоо':
          CUSTOM_1_1_2(senderID); 
             break;
-             case 'Өнгөлөг':
-            case 'өнгөлөг':
-         CUSTOM_1_2_1(senderID); 
-            break;
-                 case 'Дата':
-            case 'дата':
-         CUSTOM_1_3(senderID); 
-            break;
+            
+               
        case 'ip': 
             ip(senderID); 
             break; 
             case 'test': 
             CUSTOM_test(senderID); 
             break; 
-        case 'мэдээ':
-            sendNewsMessage(senderID); 
-            break; 
+      
 
       default:
         maunfunc(senderID);
@@ -2658,7 +2655,7 @@ function maunfunc(recipientId) {
         },
         {
           "content_type":"text",
-          "title":"Салбарууд",
+          "title":"Салбар",
           "payload":"CUSTOM_salbar_2"
         },
         {
@@ -2782,8 +2779,38 @@ function tulhuurug(recipientId) {
       id: recipientId
     },
     message: {
-      text: "Төлбөр                                                       Урамшуулал                           Карт                                          Нэгж                                   Модем                           Тохиргоо                                    Үнэ                                     Лизинг                                  Дата                           Монголдоо                           Өнгөлөг ",
-     
+
+      text: 'Та дараах түлхүүр үгнээс ашиглан BOT-оос мэдээллээ лавлана уу.' ,
+      metadata: "ZOL_DEFINED_METADATA",
+            
+      quick_replies: [
+        {
+          "content_type":"text",
+          "title":"Урамшуулал",
+          "payload":"tulhuur1"
+        },
+        {
+          "content_type":"text",
+          "title":"Төлбөр",
+          "payload":"tulhuur2"
+        },
+        {
+          "content_type":"text",
+          "title":"Өнгөлөг",
+          "payload":"tulhuur3"
+        },
+        {
+          "content_type":"text",
+          "title":"Дата",
+          "payload":"tulhuur4"
+        },
+        {
+          "content_type":"text",
+          "title":"Тохиргоо",
+          "payload":"tulhuur5"
+        }
+      ]
+            
     }
   };
 
