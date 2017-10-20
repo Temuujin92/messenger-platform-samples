@@ -1228,7 +1228,7 @@ function CUSTOM_salbaroron_tuv(recipientId) {
               elements: [{
                 title: "Админ дугаараас гишүүн бүртгэх хүсэлт илгээх",
                 image_url: `https://www.skytel.mn/uploads/images/1(8).jpg`,
-                subtitle: "+91XXXXXХ Гэж бичээд  555 дугаарт мессеж илгээнэ",
+                subtitle: "Түлхүүр үг:+9*******Тусгай дугаар: 555",
                             
                buttons: [ {
                   type: "postback",
@@ -1238,7 +1238,7 @@ function CUSTOM_salbaroron_tuv(recipientId) {
               },{
                  title: "Гэрээний дугаар харах",
                 image_url: `https://www.skytel.mn/uploads/images/1(8).jpg`,
-                subtitle: "Geree гэж бичээд  555 дугаарт мессеж илгээнэ",
+                subtitle: " Түлхүүр үг: Geree Тусгай дугаар: 555",
                          
                buttons: [ {
                   type: "postback",
@@ -1248,7 +1248,7 @@ function CUSTOM_salbaroron_tuv(recipientId) {
               },{
                title: "Бүртгэлтэй гишүүн дугааруудын жагсаалт харах",
                 image_url: `https://www.skytel.mn/uploads/images/1(8).jpg`,
-                subtitle: "All  гэж бичээд  555 дугаарт мессеж илгээнэ",
+                subtitle: "Түлхүүр үг: ALLТусгай дугаар: 555",
                             
                buttons: [ {
                   type: "postback",
@@ -1258,7 +1258,7 @@ function CUSTOM_salbaroron_tuv(recipientId) {
               },{
                  title: "Гишүүн дугаар хасах",
                 image_url: `https://www.skytel.mn/uploads/images/1(8).jpg`,
-                subtitle: "-91XXXXXXгэж бичээд  555 дугаарт мессеж илгээнэ",
+                subtitle: "Түлхүүр үг: -9*******Тусгай дугаар: 555",
                         
                buttons: [ {
                   type: "postback",
@@ -1268,7 +1268,7 @@ function CUSTOM_salbaroron_tuv(recipientId) {
               },{
                  title: "Дата үлдэгдэл шалгах",
                 image_url: `https://www.skytel.mn/uploads/images/1(8).jpg`,
-                subtitle: "DATA гэж бичээд  555 дугаарт мессеж илгээнэ",
+                subtitle: "Түлхүүр үг: DATA Тусгай дугаар: 555",
                             
                buttons: [ {
                   type: "postback",
@@ -1278,7 +1278,7 @@ function CUSTOM_salbaroron_tuv(recipientId) {
               },{
                  title: "Гишүүн дугаар группт нэмэх хүсэлт хүлээн авах",
                 image_url: `https://www.skytel.mn/uploads/images/1(8).jpg`,
-                subtitle: "Ok гэж бичээд  555 дугаарт мессеж илгээнэ",
+                subtitle: "Түлхүүр үг: OK Тусгай дугаар: 555",
                          
                buttons: [ {
                   type: "postback",
@@ -1835,6 +1835,32 @@ function CUSTOM_1_1_1_2(recipientId) {
                 {
                               "type": "web_url",
                               "url": "https://www.skytel.mn/p/postpaid-info", 
+                              "title": "Энд дарна уу"
+                            }
+          ]
+        }
+      }
+    }
+  };  
+
+  callSendAPI(messageData);
+}
+
+function CUSTOM_1_2_2_1(recipientId) {
+ var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "14-22 насны хэрэглэгч Shake&share үйлчилгээнд хамрагдах боломжтой. 23 нас хүртлээ сар бүр 100MB дата, ойр дотны 3 дугаартаа сар бүр 100МB бэлэглэх, мөн бэлэглэх бүртээ 100МВ датаг урамшуулалд авна.  Мөн Та төрсөн өдрөөрөө 1000000 нэгжийн бэлэгтэй. Үүнээс гадна Shake&share-д бүртгэлтэй 1 дугаартай 1 төгрөгөөр дуудлага хийх боломжтойгоос гадна Skytel аппликан татаж аваад дугаараа оруулаад сэгсрээд дататай болно.",
+          buttons:[
+                {
+                              "type": "web_url",
+                              "url": "https://www.skytel.mn/content/2368/view", 
                               "title": "Энд дарна уу"
                             }
           ]
@@ -3215,10 +3241,10 @@ function receivedPostback(event) {
             case 'Custom_middle_3_1':
             sendTextMessage2(senderID, "Яриа-30₮, Мессэж-(Бусад сүлжээ 20₮,Сүлжээндээ 0₮),Дата-1MB 12₮");
             break;
+         
              case 'CUSTOM_1_2_2_1':
-            sendTextMessage2(senderID, "14-22 насны хэрэглэгч Shake&Share үйлчилгээнд бүртгүүлэн дараах давуу талуудыг авна. 1. Сар бүр 23 нас хүртлээ 100MB дата багц 2. Ойр дотны 3 дугаарт сар бүр 100MB бэлэглэх, мөн бэлгэлэх бүртээ 100MB өөртөө авах 3. Хэдэн ч хэрэглэгчээс 100MB дата бэлгэнд авах боломж 4. Төрсөн өдрөөрөө сүлжээндээ яриа мессэж задгай датанд ашиглах 1 сая нэгж бэлгэнд авах 5. Shake&Share-т бүртгэлтэй 1 дугаартайгаа 1₮-өөр дуудлага хийхболомжийг эдэлнэ.");
+              CUSTOM_1_2_2_1(senderID); 
             break;
-          
            
               case 'CUSTOM_1_1_1_3':
             sendTextMessage2(senderID, "Та www.skytel.mn сайтад хандан орон зай, цаг хугацааны хязгаарлалтгүйгээр хэрэглээний төлбөрөө төлөх боломжтой. Төлбөр амжилттай төлөгдмөгц үйлчилгээний эрх шууд нээгдэх нь банкаар дамжуулан төлөхөөс илүү давуу талтай.Та бүх арилжааны банкуудын төлбөрийн картыг ашиглах боломжтой.");
