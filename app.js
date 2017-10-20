@@ -309,7 +309,7 @@ function receivedMessage(event) {
             break;
               case 'Урамшуулал':
             case 'урамшуулал':
-         CUSTOM_2(senderID); 
+         CUSTOM_2_1(senderID); 
             break;
               case 'Карт':
             case 'карт':
@@ -1721,7 +1721,7 @@ function CUSTOM_3_3(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "гар утасны тохиргоо",
+          text: "Гар утасны тохиргоо",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_3_3_1",
@@ -1748,7 +1748,7 @@ function CUSTOM_3_3_1(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "гар утасны тохиргоо",
+          text: "Гар утасны тохиргоо",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_3_3_1_1",
@@ -1775,7 +1775,7 @@ function CUSTOM_3_3_2(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "Модем",
+          text: "Гар утасны тохиргоо",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_3_3_2_1",
@@ -1886,7 +1886,7 @@ function CUSTOM_1_3_1(recipientId) {
               elements: [{
                 title: "Facebook багц 30 хоног Үнэ:5000",
                 image_url: `https://www.skytel.mn/app/images/messenger-bot/fb_package.png`,
-                subtitle: "Идэвхжүүлэхзаавар:Facebook send 123",
+                subtitle: "Идэвхжүүлэх заавар:Facebook send 123",
                          
                 buttons: [ {
                   type: "postback",
@@ -1896,7 +1896,7 @@ function CUSTOM_1_3_1(recipientId) {
               },{
                  title: "100MB 10 хоног Үнэ:1000",
                 image_url: `https://www.skytel.mn/app/images/messenger-bot/data_package.png`,
-                subtitle: "Идэвхжүүлэхзаавар:100mbsend 123",
+                subtitle: "Идэвхжүүлэх заавар:100mbsend 123",
               
                buttons: [ {
                   type: "postback",
@@ -1906,7 +1906,7 @@ function CUSTOM_1_3_1(recipientId) {
               },{
                title: "300MB 15 хоног Үнэ:3000",
                 image_url: `https://www.skytel.mn/app/images/messenger-bot/data_package.png`,
-                subtitle: "Идэвхжүүлэхзаавар:300mbsend 123",
+                subtitle: "Идэвхжүүлэх заавар:300mbsend 123",
                    
                buttons: [ {
                   type: "postback",
@@ -1916,7 +1916,7 @@ function CUSTOM_1_3_1(recipientId) {
               },{
                  title: "1GB 30 хоног Үнэ:10000",
                 image_url: `https://www.skytel.mn/app/images/messenger-bot/data_package.png`,
-                subtitle: "Идэвхжүүлэхзаавар:1GBsend 123",
+                subtitle: "Идэвхжүүлэх заавар:1GBsend 123",
                              
                buttons: [ {
                   type: "postback",
@@ -1926,7 +1926,7 @@ function CUSTOM_1_3_1(recipientId) {
               },{
                  title: "2GB 30 хоног Үнэ:13000",
                 image_url: `https://www.skytel.mn/app/images/messenger-bot/data_package.png`,
-                subtitle: "Идэвхжүүлэхзаавар:2GB send 123",
+                subtitle: "Идэвхжүүлэх заавар:2GB send 123",
                            
                buttons: [ {
                   type: "postback",
@@ -1936,7 +1936,7 @@ function CUSTOM_1_3_1(recipientId) {
               },{
                  title: "10 GB 60 хоног Үнэ:30000",
                 image_url: `https://www.skytel.mn/app/images/messenger-bot/data_package.png`,
-                subtitle: "Идэвхжүүлэхзаавар:10GBsend 123",
+                subtitle: "Идэвхжүүлэх заавар:10GBsend 123",
                 
                buttons: [ {
                   type: "postback",
@@ -2188,7 +2188,7 @@ function CUSTOM_1_2_1_1(recipientId) {
               elements: [{
                 title: "1000 карт",
                 image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_a0e6334629accebab4e78569ab2da6640ebb69d6.png`,
-                subtitle: "Хоног:1 , Нэгж:1000, Дагалдах эрх:",
+                subtitle: "Хоног:1 , Нэгж:1000,",
                    
                buttons: [ {
                   type: "postback",
@@ -2301,7 +2301,7 @@ function CUSTOM_1_2_1_2(recipientId) {
               elements: [{
                 title: "500 карт",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
-                subtitle: "Хоног: , Нэгж:500, Үнэ: 500₮ ",
+                subtitle: " Нэгж:500, Үнэ: 500₮ ",
                          
                 buttons: [ {
                   type: "postback",
@@ -2424,7 +2424,7 @@ function CUSTOM_1_2_1_3(recipientId) {
               elements: [{
                 title: "500 карт",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
-                subtitle: "Хоног: , Нэгж:500, Үнэ: 500₮ ",
+                subtitle: "Нэгж:500, Үнэ: 500₮ ",
                          
                 buttons: [ {
                   type: "postback",
@@ -3183,13 +3183,13 @@ function receivedPostback(event) {
             sendTextMessage2(senderID, "Settings-More setting-Mobile network-Access point names Name-Skytel Apn / style, net, skytel / аль нэгийг бичээд хадгална. Утсаа унтрааж асаана.");
             break;
                case 'CUSTOM_2_1_1':
-            sendTextMessage2(senderID, "Та манай ДТҮ-ний шинэ хэрэглэгч болсноор МОНГОЛдоо үйлчилгээний энгийн дугаарын бүртгэлийн хураамж 0₮ мөн сонгосон багцын суурь хураамжаас эхний 3 сард 30% хөнгөлнө.");
+            sendTextMessage2(senderID, "11/30н хүртэл  Дараа төлбөрт үйлчилгээний энгийн дугаар: 0₮/ Азын дугаар: 60000₮  Багцаасаа хамаараад 20000₮ болон 50000₮ барьцаа байршуулна Эхний 3 сар  суурь хураамжнаас 30% хөнгөлнө.");
             break;
       case 'CUSTOM_2_2_3':
             sendTextMessage2(senderID, "Та Shake and share үйлчилгээний энгийн дугаар-1,000₮-р  30хоног-1,000нэгж-180 хоног FACEBOOK эрхтэй  авах боломжтой.");
             break;
               case 'CUSTOM_2_3_1':
-            sendTextMessage2(senderID, "2017/09/15-2017/12/31 дуустал  үргэлжлэх Smart Home урамшууллын мэдээлэлтэй танилцана уу.Скаймедиа үйлчилгээний гэрээ байгуулсан хэрэглэгч скайтелийн дугаараа бүртгэлтэй дугаарт бүртгүүлэн админ болж  5 гишүүн СКАЙтелийн дугаар бүртгэж групп үүсгэж ХООРОНДОО ХЯЗГААРГҮЙ ЯРИА, САР БҮР ДАТА, КИНО ГАЛЛЕРЕЙ багцын урамшуулал авна.Админ болон гишүүн дугаар нь Скайтелийн Урьдчилсан төлбөрт үйлчилгээ болон Дараа төлбөрт үйлчилгээний дугаар байна.Гишүүн дугаар нь IP76 дугаар, модемийн (NEX, Skynet) дугаар байх боломжгүй.");
+            sendTextMessage2(senderID, "Скаймедиа үйлчилгээний хэрэглэгч өөрийн гэрээндээ Скайтелийн дараа  болон урдчилсан төлбөрт үйлчилгээний дугаарыг бүртгүүлснээр Smart home үйлчилгээний урамшууллыг авна. Та өөрийн дугаараас гадна 1-5 хүртэлх дугааруудыг тухайн үйлчилгээнд бүртгүүлснээр хоорондоо ХЯЗГААРГҮЙ  ЯРИХ, сар бүр ДАТА эрх авахаас гадна КИНО ГАЛЕРЕЙ үйлчилгээг үнэ төлбөргүй 2018/06/01-н хүртэл ашиглах боломжтой. 2017/12/31-с өмнө амжиж урамшууллаа аваарай.");
             break;
              
          
