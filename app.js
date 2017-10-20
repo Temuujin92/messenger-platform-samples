@@ -1925,9 +1925,9 @@ function CUSTOM_1_2_2_3(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "100MB 10 хоног Үнэ:1000",
+                 title: "Data share: Түлхүүр үг:9xxxxxxx 100MB  Тусгай дугаар: 123",
                 image_url: `https://www.skytel.mn/uploads/images/5(1).png`,
-                subtitle: "Идэвхжүүлэх заавар:100mbsend 123",
+                subtitle: "Дата хэрэглээгээ шалгах Түлхүүр үг: Data  Тусгай дугаар: 123",
               
                buttons: [ {
                   type: "postback",
@@ -1935,46 +1935,16 @@ function CUSTOM_1_2_2_3(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-               title: "300MB 15 хоног Үнэ:3000",
-                image_url: `https://www.skytel.mn/uploads/images/5(1).png`,
-                subtitle: "Идэвхжүүлэх заавар:300mbsend 123",
+               title: "Төрсөн өдрийн урамшуулал шалгах: Түлхүүр үг: Bday Тусгай дугаар: 123",
+                image_url: `https://www.skytel.mn/uploads/images/6(1).png`,
+                subtitle: " ",
                    
                buttons: [ {
                   type: "postback",
                   title: "Буцах",
                   payload: `CUSTOM_Back`,
                 }],
-              },{
-                 title: "1GB 30 хоног Үнэ:10000",
-                image_url: `https://www.skytel.mn/uploads/images/5(1).png`,
-                subtitle: "Идэвхжүүлэх заавар:1GBsend 123",
-                             
-               buttons: [ {
-                  type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
-                }],
-              },{
-                 title: "2GB 30 хоног Үнэ:13000",
-                image_url: `https://www.skytel.mn/uploads/images/5(1).png`,
-                subtitle: "Идэвхжүүлэх заавар:2GB send 123",
-                           
-               buttons: [ {
-                  type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
-                }],
-              },{
-                 title: "10 GB 60 хоног Үнэ:30000",
-                image_url: `https://www.skytel.mn/app/images/messenger-bot/data_package.png`,
-                subtitle: "Идэвхжүүлэх заавар:10GBsend 123",
-                
-               buttons: [ {
-                  type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
-                }],
-             }]
+              }]
             }
           }
         }
