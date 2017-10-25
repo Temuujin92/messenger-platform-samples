@@ -475,10 +475,10 @@ function startUramshuulal(recipientId) {
           buttons:[{
             type: "postback",
             payload: "CUSTOM_2_1",
-            title: "ДТҮ-ний урамшуулал"
+            title: "ДТҮ урамшуулал"
           }, {
             type: "postback",
-            title: "УТҮ-ний урамшуулал",
+            title: "УТҮ урамшуулал",
             payload: "CUSTOM_2_2"
           }, {
             type: "postback",
@@ -2196,7 +2196,7 @@ function CUSTOM_1_1_2_2(recipientId) {
               elements: [{
                 title: "10,000₮",
                 image_url: `https://www.skytel.mn/app/images/beldsen/individual/postpaid-10k.png`,
-                subtitle: "Яриа: 250мин , Дата:200MB, Суурь хураамж:10,000₮",
+                subtitle: "Яриа:250мин, Дата:200MB, Суурь хураамж:10,000₮",
                          
                 buttons: [ {
                   type: "postback",
@@ -2206,7 +2206,7 @@ function CUSTOM_1_1_2_2(recipientId) {
               },{
            title: "20,000₮",
                 image_url: `https://www.skytel.mn/app/images/beldsen/individual/postpaid-20k.png`,
-             subtitle: "Яриа: 500мин , Дата:1GB, Мессэж:Хязгааргүй,Суурь хураамж:20,000₮",
+             subtitle: "Яриа:500мин, Дата:1GB, Мессэж:Хязгааргүй, Суурь хураамж:20,000₮",
                    
                buttons: [ {
                   type: "postback",
@@ -2216,7 +2216,7 @@ function CUSTOM_1_1_2_2(recipientId) {
               },{
                title: "40,000₮",
                 image_url: `https://www.skytel.mn/app/images/beldsen/individual/postpaid-40k.png`,
-                  subtitle: "Яриа: 1000мин , Дата:4GB, Мессэж:Хязгааргүй,Суурь хураамж:40,000₮",
+                  subtitle: "Яриа:1000мин, Дата:4GB, Мессэж:Хязгааргүй, Суурь хураамж:40,000₮",
                            
                buttons: [ {
                   type: "postback",
@@ -2226,7 +2226,7 @@ function CUSTOM_1_1_2_2(recipientId) {
               },{
                title: "70,000₮",
                 image_url: `https://www.skytel.mn/app/images/beldsen/individual/postpaid-70k.png`,
-                  subtitle: "Яриа: 2000мин , Дата:8GB, Мессэж:Хязгааргүй,Суурь хураамж:70,000₮",
+                  subtitle: "Яриа:2000мин, Дата:8GB, Мессэж:Хязгааргүй, Суурь хураамж:70,000₮",
                            
                buttons: [ {
                   type: "postback",
@@ -2236,7 +2236,7 @@ function CUSTOM_1_1_2_2(recipientId) {
               },{
                title: "100,000₮",
                 image_url: `https://www.skytel.mn/app/images/beldsen/individual/postpaid-100k.png`,
-                  subtitle: "Яриа: 3000мин , Дата:12GB, Мессэж:Хязгааргүй,Суурь хураамж:",
+                  subtitle: "Яриа:3000мин, Дата:12GB, Мессэж:Хязгааргүй, Суурь хураамж:100,000₮",
                            
                buttons: [ {
                   type: "postback",
@@ -2833,7 +2833,7 @@ function CUSTOM_1_1_1_1(recipientId) {
               elements: [{
                 title: "Хэрэглээ шалгах",
                 image_url: `https://www.skytel.mn/app/images/beldsen/home/7.png`,
-                subtitle: "Илгээх утга = U , Тусгай дугаар = 1510, Багцад дагалдах эрхээс үлдсэн хэрэглээ",
+                subtitle: "Түлхүүр үг = U , Тусгай дугаар = 1510, Багцад дагалдах эрхээс үлдсэн хэрэглээ",
                          
                 buttons: [ {
                   type: "postback",
@@ -2843,7 +2843,7 @@ function CUSTOM_1_1_1_1(recipientId) {
               },{
                 title: "Төлбөр шалгах",
                 image_url: `https://www.skytel.mn/app/images/beldsen/useful/14.png`,
-                       subtitle: "Илгээх утга = B , Тусгай дугаар = 1510,  Хэрэглээг мөнгөн дүнгээр   ",
+                       subtitle: "Түлхүүр үг = B , Тусгай дугаар = 1510,  Хэрэглээг мөнгөн дүнгээр   ",
                    
                buttons: [ {
                   type: "postback",
@@ -2853,7 +2853,7 @@ function CUSTOM_1_1_1_1(recipientId) {
               },{
               title: "Дата шалгах",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
-                    subtitle: "Илгээх утга = D , Тусгай дугаар = 1510, Дата хэрэглээ болон дата багцын үлдэгдэл  ",
+                    subtitle: "Түлхүүр үг = D , Тусгай дугаар = 1510, Дата хэрэглээ болон дата багцын үлдэгдэл  ",
                            
                buttons: [ {
                   type: "postback",
@@ -2863,7 +2863,7 @@ function CUSTOM_1_1_1_1(recipientId) {
               },{
                 title: "Хэрэглээ шалгах",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
-                subtitle: "Илгээх утга = 2017/08, Тусгай дугаар = 1510, Өмнөх сарын төлбөр  ",
+                subtitle: "Түлхүүр үг = 201708, Тусгай дугаар = 1510, Өмнөх сарын төлбөр  ",
                            
                buttons: [ {
                   type: "postback",
@@ -2937,7 +2937,7 @@ function CUSTOM_2_2_1(recipientId) {
               elements: [{
                 title: "5000 карт /хоногтой/",
                 image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
-                subtitle: "Урамшуулал- 10000 бонус нэгж Урамшууллын нэгжний хугацаа- 5 хоног Ашиглах төрөл-Сүлжээний яриа, сүлжээний мессеж, задгай дата ",
+                subtitle: "Урамшуулал-10000 нэгж, Хугацаа- 5 хоног, Сүлжээний яриа, мессеж, задгай дата ",
                          
                 buttons: [ {
                   type: "postback",
@@ -2947,7 +2947,7 @@ function CUSTOM_2_2_1(recipientId) {
               },{
                 title: "5000 карт /хоноггүй/",
                 image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
-                       subtitle: "Урамшуулал- 10000 бонус нэгж Урамшууллын нэгжний хугацаа- 5 хоног Ашиглах төрөл-Сүлжээний яриа, сүлжээний мессеж, задгай дата ",
+                       subtitle: "Урамшуулал-10000 нэгж, Хугацаа- 5 хоног, Сүлжээний яриа, мессеж, задгай дата ",
                    
                buttons: [ {
                   type: "postback",
@@ -2957,7 +2957,7 @@ function CUSTOM_2_2_1(recipientId) {
               },{
               title: "10000 карт",
                 image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
-                    subtitle: "Урамшуулал- 100000 бонус нэгж Урамшууллын нэгжний хугацаа- 10 хоног Ашиглах төрөл-Сүлжээний яриа, сүлжээний мессеж, задгай дата ",
+                    subtitle: "Урамшуулал-100000 нэгж, Хугацаа- 10 хоног, Сүлжээний яриа, мессеж, задгай дата ",
                            
                buttons: [ {
                   type: "postback",
@@ -2967,7 +2967,7 @@ function CUSTOM_2_2_1(recipientId) {
               },{
                 title: "15000 карт",
                 image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
-                subtitle: "Урамшуулал- 150000 бонус нэгж Урамшууллын нэгжний хугацаа- 10 хоног Ашиглах төрөл-Сүлжээний яриа, сүлжээний мессеж, задгай дата ",
+                subtitle: "Урамшуулал-150000 нэгж, Хугацаа- 10 хоног, Сүлжээний яриа, мессеж, задгай дата ",
                            
                buttons: [ {
                   type: "postback",
@@ -3296,7 +3296,7 @@ function receivedPostback(event) {
             sendNewsMessage(senderID);
             break;
          case 'CUSTOM_3_3_1_1':
-            sendTextMessage2(senderID, "Settings-More setting-Mobile network-Access point names Name-Skytel Apn / style, net, skytel / аль нэгийг бичээд хадгална. Утсаа унтрааж асаана.");
+            sendTextMessage2(senderID, "Та дараах тохиргоог гар утсандаа хийнэ үү. Settings-More setting-Mobile network-Access point names Name-Skytel Apn / style, net, skytel / аль нэгийг бичээд хадгална. Утсаа унтрааж асаана.");
             break;
                case 'CUSTOM_2_1_1':
             sendTextMessage2(senderID, "11/30н хүртэл  Дараа төлбөрт үйлчилгээний энгийн дугаар: 0₮/ Азын дугаар: 60000₮  Багцаасаа хамаараад 20000₮ болон 50000₮ барьцаа байршуулна Эхний 3 сар  суурь хураамжнаас 30% хөнгөлнө.");
@@ -3310,23 +3310,23 @@ function receivedPostback(event) {
              
          
          case 'CUSTOM_3_3_1_2':
-            sendTextMessage2(senderID, "Settings - General - Network - Cellural Data Network - APN - хэсгийг сонгож style гэж бичнэ.");
+            sendTextMessage2(senderID, "Та дараах тохиргоог гар утсандаа хийнэ үү. Settings - General - Network - Cellural Data Network - APN - хэсгийг сонгож style гэж бичнэ.");
             break;
               case 'CUSTOM_3_3_2_1':
-            sendTextMessage2(senderID, "Menu->Settings->More->Mobile networks->Search network automatically->Skytel сонгоно.");
+            sendTextMessage2(senderID, "Та дараах тохиргоог гар утсандаа хийнэ үү. Menu->Settings->More->Mobile networks->Search network automatically->Skytel сонгоно.");
             break;
               case 'CUSTOM_1_2_2_2':
             sendTextMessage2(senderID, "Та  14-22насны хэрэглэгч бөгөөд SHAKE & SHARE  үйлчилгээнд шилжих бол өөрт ойрхон үйлчилгээний салбарт өөрийн цахим үнэмлэх эсвэл төрсний гэрчилгээтэйгээ хандан SHAKE & SHARE үйлчилгээнд бүртгүүлэх боломжтой. Бүртгүүлэхэд төлбөргүй.");
             break;
               case 'CUSTOM_1_1_2_3':
-            sendTextMessage2(senderID, "•	МОНГОЛдоо хамгийн их Дата эрхтэй•	Дата эрхээ 3 хүртэлх дотны хүндээ хуваалцах /share/ боломжтой•	МОНГОЛдоо үүрэн болон суурин холбооны бүх сүлжээнд хүссэнээрээ ярина•	Суурь хураамжид татвар тооцсон тул НӨАТ нэмэгдэхгүй•	Төлбөр төлөх уян хатан боломжууд•	Олон улсын яриа, мессэж, дата роумингийн үйлчилгээг сонгох боломжтой•	21Mbps хүртэлх хурдаар интернэт ашиглах боломжтой");
+            sendTextMessage2(senderID, "МОНГОЛдоо үүрэн болон суурин холбооны бүх сүлжээнд хүссэнээрээ хязгааргүй ярина. Мөн МОНГОЛдоо хамгийн их дата эрхтэй бөгөөд тухайн эрхээ 3 хүртэлх дотны хүндээ хуваалцах буюу илгээх эрхтэй. Төлбөр төлөх уян хатан боломжууд, ОУ-н яриа, мессэж, дата роумингийн үйлчилгээг сонгох эрхтэйгээс гадна 21MBPS хүртэлх хурдтайгаар интернэт ашиглах зэрэг олон давуу талуудыг МОНГОЛдоогоос авах боломжтой.");
             break;
             
               case 'Custom_middle_1_1':
-            sendTextMessage2(senderID, "Яриа-60₮, Мессэж-(Бусад сүлжээ20₮,Сүлжээндээ 0₮),Дата-1MB 6₮");
+            sendTextMessage2(senderID, "Яриа-60₮, Мессэж-0₮ Бусад сүлжээ-20₮, Дата-1MB 6₮");
             break;
             case 'Custom_middle_2_1':
-            sendTextMessage2(senderID, "Яриа-60₮, Мессэж-20₮,Дата-1MB 12₮");
+            sendTextMessage2(senderID, "Яриа-30₮, Мессэж-0₮ (Бусад сүлжээ 20₮, Дата-1MB 12₮");
             break;
             case 'Custom_middle_3_1':
             sendTextMessage2(senderID, "Яриа-30₮, Мессэж-(Бусад сүлжээ 20₮,Сүлжээндээ 0₮),Дата-1MB 12₮");
@@ -3337,7 +3337,7 @@ function receivedPostback(event) {
             break;
            
               case 'CUSTOM_1_1_1_3':
-            sendTextMessage2(senderID, "Та www.skytel.mn сайтад хандан орон зай, цаг хугацааны хязгаарлалтгүйгээр хэрэглээний төлбөрөө төлөх боломжтой. Төлбөр амжилттай төлөгдмөгц үйлчилгээний эрх шууд нээгдэх нь банкаар дамжуулан төлөхөөс илүү давуу талтай.Та бүх арилжааны банкуудын төлбөрийн картыг ашиглах боломжтой.");
+            sendTextMessage2(senderID, "Та www.skytel.mn сайтад хандан орон зай, цаг хугацааны хязгаарлалтгүйгээр хэрэглээний төлбөрөө төлөх боломжтой. Төлбөр амжилттай төлөгдмөгц үйлчилгээний эрх шууд нээгдэх нь банкаар дамжуулан төлөхөөс илүү давуу талтай.Та бүх арилжааны банкуудын төлбөрийн картыг ашиглах боломжтой.Мөн Skytel.mn сайтаар хугацаандаа буюу сар  бүрийн 20-с өмнө төлбөрөө төлсөн тохиолдолд 5%-н хөнгөлөлт эдлэх давуу талтай.");
             break;
              case 'CUSTOM_viewmore_1':
             sendTextMessage2(senderID, "Шинээр account үүсгэх Текст статус бичих Check in хийх Зураг харах Facebook-н видео үзэх Like, comment,share хийх Онлайн хүмүүс харах Friend request, notification харах.");
@@ -3351,13 +3351,13 @@ function receivedPostback(event) {
      
             break;
              case 'CUSTOM_2_1_2':
-            sendTextMessage2(senderID, "Гар утасны лизингийн урамшуулал одоогоор дууссан байна. Удахгүй шинэ урамшуулал зарлах болно.");
+            sendTextMessage2(senderID, "Гар утасны лизингийн урамшууллын мэдээллийг 1515 лавлах төвд эсвэл онлайн лавлахтай холбогдож мэдээлэл авна уу.");
             break;
              case 'CUSTOM_3_2_3':
             sendTextMessage2(senderID, "ERROR:691 Холболт хийгдэхэд алдаа гарлаа. Та нууц үгээ дахин оруулна уу? , Таны хэрэглэгчийн нэр, нууц үг буруу байна. Эсвэл үйлчилгээний хугацаа, мэдээлэл татаж авах эрх дууссан үед ийм алдаа гарна.ERROR:680 CCU-550 modem evdo for vista support татаж программыг ажиллуулахад  гэсэн алдаа гарвал татаж авсан програмыг ашиглахгүйгээр Vista үйлдлийн системийн dial up модемоор холболт хийгдэнэ. Windows 95, 98, Me NT, 2K & XP үйлдлийн систем дээр ажиллана.ERROR:718 Компьютерийг restart хийх (унтрааж асаах ) хэрэгтэй. Модем драйверыг дахин суулгана");
             break;
              case 'CUSTOM_3_3_2_2':
-            sendTextMessage2(senderID, " Settings-Carrier-Automatic-g idevhijuulne. Bas Settings->Cellular->Voice & Data->3G-g  сонгоно.");
+            sendTextMessage2(senderID, "Та дараах тохиргоог гар утсандаа хийнэ үү. Settings-Carrier-Automatic-g idevhijuulne. Bas Settings->Cellular->Voice & Data->3G-g  сонгоно.");
             break;
         case 'CUSTOM_FROM_123_NEWS':
                     sendNewsMessage(senderID); 
