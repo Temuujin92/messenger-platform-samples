@@ -991,7 +991,7 @@ function CUSTOM_salbarub(recipientId) {
               elements: [{
                 title: "Төв Плаза*СБДүүрэг, Чингисийн өргөн чөлөө-9, Скайтел Плаза* 7611-2000 ",
                 image_url: `https://www.skytel.mn/app/images/messenger-bot/branches/3.jpg`,
-                subtitle: "Даваа-Баасан: 08:30-18:00 Бямба,Ням: 10:00-19:00",
+                subtitle: "Даваа-Баасан: 08:30-18:00 Бямба,Ням: 10:00-18:00",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
                buttons: [ {
                   type: "postback",
@@ -1124,7 +1124,7 @@ function CUSTOM_salbaroron_tuv(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-               title: "Сэлэнгэ аймаг, Мандал сум, 3-р баг, Буян тахь ХХК-ийн байр, Зүүн хараа скайтел салба* 9110-1235",
+               title: "Сэлэнгэ аймаг, Мандал сум, 3-р баг, Буян тахь ХХК-ийн байр 9110-1235",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба: 11:00-16:00 Ням:амарна",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1164,7 +1164,7 @@ function CUSTOM_salbaroron_tuv(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Орхон аймаг, Хүрэнбулаг баг, Анса трейд ХХК-ийн байр 1-р давхар, Эрдэнэт скайтел салбар * 9111-8169",
+                 title: "Орхон аймаг, Хүрэнбулаг баг, Анса трейд ХХК-ийн байр 1-р давхар 9111-8169",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-20:00 Бямба, Ням: 10:00-18:00",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1184,7 +1184,7 @@ function CUSTOM_salbaroron_tuv(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Дорноговь аймаг, 1-р баг, Зорчигч үйлчилгээний төв, Замын-Үүд скайтел салбар* 9110-1564",
+                 title: "Дорноговь аймаг, 1-р баг, Зорчигч үйлчилгээний төв 9110-1564",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 08:00-18:00 Бямба: 12:00-18:00 Ням: амарна",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1194,7 +1194,7 @@ function CUSTOM_salbaroron_tuv(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Дорноговь аймаг, 1-р баг, сумын тамгын газрын зүүн талд, Замын-Үүд скайтел салбар* 9110-1233",
+                 title: "Дорноговь аймаг, 1-р баг, сумын тамгын газрын зүүн талд 9110-1233",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба, Ням: 11:00-16:00",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1312,7 +1312,7 @@ function CUSTOM_salbaroron_zuun(recipientId) {
             payload: {
               template_type: "generic",
               elements: [{
-                title: "Сүхбаатар аймаг, 7-р баг, АН-н байр, Сүхбаатар скайтел салбар* 9110-1578",
+                title: "Сүхбаатар аймаг, 7-р баг, АН-н байр, 9110-1578",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба: 11:00-16:00 Ням: амарна",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1332,7 +1332,7 @@ function CUSTOM_salbaroron_zuun(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-               title: "Хэнтий аймаг, 3-р баг, Алагбарс ХХК байр, Хэнтий скайтел салбар* 9111-8322",
+               title: "Хэнтий аймаг, 3-р баг, Алагбарс ХХК байр 9111-8322",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба: 11:00-16:00 Ням: амарна",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1362,7 +1362,7 @@ function CUSTOM_salbaroron_zuun(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Говьсүмбэр аймаг 1-р баг, МАН-н байрны 1-р давхар, Говь сүмбэр скайтел салбар* 9110-1564",
+                 title: "Говьсүмбэр аймаг 1-р баг, МАН-н байрны 1-р давхар 9110-1564",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба: 11:00-16:00 Ням: амарна",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1372,7 +1372,7 @@ function CUSTOM_salbaroron_zuun(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Дорноговь аймаг, 3-р баг, Шанти цогцолбор 2-р давхар, Сайншанд скайтел салбар* 9110-1215",
+                 title: "Дорноговь аймаг, 3-р баг, Шанти цогцолбор 2-р давхар 9110-1215",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба, Ням: 11:00-16:00",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1436,7 +1436,7 @@ function CUSTOM_salbaroron_baruun(recipientId) {
             payload: {
               template_type: "generic",
               elements: [{
-                title: "Баян-Өлгий аймаг, 5-р баг, МХС ТӨК-н байр1-р давхар, Баян-Өлгий Скайтел салбар 9110-1204",
+                title: "Баян-Өлгий аймаг, 5-р баг, МХС ТӨК-н байр1-р давхар 9110-1204",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 08:00-18:00 Бямба: 11:00-16:00 Ням: амарна",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1446,7 +1446,7 @@ function CUSTOM_salbaroron_baruun(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Увс аймаг, 3-р баг, Бэлбулаг төв 1-р давхар, Увс Скайтел салбар 9110-1251",
+                 title: "Увс аймаг, 3-р баг, Бэлбулаг төв 1-р давхар9110-1251",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 08:00-18:00 Бямба, Ням: 11:00-16:00 ",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1456,7 +1456,7 @@ function CUSTOM_salbaroron_baruun(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                title: "Ховд аймаг, 1-р баг, Алагтолгой баг, сонголт төв, Ховд Скайтел салбар* 9110-1255",
+                title: "Ховд аймаг, 1-р баг, Алагтолгой баг, сонголт төв 9110-1255",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 08:00-18:00 Бямба: 11:00-16:00 Ням: амарна",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1476,7 +1476,7 @@ function CUSTOM_salbaroron_baruun(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Говь-алтай аймаг, Есөнбулаг сум, Оргил баг, Оюуны түлхүүр1-1 байр, Говь-Алтай скайтел салбар* 9110-1219",
+                 title: "Говь-алтай аймаг, Есөнбулаг сум, Оргил баг, Оюуны түлхүүр1-1 байр 9110-1219",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба: 11:00-16:00 Ням: амарна",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1496,7 +1496,7 @@ function CUSTOM_salbaroron_baruun(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Баянхонгор аймаг, Баянхонгор сум, Номгон 1-баг, ОҮ-14 Арвижих группын байр 1 давхар 102 тоот* 9110-1662",
+                 title: "Баянхонгор аймаг, Баянхонгор сум, Номгон 1-баг, ОҮ-14 1 давхар 102 тоот* 9110-1662",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба, Ням: 11:00-16:00",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1526,7 +1526,7 @@ function CUSTOM_salbaroron_baruun(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Өвөрхангай аймаг, 5-р баг, Элит орон сууц 1 давхар, Өвөрхангай Скайтел салбар* 9110-1568",
+                 title: "Өвөрхангай аймаг, 5-р баг, Элит орон сууц 1 давхар 9110-1568",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба, Ням: 10:00-16:00",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -2789,12 +2789,7 @@ function tulhuurug(recipientId) {
           "title":"Урамшуулал",
           "payload":"tulhuur1"
         },
-        {
-          "content_type":"text",
-          "title":"Төлбөр",
-          "payload":"tulhuur2"
-        },
-        {
+       {
           "content_type":"text",
           "title":"Өнгөлөг",
           "payload":"tulhuur3"
@@ -2983,7 +2978,31 @@ function CUSTOM_2_2_1(recipientId) {
       callSendAPI(messageData);
   });
    } 
-                 
+   function CUSTOM_2_1_2(recipientId) {
+ var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Гар утасны лизингийн урамшууллын мэдээллийг 1515 лавлах төвд эсвэл онлайн лавлахтай холбогдож мэдээлэл авна уу.",
+          buttons:[
+                {
+                              "type": "web_url",
+                              "url": "https://www.skytel.mn/", 
+                              "title": "Энд дарна уу"
+                            }
+          ]
+        }
+      }
+    }
+  };  
+
+  callSendAPI(messageData);
+}              
                          
   function ip(recipientId) {
     networking.getLatestNews((detail) => {
@@ -3263,7 +3282,9 @@ function receivedPostback(event) {
           case 'CUSTOM_salbarub':
               CUSTOM_salbarub(senderID); 
             break;
-            
+               case 'CUSTOM_2_1_2' 
+              CUSTOM_2_1_2(senderID); 
+            break;
             case 'CUSTOM_2_3_2':
               CUSTOM_2_3_2(senderID); 
             break;
@@ -3302,7 +3323,7 @@ function receivedPostback(event) {
             sendTextMessage2(senderID, "11/30н хүртэл  Дараа төлбөрт үйлчилгээний энгийн дугаар: 0₮/ Азын дугаар: 60000₮  Багцаасаа хамаараад 20000₮ болон 50000₮ барьцаа байршуулна Эхний 3 сар  суурь хураамжнаас 30% хөнгөлнө.");
             break;
       case 'CUSTOM_2_2_3':
-            sendTextMessage2(senderID, "Та Shake and share үйлчилгээний энгийн дугаар-1,000₮-р  30хоног-1,000нэгж-180 хоног FACEBOOK эрхтэй  авах боломжтой.");
+            sendTextMessage2(senderID, "Та Shake and share үйлчилгээний энгийн дугаар-1,000₮-р  30хоног-1,000нэгж-180 хоног FACEBOOK эрхтэй  авах боломжтой.Урьдчилсан төлбөрт үйлчилгээний урамшуулал 10/31-д дуусна. ");
             break;
               case 'CUSTOM_2_3_1':
             sendTextMessage2(senderID, "Скаймедиа үйлчилгээний хэрэглэгч өөрийн гэрээндээ Скайтелийн дараа  болон урдчилсан төлбөрт үйлчилгээний дугаарыг бүртгүүлснээр Smart home үйлчилгээний урамшууллыг авна. Та өөрийн дугаараас гадна 1-5 хүртэлх дугааруудыг тухайн үйлчилгээнд бүртгүүлснээр хоорондоо ХЯЗГААРГҮЙ  ЯРИХ, сар бүр ДАТА эрх авахаас гадна КИНО ГАЛЕРЕЙ үйлчилгээг үнэ төлбөргүй 2018/06/01-н хүртэл ашиглах боломжтой. 2017/12/31-с өмнө амжиж урамшууллаа аваарай.");
@@ -3326,7 +3347,7 @@ function receivedPostback(event) {
             sendTextMessage2(senderID, "Яриа-60₮, Мессэж-0₮ Бусад сүлжээ-20₮, Дата-1MB 6₮");
             break;
             case 'Custom_middle_2_1':
-            sendTextMessage2(senderID, "Яриа-30₮, Мессэж-0₮ (Бусад сүлжээ 20₮, Дата-1MB 12₮");
+            sendTextMessage2(senderID, "Яриа-60₮, Мессэж-0₮ (Бусад сүлжээ 20₮, Дата-1MB 12₮");
             break;
             case 'Custom_middle_3_1':
             sendTextMessage2(senderID, "Яриа-30₮, Мессэж-(Бусад сүлжээ 20₮,Сүлжээндээ 0₮),Дата-1MB 12₮");
@@ -3349,10 +3370,7 @@ function receivedPostback(event) {
             sendTextMessage2(senderID, "Voice дуудлага хийх* Voice дуудлага хүлээн авах* Video дуудлага хийх* Video дуудлага хүлээн авах* Giphy хөдөлгөөнт зулаг илгээх");
             break;
      
-            break;
-             case 'CUSTOM_2_1_2':
-            sendTextMessage2(senderID, "Гар утасны лизингийн урамшууллын мэдээллийг 1515 лавлах төвд эсвэл онлайн лавлахтай холбогдож мэдээлэл авна уу.");
-            break;
+           
              case 'CUSTOM_3_2_3':
             sendTextMessage2(senderID, "ERROR:691 Холболт хийгдэхэд алдаа гарлаа. Та нууц үгээ дахин оруулна уу? , Таны хэрэглэгчийн нэр, нууц үг буруу байна. Эсвэл үйлчилгээний хугацаа, мэдээлэл татаж авах эрх дууссан үед ийм алдаа гарна.ERROR:680 CCU-550 modem evdo for vista support татаж программыг ажиллуулахад  гэсэн алдаа гарвал татаж авсан програмыг ашиглахгүйгээр Vista үйлдлийн системийн dial up модемоор холболт хийгдэнэ. Windows 95, 98, Me NT, 2K & XP үйлдлийн систем дээр ажиллана.ERROR:718 Компьютерийг restart хийх (унтрааж асаах ) хэрэгтэй. Модем драйверыг дахин суулгана");
             break;
