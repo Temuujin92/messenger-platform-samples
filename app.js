@@ -1514,7 +1514,7 @@ function CUSTOM_salbaroron_baruun(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Архангай аймаг, Эрдэнэбулган сум, 1-р баг, Холбооны байр Скайтел салбар* 9110-1130",
+                 title: "Архангай аймаг, Эрдэнэбулган сум, 1-р баг, Холбооны байр 9110-1130",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба: 11:00-16:00 ням: амарна",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -2656,16 +2656,17 @@ function maunfunc(recipientId) {
           "title":"Салбар",
           "payload":"CUSTOM_salbar_2"
         },
+          {
+          "content_type":"text",
+          "title":"Ажилтантай чатлах",
+          "payload":"operator"
+        },
         {
           "content_type":"text",
           "title":"Түлхүүр үг",
           "payload":"tulhuurug"
-        },
-        {
-          "content_type":"text",
-          "title":"Ажилтантай чатлах",
-          "payload":"operator"
         }
+        
       ]
             
     }
@@ -3307,7 +3308,9 @@ function receivedPostback(event) {
         case 'CUSTOM_GET_STARTED_PAYLOAD':
             sendStartButtons(senderID); 
             break; 
-
+    case 'maunfunc':
+            maunfunc(senderID); 
+            break; 
         case 'CUSTOM_START_NEW_SERVICE':
             sendTypingOn(senderID);
             send123Buttons(senderID);
@@ -3576,7 +3579,7 @@ function sendTextMessage2(recipientId, messageText) {
         {
           "content_type":"text",
           "title":"Буцах",
-          "payload":"CUSTOM_Back"
+          "payload":"maunfunc"
         },
        
       ]
