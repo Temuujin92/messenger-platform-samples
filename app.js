@@ -1122,7 +1122,7 @@ function CUSTOM_salbaroron_tuv(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-               title: "Сэлэнгэ аймаг, Мандал сум, 3-р баг, Буян тахь ХХК-ийн байр, Зүүн хараа скайтел салба* 9110-1235",
+               title: "Сэлэнгэ аймаг, Мандал сум, 3-р баг, Буян тахь ХХК-ийн байр 9110-1235",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба: 11:00-16:00 Ням:амарна",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1162,7 +1162,7 @@ function CUSTOM_salbaroron_tuv(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Орхон аймаг, Хүрэнбулаг баг, Анса трейд ХХК-ийн байр 1-р давхар, Эрдэнэт скайтел салбар * 9111-8169",
+                 title: "Орхон аймаг, Хүрэнбулаг баг, Анса трейд ХХК-ийн байр 1-р давхар 9111-8169",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-20:00 Бямба, Ням: 10:00-18:00",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1182,7 +1182,7 @@ function CUSTOM_salbaroron_tuv(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Дорноговь аймаг, 1-р баг, Зорчигч үйлчилгээний төв, Замын-Үүд скайтел салбар* 9110-1564",
+                 title: "Дорноговь аймаг, 1-р баг, Зорчигч үйлчилгээний төв 9110-1564",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 08:00-18:00 Бямба: 12:00-18:00 Ням: амарна",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1192,7 +1192,7 @@ function CUSTOM_salbaroron_tuv(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Дорноговь аймаг, 1-р баг, сумын тамгын газрын зүүн талд, Замын-Үүд скайтел салбар* 9110-1233",
+                 title: "Дорноговь аймаг, 1-р баг, сумын тамгын газрын зүүн талд 9110-1233",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба, Ням: 11:00-16:00",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1360,7 +1360,7 @@ function CUSTOM_salbaroron_zuun(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Говьсүмбэр аймаг 1-р баг, МАН-н байрны 1-р давхар, Говь сүмбэр скайтел салбар* 9110-1564",
+                 title: "Говьсүмбэр аймаг 1-р баг, МАН-н байрны 1-р давхар 9110-1564",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба: 11:00-16:00 Ням: амарна",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1370,7 +1370,7 @@ function CUSTOM_salbaroron_zuun(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Дорноговь аймаг, 3-р баг, Шанти цогцолбор 2-р давхар, Сайншанд скайтел салбар* 9110-1215",
+                 title: "Дорноговь аймаг, 3-р баг, Шанти цогцолбор 2-р давхар 9110-1215",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба, Ням: 11:00-16:00",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1434,7 +1434,7 @@ function CUSTOM_salbaroron_baruun(recipientId) {
             payload: {
               template_type: "generic",
               elements: [{
-                title: "Баян-Өлгий аймаг, 5-р баг, МХС ТӨК-н байр1-р давхар, Баян-Өлгий Скайтел салбар 9110-1204",
+                title: "Баян-Өлгий аймаг, 5-р баг, МХС ТӨК-н байр1-р давхар  9110-1204",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 08:00-18:00 Бямба: 11:00-16:00 Ням: амарна",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1454,7 +1454,7 @@ function CUSTOM_salbaroron_baruun(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                title: "Ховд аймаг, 1-р баг, Алагтолгой баг, сонголт төв, Ховд Скайтел салбар* 9110-1255",
+                title: "Ховд аймаг, 1-р баг, Алагтолгой баг, сонголт төв 9110-1255",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 08:00-18:00 Бямба: 11:00-16:00 Ням: амарна",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1474,7 +1474,7 @@ function CUSTOM_salbaroron_baruun(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Говь-алтай аймаг, Есөнбулаг сум, Оргил баг, Оюуны түлхүүр1-1 байр, Говь-Алтай скайтел салбар* 9110-1219",
+                 title: "Говь-алтай аймаг, Есөнбулаг сум, Оргил баг, Оюуны түлхүүр1-1 байр 9110-1219",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба: 11:00-16:00 Ням: амарна",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1494,7 +1494,7 @@ function CUSTOM_salbaroron_baruun(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Баянхонгор аймаг, Баянхонгор сум, Номгон 1-баг, ОҮ-14 Арвижих группын байр 1 давхар 102 тоот* 9110-1662",
+                 title: "Баянхонгор аймаг, Баянхонгор сум, Номгон 1-баг, ОҮ-14 9110-1662",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба, Ням: 11:00-16:00",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1524,7 +1524,7 @@ function CUSTOM_salbaroron_baruun(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Өвөрхангай аймаг, 5-р баг, Элит орон сууц 1 давхар, Өвөрхангай Скайтел салбар* 9110-1568",
+                 title: "Өвөрхангай аймаг, 5-р баг, Элит орон сууц 1 давхар 9110-1568",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба, Ням: 10:00-16:00",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
