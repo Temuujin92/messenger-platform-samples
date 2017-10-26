@@ -263,7 +263,9 @@ function receivedMessage(event) {
                  case 'tulhuur5':
               CUSTOM_3_3(senderID); 
             break;
-              
+               case 'maunfunc':
+            maunfunc(senderID); 
+            break;  
               
 		case 'CUSTOM_QUICK_DATA_1GB':
 			sendTextMessage(senderID, "1gb гэсэн түлхүүр үгийг 123 дугаарт илгээнэ. Дагалдах эрх үйлчилгээний хоног 30. Үнэ 10.000₮"); 
@@ -3308,9 +3310,7 @@ function receivedPostback(event) {
         case 'CUSTOM_GET_STARTED_PAYLOAD':
             sendStartButtons(senderID); 
             break; 
-    case 'maunfunc':
-            maunfunc(senderID); 
-            break; 
+ 
         case 'CUSTOM_START_NEW_SERVICE':
             sendTypingOn(senderID);
             send123Buttons(senderID);
