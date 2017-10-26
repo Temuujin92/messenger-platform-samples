@@ -253,9 +253,7 @@ function receivedMessage(event) {
              case 'tulhuur1':
               CUSTOM_2_1(senderID); 
             break;
-                 case 'tulhuur2':
-              CUSTOM_1_1_1_3(senderID); 
-            break;
+              
                  case 'tulhuur3':
               CUSTOM_2_1(senderID); 
             break;
@@ -991,7 +989,7 @@ function CUSTOM_salbarub(recipientId) {
               elements: [{
                 title: "Төв Плаза*СБДүүрэг, Чингисийн өргөн чөлөө-9, Скайтел Плаза* 7611-2000 ",
                 image_url: `https://www.skytel.mn/app/images/messenger-bot/branches/3.jpg`,
-                subtitle: "Даваа-Баасан: 08:30-18:00 Бямба,Ням: 10:00-19:00",
+                subtitle: "Даваа-Баасан: 08:30-18:00 Бямба,Ням: 10:00-18:00",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
                buttons: [ {
                   type: "postback",
@@ -2789,11 +2787,7 @@ function tulhuurug(recipientId) {
           "title":"Урамшуулал",
           "payload":"tulhuur1"
         },
-        {
-          "content_type":"text",
-          "title":"Төлбөр",
-          "payload":"tulhuur2"
-        },
+        
         {
           "content_type":"text",
           "title":"Өнгөлөг",
@@ -2984,7 +2978,31 @@ function CUSTOM_2_2_1(recipientId) {
   });
    } 
                  
-                         
+    function CUSTOM_2_1_2(recipientId) {
+ var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Гар утасны лизингийн урамшууллын мэдээллийг 1515 лавлах төвд эсвэл онлайн лавлахтай холбогдож мэдээлэл авна уу.",
+          buttons:[
+                {
+                              "type": "web_url",
+                              "url": "https://www.skytel.mn/shop/product", 
+                              "title": "Энд дарна уу"
+                            }
+          ]
+        }
+      }
+    }
+  };  
+
+  callSendAPI(messageData);
+}                     
   function ip(recipientId) {
     networking.getLatestNews((detail) => {
       newsDetail = detail; 
@@ -3270,7 +3288,10 @@ function receivedPostback(event) {
              case 'CUSTOM_3_2_1':
               CUSTOM_3_2_1(senderID); 
             break;
-           
+              case 'CUSTOM_2_1_2':
+              CUSTOM_2_1_2(senderID); 
+            break;
+        
              case 'CUSTOM_salbaroron':
               CUSTOM_salbaroron(senderID); 
             break;
@@ -3302,7 +3323,7 @@ function receivedPostback(event) {
             sendTextMessage2(senderID, "11/30н хүртэл  Дараа төлбөрт үйлчилгээний энгийн дугаар: 0₮/ Азын дугаар: 60000₮  Багцаасаа хамаараад 20000₮ болон 50000₮ барьцаа байршуулна Эхний 3 сар  суурь хураамжнаас 30% хөнгөлнө.");
             break;
       case 'CUSTOM_2_2_3':
-            sendTextMessage2(senderID, "Та Shake and share үйлчилгээний энгийн дугаар-1,000₮-р  30хоног-1,000нэгж-180 хоног FACEBOOK эрхтэй  авах боломжтой.");
+            sendTextMessage2(senderID, "Та Shake and share үйлчилгээний энгийн дугаар-1,000₮-р  30хоног-1,000нэгж-180 хоног FACEBOOK эрхтэй  авах боломжтой.Урьдчилсан төлбөрт үйлчилгээний урамшуулал 10/31-д дуусна");
             break;
               case 'CUSTOM_2_3_1':
             sendTextMessage2(senderID, "Скаймедиа үйлчилгээний хэрэглэгч өөрийн гэрээндээ Скайтелийн дараа  болон урдчилсан төлбөрт үйлчилгээний дугаарыг бүртгүүлснээр Smart home үйлчилгээний урамшууллыг авна. Та өөрийн дугаараас гадна 1-5 хүртэлх дугааруудыг тухайн үйлчилгээнд бүртгүүлснээр хоорондоо ХЯЗГААРГҮЙ  ЯРИХ, сар бүр ДАТА эрх авахаас гадна КИНО ГАЛЕРЕЙ үйлчилгээг үнэ төлбөргүй 2018/06/01-н хүртэл ашиглах боломжтой. 2017/12/31-с өмнө амжиж урамшууллаа аваарай.");
@@ -3326,7 +3347,7 @@ function receivedPostback(event) {
             sendTextMessage2(senderID, "Яриа-60₮, Мессэж-0₮ Бусад сүлжээ-20₮, Дата-1MB 6₮");
             break;
             case 'Custom_middle_2_1':
-            sendTextMessage2(senderID, "Яриа-30₮, Мессэж-0₮ (Бусад сүлжээ 20₮, Дата-1MB 12₮");
+            sendTextMessage2(senderID, "Яриа-60₮, Мессэж-0₮ (Бусад сүлжээ 20₮, Дата-1MB 12₮");
             break;
             case 'Custom_middle_3_1':
             sendTextMessage2(senderID, "Яриа-30₮, Мессэж-(Бусад сүлжээ 20₮,Сүлжээндээ 0₮),Дата-1MB 12₮");
@@ -3349,10 +3370,7 @@ function receivedPostback(event) {
             sendTextMessage2(senderID, "Voice дуудлага хийх* Voice дуудлага хүлээн авах* Video дуудлага хийх* Video дуудлага хүлээн авах* Giphy хөдөлгөөнт зулаг илгээх");
             break;
      
-            break;
-             case 'CUSTOM_2_1_2':
-            sendTextMessage2(senderID, "Гар утасны лизингийн урамшууллын мэдээллийг 1515 лавлах төвд эсвэл онлайн лавлахтай холбогдож мэдээлэл авна уу.");
-            break;
+         
              case 'CUSTOM_3_2_3':
             sendTextMessage2(senderID, "ERROR:691 Холболт хийгдэхэд алдаа гарлаа. Та нууц үгээ дахин оруулна уу? , Таны хэрэглэгчийн нэр, нууц үг буруу байна. Эсвэл үйлчилгээний хугацаа, мэдээлэл татаж авах эрх дууссан үед ийм алдаа гарна.ERROR:680 CCU-550 modem evdo for vista support татаж программыг ажиллуулахад  гэсэн алдаа гарвал татаж авсан програмыг ашиглахгүйгээр Vista үйлдлийн системийн dial up модемоор холболт хийгдэнэ. Windows 95, 98, Me NT, 2K & XP үйлдлийн систем дээр ажиллана.ERROR:718 Компьютерийг restart хийх (унтрааж асаах ) хэрэгтэй. Модем драйверыг дахин суулгана");
             break;
