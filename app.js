@@ -3350,10 +3350,10 @@ function receivedPostback(event) {
             sendTextMessage2(senderID, "Яриа-60₮, Мессэж-0₮ Бусад сүлжээ-20₮, Дата-1MB 6₮");
             break;
             case 'Custom_middle_2_1':
-            sendTextMessage2(senderID, "Яриа-60₮, Мессэж-0₮ (Бусад сүлжээ 20₮, Дата-1MB 12₮");
+            sendTextMessage2(senderID, "Яриа-60₮, Мессэж-20₮ (Бусад сүлжээ 20₮, Дата-1MB 12₮");
             break;
             case 'Custom_middle_3_1':
-            sendTextMessage2(senderID, "Яриа-30₮, Мессэж-(Бусад сүлжээ 20₮,Сүлжээндээ 20₮),Дата-1MB 12₮");
+            sendTextMessage2(senderID, "Яриа-30₮, Мессэж-(Бусад сүлжээ 20₮,Сүлжээндээ 0₮),Дата-1MB 12₮");
             break;
          
              case 'CUSTOM_1_2_2_1':
