@@ -1114,7 +1114,7 @@ function CUSTOM_salbaroron_tuv(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Сэлэнгэ аймаг, 2-р баг, Сэлэнгэ Плаза, Сэлэнгэ Скйател салбар 9110-2043",
+                 title: "Сэлэнгэ аймаг, 2-р баг, Сэлэнгэ Плаза 9110-2043",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба: 11:00-16:00 Ням: амарна ",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1154,7 +1154,7 @@ function CUSTOM_salbaroron_tuv(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Өмнөговь аймаг, 3-р баг, МАН-ын байр 1 давхар, Даланзадгад Скайтел салбар 9110-1608",
+                 title: "Өмнөговь аймаг, 3-р баг, МАН-ын байр 1 давхар 9110-1608",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба, Ням: 11:00-16:00",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1174,7 +1174,7 @@ function CUSTOM_salbaroron_tuv(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Булган аймаг, 5-р баг, Тулга төв, Булган Скайтел салбар 9110-1217",
+                 title: "Булган аймаг, 5-р баг, Тулга төв 9110-1217",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба: 11:00-16:00 Ням: амарна",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1312,7 +1312,7 @@ function CUSTOM_salbaroron_zuun(recipientId) {
             payload: {
               template_type: "generic",
               elements: [{
-                title: "Сүхбаатар аймаг, 7-р баг, АН-н байр, Сүхбаатар скайтел салбар 9110-1578",
+                title: "Сүхбаатар аймаг, 7-р баг, АН-н байр 9110-1578",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба: 11:00-16:00 Ням: амарна",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1322,7 +1322,7 @@ function CUSTOM_salbaroron_zuun(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Дорнод аймаг, 61-р байшин, Дорнод скайтел салбар 9110-0229",
+                 title: "Дорнод аймаг, 61-р байшин 9110-0229",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба: 11:00-16:00 Ням:амарна ",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1332,7 +1332,7 @@ function CUSTOM_salbaroron_zuun(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-               title: "Хэнтий аймаг, 3-р баг, Алагбарс ХХК байр, Хэнтий скайтел салбар 9111-8322",
+               title: "Хэнтий аймаг, 3-р баг, Алагбарс ХХК байр 9111-8322",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба: 11:00-16:00 Ням: амарна",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1352,7 +1352,7 @@ function CUSTOM_salbaroron_zuun(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Төв аймаг Зуунмод сум,1-р баг холбооны байр, скайтел салбар 9110-1318",
+                 title: "Төв аймаг Зуунмод сум,1-р баг холбооны байр9110-1318",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба: 11:00-16:00 Ням: амарна",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1382,7 +1382,7 @@ function CUSTOM_salbaroron_zuun(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Дундговь аймаг, 7-р баг, Гандалай ХТ, Дундговь скайтел салбар 9110-1228",
+                 title: "Дундговь аймаг, 7-р баг, Гандалай ХТ 9110-1228",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба: 11:00-16:00 Ням: амарна",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1446,7 +1446,7 @@ function CUSTOM_salbaroron_baruun(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Увс аймаг, 3-р баг, Бэлбулаг төв 1-р давхар, Увс Скайтел салбар 9110-1251",
+                 title: "Увс аймаг, 3-р баг, Бэлбулаг төв 1-р давхар 9110-1251",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 08:00-18:00 Бямба, Ням: 11:00-16:00 ",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1466,7 +1466,7 @@ function CUSTOM_salbaroron_baruun(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Завхан аймаг, Улиастай сум, Жинст баг, Завхан скайтел салбар 9110-1231",
+                 title: "Завхан аймаг, Улиастай сум, Жинст баг 9110-1231",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба: 11:00-16:00 Ням: амарна",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1476,7 +1476,7 @@ function CUSTOM_salbaroron_baruun(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Говь-алтай аймаг, Есөнбулаг сум, Оргил баг, Оюуны түлхүүр1-1 байр 9110-1219",
+                 title: "Говь-алтай аймаг, Есөнбулаг сум, Оргил баг, Төрийн банкны байр 9110-1219",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба: 11:00-16:00 Ням: амарна",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1506,7 +1506,7 @@ function CUSTOM_salbaroron_baruun(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Хөвсгөл аймаг, 8-р баг 13 байрны 1 тоот, Хөвсгөл скайтел салбар 9110-1513",
+                 title: "Хөвсгөл аймаг, 8-р баг 13 байрны 1 тоот 9110-1513",
                 image_url: `https://www.skytel.mn/app/images/download/SKYtel_logo_transparent.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба,Ням: 11:00-16:00",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -1978,7 +1978,7 @@ function CUSTOM_1_3_1(recipientId) {
               },{
                  title: "100MB 10 хоног Үнэ:1000",
                 image_url: `https://www.skytel.mn/app/images/messenger-bot/data_package.png`,
-                subtitle: "Идэвхжүүлэх заавар:100mbsend 123",
+                subtitle: "Идэвхжүүлэх заавар:100mb send 123",
               
                buttons: [ {
                   type: "postback",
@@ -1988,7 +1988,7 @@ function CUSTOM_1_3_1(recipientId) {
               },{
                title: "300MB 15 хоног Үнэ:3000",
                 image_url: `https://www.skytel.mn/app/images/messenger-bot/data_package.png`,
-                subtitle: "Идэвхжүүлэх заавар:300mbsend 123",
+                subtitle: "Идэвхжүүлэх заавар:300mb send 123",
                    
                buttons: [ {
                   type: "postback",
@@ -1998,7 +1998,7 @@ function CUSTOM_1_3_1(recipientId) {
               },{
                  title: "1GB 30 хоног Үнэ:10000",
                 image_url: `https://www.skytel.mn/app/images/messenger-bot/data_package.png`,
-                subtitle: "Идэвхжүүлэх заавар:1GBsend 123",
+                subtitle: "Идэвхжүүлэх заавар:1GB  send 123",
                              
                buttons: [ {
                   type: "postback",
@@ -2018,7 +2018,7 @@ function CUSTOM_1_3_1(recipientId) {
               },{
                  title: "10 GB 60 хоног Үнэ:30000",
                 image_url: `https://www.skytel.mn/app/images/messenger-bot/data_package.png`,
-                subtitle: "Идэвхжүүлэх заавар:10GBsend 123",
+                subtitle: "Идэвхжүүлэх заавар:10GB send 123",
                 
                buttons: [ {
                   type: "postback",
@@ -2271,7 +2271,7 @@ function CUSTOM_1_2_1_1(recipientId) {
               elements: [{
                 title: "1000 карт",
                 image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_a0e6334629accebab4e78569ab2da6640ebb69d6.png`,
-                subtitle: "Хоног:1 , Нэгж:1000,",
+                subtitle: "Хоног:1, Нэгж:1000",
                    
                buttons: [ {
                   type: "postback",
@@ -2281,7 +2281,7 @@ function CUSTOM_1_2_1_1(recipientId) {
               },{
               title: "2000 карт",
                 image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_9a38a0807860d530143a6f5146f71b0670cb2974.png`,
-               subtitle: "Хоног:3 , Нэгж:1000, Дагалдах эрх:1024mb+Facebook",
+               subtitle: "Хоног:3, Нэгж:1000, Дагалдах эрх:1024mb+Facebook",
                            
                buttons: [ {
                   type: "postback",
@@ -2291,7 +2291,7 @@ function CUSTOM_1_2_1_1(recipientId) {
               },{
                 title: "3000 карт",
                 image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_bf98815ac7832e96f94233039120012d1bfb0eb5.png`,
-               subtitle: "Хоног:5 , Нэгж:2000, Дагалдах эрх:1024mb+Facebook",
+               subtitle: "Хоног:5, Нэгж:2000, Дагалдах эрх:1024mb+Facebook",
                            
             buttons: [ {
                   type: "postback",
@@ -2301,7 +2301,7 @@ function CUSTOM_1_2_1_1(recipientId) {
               },{
               title: "5000 карт",
                 image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_eeec299743d691ae0c6567cd2e89329739e5f9e7.png`,
-                 subtitle: "Хоног:15 , Нэгж:2500, Дагалдах эрх:1024mb+Facebook",
+                 subtitle: "Хоног:15, Нэгж:2500, Дагалдах эрх:1024mb+Facebook",
                            
                buttons: [ {
                   type: "postback",
@@ -2311,7 +2311,7 @@ function CUSTOM_1_2_1_1(recipientId) {
               },{
              title: "247 карт",
                 image_url: `http://www.skytel.mn:8080/uploads/products/201704/200/uploaded_c6888eb5268b0a1fec26930a09a444cf124e5bcc.png`,
-             subtitle: "Хоног:30 , Нэгж:5000, Дагалдах эрх:Сүлжээндээ үнэгүй",
+             subtitle: "Хоног:30, Нэгж:5000, Дагалдах эрх:Сүлжээндээ үнэгүй",
                            
                buttons: [ {
                   type: "postback",
@@ -2331,7 +2331,7 @@ function CUSTOM_1_2_1_1(recipientId) {
               },{
             title: "15000 карт",
                 image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_78ea3d3d8dff80624be9db48d08de102981c400b.png`,
-               subtitle: "Хоног:45 , Нэгж:5000, Дагалдах эрх:1024mb+Facebook",
+               subtitle: "Хоног:45, Нэгж:5000, Дагалдах эрх:1024mb+Facebook",
                            
                buttons: [ {
                   type: "postback",
@@ -2341,7 +2341,7 @@ function CUSTOM_1_2_1_1(recipientId) {
               },{
             title: "50000 карт",
                 image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_90b396f63b8ab79433aa69d623fc0c467841bfd1.png`,
-                subtitle: "Хоног:180 , Нэгж:10000, Дагалдах эрх:5GB+Facebook",
+                subtitle: "Хоног:180, Нэгж:10000, Дагалдах эрх:5GB+Facebook",
                            
                buttons: [ {
                   type: "postback",
@@ -2351,7 +2351,7 @@ function CUSTOM_1_2_1_1(recipientId) {
               },{
             title: "90000 карт",
                 image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_9bb3a85c1fbee834d24439f29bbc22ace90712f9.png`,
-                subtitle: "Хоног:360 , Нэгж:10000, Дагалдах эрх:15GB+Facebook",
+                subtitle: "Хоног:360, Нэгж:10000, Дагалдах эрх:15GB+Facebook",
                            
                buttons: [ {
                   type: "postback",
@@ -2394,7 +2394,7 @@ function CUSTOM_1_2_1_2(recipientId) {
               },{
                 title: "1000 карт",
                 image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_a0e6334629accebab4e78569ab2da6640ebb69d6.png`,
-                subtitle: "Хоног:5 , Нэгж:1000, Үнэ: 1000₮ ",
+                subtitle: "Хоног:5, Нэгж:1000, Үнэ: 1000₮ ",
                    
                buttons: [ {
                   type: "postback",
@@ -2404,7 +2404,7 @@ function CUSTOM_1_2_1_2(recipientId) {
               },{
               title: "2000 карт",
                 image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_9a38a0807860d530143a6f5146f71b0670cb2974.png`,
-                subtitle: "Хоног: 20, Нэгж:2000, Үнэ: 2000₮ ",
+                subtitle: "Хоног:20, Нэгж:2000, Үнэ: 2000₮ ",
                            
                buttons: [ {
                   type: "postback",
@@ -2414,7 +2414,7 @@ function CUSTOM_1_2_1_2(recipientId) {
               },{
                 title: "3000 карт",
                 image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_bf98815ac7832e96f94233039120012d1bfb0eb5.png`,
-                subtitle: "Хоног:30 , Нэгж:3000, Үнэ: 3000₮ ",
+                subtitle: "Хоног:30, Нэгж:3000, Үнэ: 3000₮ ",
                            
                buttons: [ {
                   type: "postback",
@@ -2424,7 +2424,7 @@ function CUSTOM_1_2_1_2(recipientId) {
               },{
               title: "5000 карт",
                 image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_eeec299743d691ae0c6567cd2e89329739e5f9e7.png`,
-                subtitle: "Хоног: 50, Нэгж:5000, Үнэ: 5000₮ ",
+                subtitle: "Хоног:50, Нэгж:5000, Үнэ: 5000₮ ",
                            
                buttons: [ {
                   type: "postback",
@@ -2434,7 +2434,7 @@ function CUSTOM_1_2_1_2(recipientId) {
               },{
              title: "6000 карт",
                 image_url: `http://www.skytel.mn:8080/uploads/products/201704/200/uploaded_03a3254fd07471e48093550a324782f317be4a72.png`,
-                subtitle: "Хоног:60 , Нэгж:6000, Үнэ: 6000₮ ",
+                subtitle: "Хоног:60, Нэгж:6000, Үнэ: 6000₮ ",
                            
                buttons: [ {
                   type: "postback",
@@ -2444,7 +2444,7 @@ function CUSTOM_1_2_1_2(recipientId) {
               },{
            title: "10000 карт",
                 image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_638cc78929de4f075374690bc67ac421b44ed4f4.png`,
-                subtitle: "Хоног:100 , Нэгж:10000, Үнэ: 10000₮ ",
+                subtitle: "Хоног:100, Нэгж:10000, Үнэ: 10000₮ ",
                            
                buttons: [ {
                   type: "postback",
@@ -2454,7 +2454,7 @@ function CUSTOM_1_2_1_2(recipientId) {
               },{
             title: "15000 карт",
                 image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_78ea3d3d8dff80624be9db48d08de102981c400b.png`,
-                subtitle: "Хоног:150 , Нэгж:15000, Үнэ: 15000₮ ",
+                subtitle: "Хоног:150, Нэгж:15000, Үнэ: 15000₮ ",
                            
                buttons: [ {
                   type: "postback",
@@ -2464,7 +2464,7 @@ function CUSTOM_1_2_1_2(recipientId) {
               },{
             title: "50000 карт",
                 image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_90b396f63b8ab79433aa69d623fc0c467841bfd1.png`,
-                subtitle: "Хоног:180 , Нэгж:50000, Үнэ: 50000₮ ",
+                subtitle: "Хоног:180, Нэгж:50000, Үнэ: 50000₮ ",
                            
                buttons: [ {
                   type: "postback",
@@ -2474,7 +2474,7 @@ function CUSTOM_1_2_1_2(recipientId) {
               },{
             title: "90000 карт",
                 image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_9bb3a85c1fbee834d24439f29bbc22ace90712f9.png`,
-                subtitle: "Хоног:360 , Нэгж:90000, Үнэ: 90000₮ ",
+                subtitle: "Хоног:360, Нэгж:90000, Үнэ: 90000₮ ",
                            
                buttons: [ {
                   type: "postback",
@@ -2517,7 +2517,7 @@ function CUSTOM_1_2_1_3(recipientId) {
               },{
                 title: "1000 карт",
                 image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_a0e6334629accebab4e78569ab2da6640ebb69d6.png`,
-                subtitle: "Хоног:2 , Нэгж:1000, Үнэ: 1000₮ ",
+                subtitle: "Хоног:2, Нэгж:1000, Үнэ: 1000₮ ",
                    
                buttons: [ {
                   type: "postback",
@@ -2527,7 +2527,7 @@ function CUSTOM_1_2_1_3(recipientId) {
               },{
               title: "2000 карт",
                 image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_9a38a0807860d530143a6f5146f71b0670cb2974.png`,
-                subtitle: "Хоног: 5, Нэгж:2000, Үнэ: 2000₮ ",
+                subtitle: "Хоног:5, Нэгж:2000, Үнэ: 2000₮ ",
                            
                buttons: [ {
                   type: "postback",
@@ -2537,7 +2537,7 @@ function CUSTOM_1_2_1_3(recipientId) {
               },{
                 title: "3000 карт",
                 image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_bf98815ac7832e96f94233039120012d1bfb0eb5.png`,
-                subtitle: "Хоног:10 , Нэгж:3000, Үнэ: 3000₮ ",
+                subtitle: "Хоног:10, Нэгж:3000, Үнэ: 3000₮ ",
                            
                buttons: [ {
                   type: "postback",
@@ -2547,7 +2547,7 @@ function CUSTOM_1_2_1_3(recipientId) {
               },{
               title: "5000 карт",
                 image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_eeec299743d691ae0c6567cd2e89329739e5f9e7.png`,
-                subtitle: "Хоног: 30, Нэгж:5000, Үнэ: 5000₮ ",
+                subtitle: "Хоног:30, Нэгж:5000, Үнэ: 5000₮ ",
                            
                buttons: [ {
                   type: "postback",
@@ -2557,7 +2557,7 @@ function CUSTOM_1_2_1_3(recipientId) {
               },{
              title: "6000 карт",
                 image_url: `http://www.skytel.mn:8080/uploads/products/201704/200/uploaded_03a3254fd07471e48093550a324782f317be4a72.png`,
-                subtitle: "Хоног:3  0 , Нэгж:6000, Үнэ: 6000₮ ",
+                subtitle: "Хоног:30, Нэгж:6000, Үнэ: 6000₮ ",
                            
                buttons: [ {
                   type: "postback",
@@ -2567,7 +2567,7 @@ function CUSTOM_1_2_1_3(recipientId) {
               },{
            title: "10000 карт",
                 image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_638cc78929de4f075374690bc67ac421b44ed4f4.png`,
-                subtitle: "Хоног:30 , Нэгж:10000, Үнэ: 10000₮ ",
+                subtitle: "Хоног:30, Нэгж:10000, Үнэ: 10000₮ ",
                            
                buttons: [ {
                   type: "postback",
@@ -2577,7 +2577,7 @@ function CUSTOM_1_2_1_3(recipientId) {
               },{
             title: "15000 карт",
                 image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_78ea3d3d8dff80624be9db48d08de102981c400b.png`,
-                subtitle: "Хоног:45 , Нэгж:15000, Үнэ: 15000₮ ",
+                subtitle: "Хоног:45, Нэгж:15000, Үнэ: 15000₮ ",
                            
                buttons: [ {
                   type: "postback",
@@ -2587,7 +2587,7 @@ function CUSTOM_1_2_1_3(recipientId) {
               },{
             title: "50000 карт",
                 image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_90b396f63b8ab79433aa69d623fc0c467841bfd1.png`,
-                subtitle: "Хоног:180 , Нэгж:50000, Үнэ: 50000₮ ",
+                subtitle: "Хоног:180, Нэгж:50000, Үнэ: 50000₮ ",
                            
                buttons: [ {
                   type: "postback",
@@ -2597,7 +2597,7 @@ function CUSTOM_1_2_1_3(recipientId) {
               },{
             title: "90000 карт",
                 image_url: `http://www.skytel.mn:8080/uploads/products/201606/200/uploaded_9bb3a85c1fbee834d24439f29bbc22ace90712f9.png`,
-                subtitle: "Хоног:360 , Нэгж:90000, Үнэ: 90000₮ ",
+                subtitle: "Хоног:360, Нэгж:90000, Үнэ: 90000₮ ",
                            
                buttons: [ {
                   type: "postback",
@@ -3079,7 +3079,7 @@ function CUSTOM_2_2_1(recipientId) {
                   payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Налайх салбар Налайх дүүрэг, 2-р хороо, МХС ТӨК байр, 1-р давхар, Налайх Скайтел салбар 7611-2003",
+                 title: "Налайх салбар Налайх дүүрэг, 2-р хороо, МХС ТӨК байр, 1-р давхар 7611-2003",
                 image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
                 subtitle: "Даваа-Баасан: 09:00-19:00 Бямба: 11:00-16:00 Ням:Амарна",
                 item_url: `https://www.skytel.mn/content/branches/Ulaanbaatar`,               
@@ -3329,7 +3329,7 @@ function receivedPostback(event) {
             sendTextMessage2(senderID, "Та Shake and share үйлчилгээний энгийн дугаар-1,000₮-р  30хоног-1,000нэгж-180 хоног FACEBOOK эрхтэй  авах боломжтой.Урьдчилсан төлбөрт үйлчилгээний урамшуулал 10/31-д дуусна");
             break;
               case 'CUSTOM_2_3_1':
-            sendTextMessage2(senderID, "Скаймедиа үйлчилгээний хэрэглэгч өөрийн гэрээндээ Скайтелийн дараа  болон урдчилсан төлбөрт үйлчилгээний дугаарыг бүртгүүлснээр Smart home үйлчилгээний урамшууллыг авна. Та өөрийн дугаараас гадна 1-5 хүртэлх дугааруудыг тухайн үйлчилгээнд бүртгүүлснээр хоорондоо ХЯЗГААРГҮЙ  ЯРИХ, сар бүр ДАТА эрх авахаас гадна КИНО ГАЛЕРЕЙ үйлчилгээг үнэ төлбөргүй 2018/06/01-н хүртэл ашиглах боломжтой. 2017/12/31-с өмнө амжиж урамшууллаа аваарай.");
+            sendTextMessage2(senderID, "Скаймедиа үйлчилгээний хэрэглэгч өөрийн гэрээндээ Скайтелийн дараа  болон урьдчилсан төлбөрт үйлчилгээний дугаарыг бүртгүүлснээр Smart home үйлчилгээний урамшууллыг авна. Та өөрийн дугаараас гадна 1-5 хүртэлх дугааруудыг тухайн үйлчилгээнд бүртгүүлснээр хоорондоо ХЯЗГААРГҮЙ  ЯРИХ, сар бүр ДАТА эрх авахаас гадна КИНО ГАЛЕРЕЙ үйлчилгээг үнэ төлбөргүй 2018/06/01-н хүртэл ашиглах боломжтой. 2017/12/31-с өмнө амжиж урамшууллаа аваарай.");
             break;
              
          
