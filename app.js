@@ -433,17 +433,35 @@ function startMessage(recipientId) {
 
 function CUSTOM_new(recipientId){
 
-    var messageData = {
-        recipient: {
-            id: recipientId
-        },
-        message: {
-            text: "hello welcome to our page",
-            metadata: "DEVELOPER_DEFINED_METADATA"
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Skytel Messenger-т тавтай морил",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_1",
+            title: "Үндсэн үйлчилгээ"
+          }, {
+            type: "postback",
+            title: "Урамшуулал",
+            payload: "CUSTOM_2"
+          }, {
+            type: "postback",
+            title: "Гар утас,төхөөрөмж",
+            payload: "CUSTOM_3"
+          }]
         }
-    };
+      }
+    }
+  };  
 
-    callSendAPI(messageData);
+  callSendAPI(messageData);
 }
 
 function CUSTOM_soap(recipientId) {
