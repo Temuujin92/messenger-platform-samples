@@ -305,10 +305,13 @@ function receivedMessage(event) {
       case '123': 
         maunfunc(senderID);
         break; 
-    case 'Get Started':
+    case 'hello':
             CUSTOM_new(senderID); 
-            break;     
-      case 'Салбар':
+            break;
+        case 'soap':
+            CUSTOM_soap(senderID);
+            break;
+        case 'Салбар':
      case 'salbar':
          salbarMessage(senderID); 
             break;
@@ -429,37 +432,33 @@ function startMessage(recipientId) {
 }
 
 function CUSTOM_new(recipientId){
-    
-   var messageData = {
-    recipient: {
-      id: recipientId
-    },
-    message: {
-      attachment: {
-        type: "template",
-        payload: {
-          template_type: "button",
-          text: "Skytel Messenger-т тавтай морил",
-          buttons:[{
-            type: "postback",
-            payload: "CUSTOM_1",
-            title: "Үндсэн үйлчилгээ"
-          }, {
-            type: "postback",
-            title: "Урамшуулал",
-            payload: "CUSTOM_2"
-          }, {
-            type: "postback",
-            title: "Гар утас, төхөөрөмж",
-            payload: "CUSTOM_3"
-          }]
+
+    var messageData = {
+        recipient: {
+            id: recipientId
+        },
+        message: {
+            text: "hello welcome to our page",
+            metadata: "DEVELOPER_DEFINED_METADATA"
         }
-      }
-    }
-  };  
-  callSendAPI(messageData);
+    };
+
+    callSendAPI(messageData);
 }
 
+function CUSTOM_soap(recipientId) {
+    var messageData = {
+        recipient: {
+            id: recipientId
+        },
+        message: {
+            text: "Сайн байн уу",
+            metadata: "DEVELOPER_DEFINED_METADATA"
+        }
+    };
+
+    callSendAPI(messageData);
+}
 function startUramshuulal(recipientId) {
     
    var messageData = {
@@ -582,7 +581,7 @@ function CUSTOM_2_2(recipientId) {
             title: "Шинэ хэрэглэгч"
           }, {
             type: "postback",
-            title: "Цэнэглэгч карт",
+            title: "Shake & Win",
             payload: "CUSTOM_2_2_2"
           }, {
             type: "postback",
@@ -717,6 +716,11 @@ function CUSTOM_1_2(recipientId) {
   };  
   callSendAPI(messageData);
 }
+
+
+
+
+
 function CUSTOM_1_2_2(recipientId) {
     
    var messageData = {
@@ -1966,16 +1970,6 @@ function CUSTOM_1_3_1(recipientId) {
             payload: {
               template_type: "generic",
               elements: [{
-                title: "Facebook багц 30 хоног Үнэ:5000",
-                image_url: `https://www.skytel.mn/app/images/messenger-bot/fb_package.png`,
-                subtitle: "Идэвхжүүлэх заавар:Facebook send 123",
-                         
-                buttons: [ {
-                  type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
-                }],
-              },{
                  title: "100MB 10 хоног Үнэ:1000",
                 image_url: `https://www.skytel.mn/app/images/messenger-bot/data_package.png`,
                 subtitle: "Идэвхжүүлэх заавар:100mb send 123",
@@ -2048,37 +2042,36 @@ function CUSTOM_1_3_2(recipientId) {
           attachment: {
             type: "template",
             payload: {
-            "template_type": "list",
-        "top_element_style": "compact",
+              template_type: "generic",
               elements: [{
-                title: "Facebook/Төлбөргүй/",
-               
-                subtitle: "Шинээр account үүсгэх Текст статус бичих Check in хийх Зураг харах Facebook-н видео үзэх Like, comment,share хийх Онлайн хүмүүс харах Friend request, notification харах",
-                         
-                buttons: [ {
+                 title: "Facebook багц 30 хоног Үнэ:5000",
+                image_url: `https://www.skytel.mn/app/images/messenger-bot/fb_package.png`,
+                subtitle: "Идэвхжүүлэх заавар:Facebook send 123",
+              
+               buttons: [ {
                   type: "postback",
-                  title: "Цааш үзэх",
-                  payload: `CUSTOM_viewmore_1`,
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
                 }],
               },{
-               title: "Messenger/төлбөргүй/",
-             
-                subtitle: "Чатлах Стикер илгээх  Зураг илгээх Зураг хүлээн авах Видео илгээх* Өөрт ирсэн видеог үзэх Voice record илгээх Өөрт ирсэн record сонсох Байршил илгээх",
+               title: "Facebook+247 багц",
+                image_url: `https://www.skytel.mn/app/images/messenger-bot/fb_package.png`,
+                subtitle: "Хугацаа:24 цаг Үнэ:777₮  Идэвхжүүлэх заавар: 1 send 123",
                    
                buttons: [ {
                   type: "postback",
-                  title: "Цааш үзэх",
-                  payload: `CUSTOM_viewmore_2`,
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
                 }],
               },{
-                 title: "Messenger/төлбөртэй/",
-              
-                subtitle: "Voice дуудлага хийх* Voice дуудлага хүлээн авах* Video дуудлага хийх* Video дуудлага хүлээн авах* Giphy хөдөлгөөнт зулаг илгээх",
-                           
+                 title: "Facebook+247 багц ",
+                image_url: `https://www.skytel.mn/app/images/messenger-bot/fb_package.png`,
+                subtitle: "Хугацаа:24 цаг Үнэ:777₮  Идэвхжүүлэх заавар: 1 send 123",
+                             
                buttons: [ {
                   type: "postback",
-                  title: "Цааш үзэх",
-                  payload: `CUSTOM_viewmore_3`,
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
                 }],
               }]
             }
@@ -2089,6 +2082,7 @@ function CUSTOM_1_3_2(recipientId) {
       callSendAPI(messageData);
   });
   
+
 
   }
 
@@ -2892,7 +2886,7 @@ function CUSTOM_2_2_1(recipientId) {
               elements: [{
                 title: "Энгийн дугаар",
                 image_url: `https://www.skytel.mn/app/images/beldsen/useful/17.png`,
-                subtitle: "Үнэ-3000 Нэгж-1000 Хоног-30 Урамшуулал- 180 хоног FACEBOOK үнэгүй ",
+                subtitle: "Үнэ-3000 Нэгж-1000 Хоног-30 Урамшуулал-6 сарын 247+сар бүр 1GB дата /6сар/",
                          
                 buttons: [ {
                   type: "postback",
@@ -2902,7 +2896,7 @@ function CUSTOM_2_2_1(recipientId) {
               },{
                 title: "Азын дугаар",
                 image_url: `https://www.skytel.mn/app/images/beldsen/useful/17.png`,
-                       subtitle: "Үнэ-10000 Нэгж-5000 Хоног-30 Урамшуулал- 180 хоног FACEBOOK үнэгүй ",
+                       subtitle: "Үнэ-10000 Нэгж-5000 Хоног-30 Урамшуулал-6 сарын 247+сар бүр 1GB дата /6сар/",
                    
                buttons: [ {
                   type: "postback",
@@ -2920,65 +2914,29 @@ function CUSTOM_2_2_1(recipientId) {
    }
 
   function CUSTOM_2_2_2(recipientId) {
-    networking.getLatestNews((detail) => {
-      newsDetail = detail; 
-      var messageData = {
-        recipient: {
-          id: recipientId
-        },
-        message: {
-          attachment: {
-            type: "template",
-            payload: {
-              template_type: "generic",
-              elements: [{
-                title: "5000 карт /хоногтой/",
-                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
-                subtitle: "Урамшуулал-10000 нэгж, Хугацаа- 5 хоног, Сүлжээний яриа, мессеж, задгай дата ",
-                         
-                buttons: [ {
-                  type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
-                }],
-              },{
-                title: "5000 карт /хоноггүй/",
-                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
-                       subtitle: "Урамшуулал-10000 нэгж, Хугацаа- 5 хоног, Сүлжээний яриа, мессеж, задгай дата ",
-                   
-               buttons: [ {
-                  type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
-                }],
-              },{
-              title: "10000 карт",
-                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
-                    subtitle: "Урамшуулал-100000 нэгж, Хугацаа- 10 хоног, Сүлжээний яриа, мессеж, задгай дата ",
-                           
-               buttons: [ {
-                  type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
-                }],
-              },{
-                title: "15000 карт",
-                image_url: `https://www.skytel.mn/uploads/news/4a3aa5931d8b21ef59e1e2b27555fe2384445c82.png`,
-                subtitle: "Урамшуулал-150000 нэгж, Хугацаа- 10 хоног, Сүлжээний яриа, мессеж, задгай дата ",
-                           
-               buttons: [ {
-                  type: "postback",
-                  title: "Буцах",
-                  payload: `CUSTOM_Back`,
-                }],
-              }]
-            }
-          }
+    var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Хэрэглэгч та цэнэглэгч картаар цэнэглэх бүртээ shake and win урамшуулалд оролцох 1 код авах бөгөөд тус кодоо Skytel application-д нэвтрэн эсвэл Skytel.mn сайтаар хандан shake & win урамшууллын хэсэгт оруулж урамшуулалд оролцоно. Цэнэглэлтэнд дагалдах код 3 өдөрт хүчинтэй байна.",
+          buttons:[
+                {
+                              "type": "web_url",
+                              "url": "https://www.skytel.mn/shakewin", 
+                              "title": "Энд дарна уу"
+                            }
+          ]
         }
-      };  
+      }
+    }
+  };  
 
-      callSendAPI(messageData);
-  });
+  callSendAPI(messageData);
    } 
                  
     function CUSTOM_2_1_2(recipientId) {
@@ -3326,7 +3284,7 @@ function receivedPostback(event) {
             sendTextMessage2(senderID, "11/30н хүртэл  Дараа төлбөрт үйлчилгээний энгийн дугаар: 0₮/ Азын дугаар: 60000₮  Багцаасаа хамаараад 20000₮ болон 50000₮ барьцаа байршуулна Эхний 3 сар  суурь хураамжнаас 30% хөнгөлнө.");
             break;
       case 'CUSTOM_2_2_3':
-            sendTextMessage2(senderID, "Та Shake and share үйлчилгээний энгийн дугаар-1,000₮-р  30хоног-1,000нэгж-180 хоног FACEBOOK эрхтэй  авах боломжтой.Урьдчилсан төлбөрт үйлчилгээний урамшуулал 10/31-д дуусна");
+            sendTextMessage2(senderID, "Та Shake and share үйлчилгээний энгийн дугаарыг-1,000₮-р үйлчилгээний 30хоног-1,000нэгж, 180 хоног 247 эрх+ 6 сарын турш сар бүр 1GB дата эрхтэй авах боломжтой. Мөн та 1990 онд төрсөн бол үйлчилгээний салбарт хандан Shake and Share үйлчилгээний шинэ дугаараа үнэгүй аваарай.");
             break;
               case 'CUSTOM_2_3_1':
             sendTextMessage2(senderID, "Скаймедиа үйлчилгээний хэрэглэгч өөрийн гэрээндээ Скайтелийн дараа  болон урьдчилсан төлбөрт үйлчилгээний дугаарыг бүртгүүлснээр Smart home үйлчилгээний урамшууллыг авна. Та өөрийн дугаараас гадна 1-5 хүртэлх дугааруудыг тухайн үйлчилгээнд бүртгүүлснээр хоорондоо ХЯЗГААРГҮЙ  ЯРИХ, сар бүр ДАТА эрх авахаас гадна КИНО ГАЛЕРЕЙ үйлчилгээг үнэ төлбөргүй 2018/06/01-н хүртэл ашиглах боломжтой. 2017/12/31-с өмнө амжиж урамшууллаа аваарай.");
