@@ -2019,6 +2019,16 @@ function CUSTOM_1_3_1(recipientId) {
                   title: "Буцах",
                   payload: `CUSTOM_Back`,
                 }],
+             },{
+                 title: "1GB+247 багц Хугацаа:48 цаг Үнэ:2000₮",
+                image_url: `https://www.skytel.mn/app/images/messenger-bot/data_package.png`,
+                subtitle: "Идэвхжүүлэх заавар: 2 send 123",
+                
+               buttons: [ {
+                  type: "postback",
+                  title: "Буцах",
+                  payload: `CUSTOM_Back`,
+                }],
              }]
             }
           }
