@@ -450,7 +450,7 @@ function CUSTOM_new(recipientId){
           }, {
             type: "postback",
             title: "Урамшуулал",
-            payload: "CUSTOM_2"
+            payload: "CUSTOM_1_2"
           }, {
             type: "postback",
             title: "Гар утас,төхөөрөмж",
