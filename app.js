@@ -2666,7 +2666,7 @@ function maunfunc(recipientId) {
     },
     message: {
 
-      text: 'Сайн байна уу? '+resultObj.first_name+' '+resultObj.last_name+'  СКАЙмедиа-н үйлчилгээний лавлахтай холбогдсон танд баярлалаа. СКАЙмедиа БОТ танд үйлчилж байна.' ,
+      text: 'Сайн байна уу? '+resultObj.first_name+' '+resultObj.last_name+'  СКАЙтел-н үйлчилгээний лавлахтай холбогдсон танд баярлалаа. СКАЙтел БОТ танд үйлчилж байна.' ,
       metadata: "ZOL_DEFINED_METADATA",
             
       quick_replies: [
