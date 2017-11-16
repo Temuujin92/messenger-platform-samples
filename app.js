@@ -392,7 +392,7 @@ function CUSTOM_new(recipientId){
         type: "template",
         payload: {
           template_type: "button",
-          text: "Skytmedia Messenger-т тавтай морил",
+          text: "Skymedia Messenger-т тавтай морил",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_1",
@@ -1252,7 +1252,7 @@ function maunfunc(recipientId) {
     },
     message: {
 
-      text: 'Сайн байна уу? '+resultObj.first_name+' '+resultObj.last_name+'  СКАЙтел-н үйлчилгээний лавлахтай холбогдсон танд баярлалаа. СКАЙтел БОТ танд үйлчилж байна.' ,
+      text: 'Сайн байна уу? '+resultObj.first_name+' '+resultObj.last_name+'  СКАЙмедиа-н үйлчилгээний лавлахтай холбогдсон танд баярлалаа. СКАЙмедиа БОТ танд үйлчилж байна.' ,
       metadata: "ZOL_DEFINED_METADATA",
             
       quick_replies: [
@@ -1405,7 +1405,7 @@ function receivedPostback(event) {
             CUSTOM_1(senderID); 
             break;        
       case 'CUSTOM_2':
-            startUramshuulal(senderID); 
+            CUSTOM_2(senderID); 
             break;
      case 'CUSTOM_3':
             CUSTOM_3(senderID); 
@@ -1493,68 +1493,8 @@ function receivedPostback(event) {
          case 'CUSTOM_3_3_1_1':
             sendTextMessage2(senderID, "Та дараах тохиргоог гар утсандаа хийнэ үү. Settings-More setting-Mobile network-Access point names Name-Skytel Apn / style, net, skytel / аль нэгийг бичээд хадгална. Утсаа унтрааж асаана.");
             break;
-               case 'CUSTOM_2_1_1':
-            sendTextMessage2(senderID, "11/30н хүртэл  Дараа төлбөрт үйлчилгээний энгийн дугаар: 0₮/ Азын дугаар: 60000₮  Багцаасаа хамаараад 20000₮ болон 50000₮ барьцаа байршуулна Эхний 3 сар  суурь хураамжнаас 30% хөнгөлнө.");
-            break;
-      case 'CUSTOM_2_2_3':
-            sendTextMessage2(senderID, "Та Shake and share үйлчилгээний энгийн дугаарыг-1,000₮-р үйлчилгээний 30хоног-1,000нэгж, 180 хоног 247 эрх+ 6 сарын турш сар бүр 1GB дата эрхтэй авах боломжтой. Мөн та 1990 онд төрсөн бол үйлчилгээний салбарт хандан Shake and Share үйлчилгээний шинэ дугаараа үнэгүй аваарай.");
-            break;
-              case 'CUSTOM_2_3_1':
-            sendTextMessage2(senderID, "Скаймедиа үйлчилгээний хэрэглэгч өөрийн гэрээндээ Скайтелийн дараа  болон урьдчилсан төлбөрт үйлчилгээний дугаарыг бүртгүүлснээр Smart home үйлчилгээний урамшууллыг авна. Та өөрийн дугаараас гадна 1-5 хүртэлх дугааруудыг тухайн үйлчилгээнд бүртгүүлснээр хоорондоо ХЯЗГААРГҮЙ  ЯРИХ, сар бүр ДАТА эрх авахаас гадна КИНО ГАЛЕРЕЙ үйлчилгээг үнэ төлбөргүй 2018/06/01-н хүртэл ашиглах боломжтой. 2017/12/31-с өмнө амжиж урамшууллаа аваарай.");
-            break;
-             
-         
-         case 'CUSTOM_3_3_1_2':
-            sendTextMessage2(senderID, "Та дараах тохиргоог гар утсандаа хийнэ үү. Settings - General - Network - Cellural Data Network - APN - хэсгийг сонгож style гэж бичнэ.");
-            break;
-              case 'CUSTOM_3_3_2_1':
-            sendTextMessage2(senderID, "Та дараах тохиргоог гар утсандаа хийнэ үү. Menu->Settings->More->Mobile networks->Search network automatically->Skytel сонгоно.");
-            break;
-              case 'CUSTOM_1_2_2_2':
-            sendTextMessage2(senderID, "Та  14-22насны хэрэглэгч бөгөөд SHAKE & SHARE  үйлчилгээнд шилжих бол өөрт ойрхон үйлчилгээний салбарт өөрийн цахим үнэмлэх эсвэл төрсний гэрчилгээтэйгээ хандан SHAKE & SHARE үйлчилгээнд бүртгүүлэх боломжтой. Бүртгүүлэхэд төлбөргүй.");
-            break;
-              case 'CUSTOM_1_1_2_3':
-            sendTextMessage2(senderID, "МОНГОЛдоо үүрэн болон суурин холбооны бүх сүлжээнд хүссэнээрээ хязгааргүй ярина. Мөн МОНГОЛдоо хамгийн их дата эрхтэй бөгөөд тухайн эрхээ 3 хүртэлх дотны хүндээ хуваалцах буюу илгээх эрхтэй. Төлбөр төлөх уян хатан боломжууд, ОУ-н яриа, мессэж, дата роумингийн үйлчилгээг сонгох эрхтэйгээс гадна 21MBPS хүртэлх хурдтайгаар интернэт ашиглах зэрэг олон давуу талуудыг МОНГОЛдоогоос авах боломжтой.");
-            break;
-            
-              case 'Custom_middle_1_1':
-            sendTextMessage2(senderID, "Яриа-60₮, Мессэж-20₮, Дата-1MB 6₮");
-            break;
-            case 'Custom_middle_2_1':
-            sendTextMessage2(senderID, "Яриа-60₮, Мессэж-20₮ , Дата-1MB 12₮");
-            break;
-            case 'Custom_middle_3_1':
-            sendTextMessage2(senderID, "Яриа-30₮, Мессэж-(Бусад сүлжээ 20₮,Сүлжээндээ 0₮),Дата-1MB 12₮");
-            break;
-         
-             case 'CUSTOM_1_2_2_1':
-              CUSTOM_1_2_2_1(senderID); 
-            break;
-           
-              case 'CUSTOM_1_1_1_3':
-            sendTextMessage2(senderID, "Та www.skytel.mn сайтад хандан орон зай, цаг хугацааны хязгаарлалтгүйгээр хэрэглээний төлбөрөө төлөх боломжтой. Төлбөр амжилттай төлөгдмөгц үйлчилгээний эрх шууд нээгдэх нь банкаар дамжуулан төлөхөөс илүү давуу талтай.Та бүх арилжааны банкуудын төлбөрийн картыг ашиглах боломжтой.Мөн Skytel.mn сайтаар хугацаандаа буюу сар  бүрийн 20-с өмнө төлбөрөө төлсөн тохиолдолд 5%-н хөнгөлөлт эдлэх давуу талтай.");
-            break;
-             case 'CUSTOM_viewmore_1':
-            sendTextMessage2(senderID, "Шинээр account үүсгэх Текст статус бичих Check in хийх Зураг харах Facebook-н видео үзэх Like, comment,share хийх Онлайн хүмүүс харах Friend request, notification харах.");
-            break;
-         case 'CUSTOM_viewmore_2':
-            sendTextMessage2(senderID, "Чатлах Стикер илгээх  Зураг илгээх Зураг хүлээн авах Видео илгээх* Өөрт ирсэн видеог үзэх Voice record илгээх Өөрт ирсэн record сонсох Байршил илгээх.");
-            break;
-             case 'CUSTOM_viewmore_3':
-            sendTextMessage2(senderID, "Voice дуудлага хийх* Voice дуудлага хүлээн авах* Video дуудлага хийх* Video дуудлага хүлээн авах* Giphy хөдөлгөөнт зулаг илгээх");
-            break;
-     
-         
-             case 'CUSTOM_3_2_3':
-            sendTextMessage2(senderID, "ERROR:691 Холболт хийгдэхэд алдаа гарлаа. Та нууц үгээ дахин оруулна уу? , Таны хэрэглэгчийн нэр, нууц үг буруу байна. Эсвэл үйлчилгээний хугацаа, мэдээлэл татаж авах эрх дууссан үед ийм алдаа гарна.ERROR:680 CCU-550 modem evdo for vista support татаж программыг ажиллуулахад  гэсэн алдаа гарвал татаж авсан програмыг ашиглахгүйгээр Vista үйлдлийн системийн dial up модемоор холболт хийгдэнэ. Windows 95, 98, Me NT, 2K & XP үйлдлийн систем дээр ажиллана.ERROR:718 Компьютерийг restart хийх (унтрааж асаах ) хэрэгтэй. Модем драйверыг дахин суулгана");
-            break;
-             case 'CUSTOM_3_3_2_2':
-            sendTextMessage2(senderID, "Та дараах тохиргоог гар утсандаа хийнэ үү. Settings-Carrier-Automatic-g idevhijuulne. Bas Settings->Cellular->Voice & Data->3G-g  сонгоно.");
-            break;
-        case 'CUSTOM_FROM_123_NEWS':
-                    sendNewsMessage(senderID); 
-        //sendTextMessage(senderID, "Та 123-г ашиглан 247 багц авахын тулд 247 гэсэн түлхүүр үгийг //123 тусгай дугаарт илгээхэд хангалттай. Дагалдах эрх үйлчилгээний 30 хоног. Үнэ 5000₮");
-        break; 
+    
+    
         case 'CUSTOM_123_DATA_PACKAGE':
             sendDataQuickReply(senderID); 
             break; 
