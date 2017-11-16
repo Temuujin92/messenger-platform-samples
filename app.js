@@ -392,18 +392,18 @@ function CUSTOM_new(recipientId){
         type: "template",
         payload: {
           template_type: "button",
-          text: "Skytel Messenger-т тавтай морил",
+          text: "Skytmedia Messenger-т тавтай морил",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_1",
-            title: "Үндсэн үйлчилгээ"
+            title: "Урамшуулал"
           }, {
             type: "postback",
-            title: "Урамшуулал",
+            title: "Төлбөр төлөлт",
             payload: "CUSTOM_2"
           }, {
             type: "postback",
-            title: "Гар утас,төхөөрөмж",
+            title: "Үндсэн үйлчилгээ",
             payload: "CUSTOM_3"
           }]
         }
@@ -2077,7 +2077,7 @@ function sendStartButtons(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "Skytel Messenger-т тавтай морил",
+          text: "Skytmedia Messenger-т тавтай морил",
           buttons:[{
             type: "postback",
             payload: "CUSTOM_START_NEW_SERVICE",
