@@ -118,7 +118,67 @@ app.post('/webhook', function (req, res) {
   }
 });
 
+/*
+ * This path is used for account linking. The account linking call-to-action
+ * (sendAccountLinking) is pointed to this URL. 
+ * 
+ */
+app.get('/authorize', function(req, res) {
+  var accountLinkingToken = req.query['account_linking_token'];
+  var redirectURI = req.query['redirect_uri'];
 
+  // Authorization Code should be generated per user by the developer. This will 
+  // be passed to the Account Linking callback.
+  var authCode = "1234567890";
+
+  // Redirect users to this URI on successful login
+  var redirectURISuccess = redirectURI + "&authorization_code=" + authCode;
+
+  res.render('authorize', {
+    accountLinkingToken: accountLinkingToken,
+    redirectURI: redirectURI,
+    redirectURISuccess: redirectURISuccess
+  });
+});
+
+/*
+ * Verify that the callback came from Facebook. Using the App Secret from 
+ * the App Dashboard, we can verify the signature that is sent with each 
+ * callback in the x-hub-signature field, located in the header.
+ *
+ * https://developers.facebook.com/docs/graph-api/webhooks#setup
+ *
+ */
+function verifyRequestSignature(req, res, buf) {
+  var signature = req.headers["x-hub-signature"];
+
+  if (!signature) {
+    // For testing, let's log an error. In production, you should throw an 
+    // error.
+    console.error("Couldn't validate the signature.");
+  } else {
+    var elements = signature.split('=');
+    var method = elements[0];
+    var signatureHash = elements[1];
+
+    var expectedHash = crypto.createHmac('sha1', APP_SECRET)
+                        .update(buf)
+                        .digest('hex');
+
+    if (signatureHash != expectedHash) {
+      throw new Error("Couldn't validate the request signature.");
+    }
+  }
+}
+
+/*
+ * Authorization Event
+ *
+ * The value for 'optin.ref' is defined in the entry point. For the "Send to 
+ * Messenger" plugin, it is the 'data-ref' field. Read more at 
+ * https://developers.facebook.com/docs/messenger-platform/webhook-reference/authentication
+ *
+ */
 function receivedAuthentication(event) {
   var senderID = event.sender.id;
   var recipientID = event.recipient.id;
@@ -386,14 +446,14 @@ function CUSTOM_new(recipientId){
           buttons:[{
             type: "postback",
             payload: "CUSTOM_1",
-            title: "Урамшуулал"
+            title: "Үндсэн үйлчилгээ"
           }, {
             type: "postback",
-            title: "Төлбөр төлөлт",
+            title: "Урамшуулал",
             payload: "CUSTOM_2"
           }, {
             type: "postback",
-            title: "Үндсэн үйлчилгээ",
+            title: "Гар утас,төхөөрөмж",
             payload: "CUSTOM_3"
           }]
         }
@@ -595,14 +655,14 @@ function CUSTOM_1(recipientId) {
           buttons:[{
             type: "postback",
             payload: "CUSTOM_1_1",
-            title: "Шинэ хэрэглэгч"
+            title: "Дараа төлбөрт"
           }, {
             type: "postback",
-            title: "ip76",
+            title: "Урьдчилсан төлбөрт",
             payload: "CUSTOM_1_2"
           }, {
             type: "postback",
-            title: "Video Сан",
+            title: "Дата",
             payload: "CUSTOM_1_3"
           }]
         }
@@ -675,7 +735,70 @@ function CUSTOM_1_2(recipientId) {
   callSendAPI(messageData);
 }
 
-function CUSTOM_2(recipientId) {
+
+
+
+
+function CUSTOM_1_2_2(recipientId) {
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Shake and Share",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_1_2_2_1",
+            title: "Танилцуулга"
+          }, {
+            type: "postback",
+            title: "Бүртгүүлэх заавар",
+            payload: "CUSTOM_1_2_2_2"
+          }, {
+            type: "postback",
+            title: "Үйлчилгээ ашиглах",
+            payload: "CUSTOM_1_2_2_3"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
+function CUSTOM_1_3(recipientId) {
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Дата",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_1_3_1",
+            title: "Дата багц"
+          }, {
+            type: "postback",
+            title: "Facebook",
+            payload: "CUSTOM_1_3_2"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
+
+function CUSTOM_1_1_1(recipientId) {
     
    var messageData = {
     recipient: {
@@ -689,21 +812,102 @@ function CUSTOM_2(recipientId) {
           text: "Дараах цэснээс сонгоно уу",
           buttons:[{
             type: "postback",
-            payload: "CUSTOM_3_1_1",
-            title: "My.skymedia.mn"
+            payload: "CUSTOM_1_1_1_1",
+            title: "Төлбөр шалгах заавар"
           }, {
             type: "postback",
-            title: "Скайтел салбар",
-            payload: "CUSTOM_3_2"
+            title: "Mobile,интернэт банк",
+            payload: "CUSTOM_1_1_1_2"
           }, {
             type: "postback",
-            title: "Цахим банк",
-            payload: "CUSTOM_3_3"
+            title: "Цахим салбар",
+            payload: "CUSTOM_1_1_1_3"
           }]
         }
       }
     }
   };  
+  callSendAPI(messageData);
+}
+function CUSTOM_1_1_2(recipientId) {
+    
+   var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Дараах цэснээс сонгоно уу",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_1_1_2_1",
+            title: "Дугаарын үнэ тариф"
+          }, {
+            type: "postback",
+            title: "Багцын танилцуулга",
+            payload: "CUSTOM_1_1_2_2"
+          }, {
+            type: "postback",
+            title: "Онцлог давуу тал",
+            payload: "CUSTOM_1_1_2_3"
+          }]
+        }
+      }
+    }
+  };  
+  callSendAPI(messageData);
+}
+function CUSTOM_1_1_3(recipientId) {
+ var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Нэмэлт үйлчилгээ",
+          buttons:[
+                {
+                              "type": "web_url",
+                              "url": "https://www.skytel.mn/p/extra", 
+                              "title": "Энд дарна уу"
+                            }
+          ]
+        }
+      }
+    }
+  };  
+
+  callSendAPI(messageData);
+}
+function CUSTOM_1_2_3(recipientId) {
+ var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Нэмэлт үйлчилгээ",
+          buttons:[
+                {
+                              "type": "web_url",
+                              "url": "https://www.skytel.mn/p/extra", 
+                              "title": "Энд дарна уу"
+                            }
+          ]
+        }
+      }
+    }
+  };  
+
   callSendAPI(messageData);
 }
 function CUSTOM_3(recipientId) {
@@ -2462,7 +2666,7 @@ function maunfunc(recipientId) {
     },
     message: {
 
-      text: 'Сайн байна уу? '+resultObj.first_name+' '+resultObj.last_name+'  СКАЙтел-н үйлчилгээний лавлахтай холбогдсон танд баярлалаа. СКАЙмедиа БОТ танд үйлчилж байна.' ,
+      text: 'Сайн байна уу? '+resultObj.first_name+' '+resultObj.last_name+'  СКАЙмедиа-н үйлчилгээний лавлахтай холбогдсон танд баярлалаа. СКАЙмедиа БОТ танд үйлчилж байна.' ,
       metadata: "ZOL_DEFINED_METADATA",
             
       quick_replies: [
@@ -3545,7 +3749,106 @@ function sendNewsMessage(recipientId) {
   
 }
 
+/*
+ * Send a receipt message using the Send API.
+ *
+ */
+function sendReceiptMessage(recipientId) {
+  // Generate a random receipt ID as the API requires a unique ID
+  var receiptId = "order" + Math.floor(Math.random()*1000);
 
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message:{
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "receipt",
+          recipient_name: "Peter Chang",
+          order_number: receiptId,
+          currency: "USD",
+          payment_method: "Visa 1234",        
+          timestamp: "1428444852", 
+          elements: [{
+            title: "Oculus Rift",
+            subtitle: "Includes: headset, sensor, remote",
+            quantity: 1,
+            price: 599.00,
+            currency: "USD",
+            image_url: SERVER_URL + "/assets/riftsq.png"
+          }, {
+            title: "Samsung Gear VR",
+            subtitle: "Frost White",
+            quantity: 1,
+            price: 99.99,
+            currency: "USD",
+            image_url: SERVER_URL + "/assets/gearvrsq.png"
+          }],
+          address: {
+            street_1: "1 Hacker Way",
+            street_2: "",
+            city: "Menlo Park",
+            postal_code: "94025",
+            state: "CA",
+            country: "US"
+          },
+          summary: {
+            subtotal: 698.99,
+            shipping_cost: 20.00,
+            total_tax: 57.67,
+            total_cost: 626.66
+          },
+          adjustments: [{
+            name: "New Customer Discount",
+            amount: -50
+          }, {
+            name: "$100 Off Coupon",
+            amount: -100
+          }]
+        }
+      }
+    }
+  };
+
+  callSendAPI(messageData);
+}
+
+/*
+ * Send a message with Quick Reply buttons.
+ *
+ */
+function sendQuickReply(recipientId) {
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      text: "What's your favorite movie genre?",
+      metadata: "DEVELOPER_DEFINED_METADATA",
+      quick_replies: [
+        {
+          "content_type":"text",
+          "title":"Action",
+          "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_ACTION"
+        },
+        {
+          "content_type":"text",
+          "title":"Comedy",
+          "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_COMEDY"
+        },
+        {
+          "content_type":"text",
+          "title":"Drama",
+          "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_DRAMA"
+        }
+      ]
+    }
+  };
+
+  callSendAPI(messageData);
+}
 //TODO mine 
 function sendDataQuickReply(recipientId) {
   var messageData = {
@@ -3578,7 +3881,112 @@ function sendDataQuickReply(recipientId) {
   callSendAPI(messageData);
 }
 
+//MINE
+function sendStartButtons(recipientId) {
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Skytel Messenger-т тавтай морил",
+          buttons:[{
+            type: "postback",
+            payload: "CUSTOM_START_NEW_SERVICE",
+            title: "Шинэ үйлчилгээ"
+          }, {
+            type: "postback",
+            title: "Шинэ мэдээ",
+            payload: "CUSTOM_START_NEWS"
+          }]
+        }
+      }
+    }
+  };  
+	sendTypingOff(recipientId); 
+  callSendAPI(messageData);
+}
 
+/*
+ * Send a read receipt to indicate the message has been read
+ *
+ */
+function sendReadReceipt(recipientId) {
+  console.log("Sending a read receipt to mark message as seen");
+
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    sender_action: "mark_seen"
+  };
+
+  callSendAPI(messageData);
+}
+
+/*
+ * Turn typing indicator on
+ *
+ */
+function sendTypingOn(recipientId) {
+  console.log("Turning typing indicator on");
+
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    sender_action: "typing_on"
+  };
+
+  callSendAPI(messageData);
+}
+
+/*
+ * Turn typing indicator off
+ *
+ */
+function sendTypingOff(recipientId) {
+  console.log("Turning typing indicator off");
+
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    sender_action: "typing_off"
+  };
+
+  callSendAPI(messageData);
+}
+
+/*
+ * Send a message with the account linking call-to-action
+ *
+ */
+function sendAccountLinking(recipientId) {
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      attachment: {
+        type: "template",
+        payload: {
+          template_type: "button",
+          text: "Welcome. Link your account.",
+          buttons:[{
+            type: "account_link",
+            url: SERVER_URL + "/authorize"
+          }]
+        }
+      }
+    }
+  };  
+
+  callSendAPI(messageData);
+}
 
 /*
  * Call the Send API. The message data goes in the body. If successful, we'll 
